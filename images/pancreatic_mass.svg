@@ -1,0 +1,29 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="300" fill="#1a1a1a"/>
+  
+  <!-- Pancreas outline -->
+  <ellipse cx="200" cy="150" rx="120" ry="25" fill="#8B4513" opacity="0.6"/>
+  
+  <!-- Pancreatic mass (hypoechoic) -->
+  <ellipse cx="160" cy="150" rx="30" ry="20" fill="#2c3e50" stroke="#fff" stroke-width="2"/>
+  
+  <!-- Dilated bile duct -->
+  <ellipse cx="250" cy="120" rx="40" ry="8" fill="#000" stroke="#fff" stroke-width="1"/>
+  
+  <!-- Dilated pancreatic duct -->
+  <ellipse cx="220" cy="150" rx="60" ry="3" fill="#333" stroke="#ccc" stroke-width="1"/>
+  
+  <!-- Labels -->
+  <text x="50" y="50" fill="#fff" font-family="Arial" font-size="14" font-weight="bold">Pancreatic Head Mass</text>
+  <text x="50" y="70" fill="#ccc" font-family="Arial" font-size="12">With bile duct dilatation</text>
+  
+  <!-- Arrows -->
+  <polygon points="120,140 140,150 120,160" fill="#ff6b6b"/>
+  <line x1="110" y1="150" x2="120" y2="150" stroke="#ff6b6b" stroke-width="2"/>
+  <text x="80" y="165" fill="#ff6b6b" font-family="Arial" font-size="10">Mass</text>
+  
+  <polygon points="250,100 260,110 250,120" fill="#4ecdc4"/>
+  <line x1="240" y1="110" x2="250" y2="110" stroke="#4ecdc4" stroke-width="2"/>
+  <text x="200" y="100" fill="#4ecdc4" font-family="Arial" font-size="10">Dilated BD</text>
+</svg>

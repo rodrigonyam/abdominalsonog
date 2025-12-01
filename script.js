@@ -132,10 +132,27 @@ class AbdominalSonographyQuiz {
         document.getElementById('submitBtn').addEventListener('click', () => this.submitAnswer());
         document.getElementById('finishBtn').addEventListener('click', () => this.finishQuiz());
         document.getElementById('restartBtn').addEventListener('click', () => this.restartQuiz());
+        
+        // Floating action buttons
+        document.getElementById('quickStatsBtn').addEventListener('click', () => this.showQuickStats());
+        document.getElementById('bookmarkBtn').addEventListener('click', () => this.bookmarkQuestion());
+        document.getElementById('scrollTopBtn').addEventListener('click', () => this.scrollToTop());
+        document.getElementById('closeStatsModal').addEventListener('click', () => this.closeQuickStats());
     }
     
     filterByCategory(category) {
         this.currentCategory = category;
+        
+        // Handle sources section
+        if (category === 'sources') {
+            this.showSources();
+            return;
+        }
+        
+        // Hide sources section if visible
+        document.getElementById('sourcesSection').classList.add('hidden');
+        document.getElementById('questionContainer').classList.remove('hidden');
+        document.querySelector('.quiz-controls').classList.remove('hidden');
         
         if (category === 'all') {
             this.filteredQuestions = [...this.allQuestions];
@@ -154,6 +171,140 @@ class AbdominalSonographyQuiz {
         this.updateProgress();
     }
     
+    showSources() {
+        // Hide quiz sections
+        document.getElementById('questionContainer').classList.add('hidden');
+        document.querySelector('.quiz-controls').classList.add('hidden');
+        document.getElementById('resultsSection').classList.add('hidden');
+        
+        // Show sources section
+        document.getElementById('sourcesSection').classList.remove('hidden');
+        
+        // Update active tab
+        document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+        document.querySelector('[data-category="sources"]').classList.add('active');
+        
+        // Scroll to sources
+        document.getElementById('sourcesSection').scrollIntoView({ behavior: 'smooth' });
+    }
+    
+    showQuickStats() {
+        const modal = document.getElementById('quickStatsModal');
+        const content = document.getElementById('quickStatsContent');
+        
+        const totalQuestions = this.allQuestions.length;
+        const answeredQuestions = Object.keys(this.submittedAnswers).length;
+        const correctAnswers = this.score;
+        const accuracy = answeredQuestions > 0 ? Math.round((correctAnswers / answeredQuestions) * 100) : 0;
+        
+        const categoryStats = {};
+        ['multiple-choice', 'true-false', 'short-answer', 'diagram'].forEach(category => {
+            const categoryQuestions = this.allQuestions.filter(q => q.category === category);
+            const answered = categoryQuestions.filter(q => this.submittedAnswers[q.id] !== undefined).length;
+            const correct = categoryQuestions.filter(q => {
+                const userAnswer = this.userAnswers[q.id];
+                return this.submittedAnswers[q.id] !== undefined && this.isAnswerCorrect(q, userAnswer);
+            }).length;
+            
+            categoryStats[category] = {
+                total: categoryQuestions.length,
+                answered,
+                correct,
+                accuracy: answered > 0 ? Math.round((correct / answered) * 100) : 0
+            };
+        });
+        
+        content.innerHTML = `
+            <div class="quick-stats">
+                <div class="stat-row">
+                    <span class="stat-label">Progress:</span>
+                    <span class="stat-value">${answeredQuestions}/${totalQuestions} (${Math.round((answeredQuestions/totalQuestions)*100)}%)</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Overall Accuracy:</span>
+                    <span class="stat-value ${accuracy >= 80 ? 'high' : accuracy >= 60 ? 'medium' : 'low'}">${accuracy}%</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Current Streak:</span>
+                    <span class="stat-value">${this.sessionStats.streakCount}</span>
+                </div>
+                <div class="category-stats">
+                    <h4>Category Breakdown:</h4>
+                    ${Object.entries(categoryStats).map(([category, stats]) => `
+                        <div class="category-stat">
+                            <span class="category-name">${this.formatQuestionType(category)}:</span>
+                            <span class="category-progress">${stats.correct}/${stats.answered} (${stats.accuracy}%)</span>
+                        </div>
+                    `).join('')}
+                </div>
+            </div>
+        `;
+        
+        modal.classList.remove('hidden');
+    }
+    
+    closeQuickStats() {
+        document.getElementById('quickStatsModal').classList.add('hidden');
+    }
+    
+    bookmarkQuestion() {
+        if (this.filteredQuestions.length === 0) return;
+        
+        const question = this.filteredQuestions[this.currentQuestionIndex];
+        let bookmarks = JSON.parse(localStorage.getItem('bookmarkedQuestions') || '[]');
+        
+        if (bookmarks.includes(question.id)) {
+            bookmarks = bookmarks.filter(id => id !== question.id);
+            this.showNotification('Question removed from bookmarks', 'info');
+        } else {
+            bookmarks.push(question.id);
+            this.showNotification('Question bookmarked!', 'success');
+        }
+        
+        localStorage.setItem('bookmarkedQuestions', JSON.stringify(bookmarks));
+        this.updateBookmarkButton();
+    }
+    
+    updateBookmarkButton() {
+        const bookmarkBtn = document.getElementById('bookmarkBtn');
+        if (this.filteredQuestions.length === 0) return;
+        
+        const question = this.filteredQuestions[this.currentQuestionIndex];
+        const bookmarks = JSON.parse(localStorage.getItem('bookmarkedQuestions') || '[]');
+        
+        if (bookmarks.includes(question.id)) {
+            bookmarkBtn.classList.add('bookmarked');
+        } else {
+            bookmarkBtn.classList.remove('bookmarked');
+        }
+    }
+    
+    scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+    
+    showNotification(message, type = 'info') {
+        const notification = document.createElement('div');
+        notification.className = `notification ${type}`;
+        notification.innerHTML = `
+            <i class="fas fa-${type === 'success' ? 'check-circle' : 'info-circle'}"></i>
+            <span>${message}</span>
+        `;
+        
+        document.body.appendChild(notification);
+        
+        setTimeout(() => {
+            notification.classList.add('show');
+        }, 100);
+        
+        setTimeout(() => {
+            notification.classList.remove('show');
+            setTimeout(() => {
+                document.body.removeChild(notification);
+            }, 300);
+        }, 3000);
+    }
+    
     loadQuestion() {
         const question = this.filteredQuestions[this.currentQuestionIndex];
         if (!question) return;
@@ -166,6 +317,9 @@ class AbdominalSonographyQuiz {
         
         // Update navigation buttons
         this.updateNavigationButtons();
+        
+        // Update bookmark button state
+        this.updateBookmarkButton();
         
         // Start timer on first question
         if (!this.startTime && this.currentQuestionIndex === 0) {

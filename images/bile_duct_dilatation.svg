@@ -1,0 +1,23 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="300" fill="#1a1a1a"/>
+  
+  <!-- Common bile duct (dilated) -->
+  <ellipse cx="200" cy="150" rx="80" ry="15" fill="#2c3e50" stroke="#fff" stroke-width="3"/>
+  
+  <!-- Measurement lines -->
+  <line x1="120" y1="135" x2="120" y2="165" stroke="#ff6b6b" stroke-width="2"/>
+  <line x1="280" y1="135" x2="280" y2="165" stroke="#ff6b6b" stroke-width="2"/>
+  <line x1="120" y1="150" x2="280" y2="150" stroke="#ff6b6b" stroke-width="1" stroke-dasharray="5,5"/>
+  
+  <!-- Measurement text -->
+  <text x="185" y="130" fill="#ff6b6b" font-family="Arial" font-size="12" font-weight="bold">9.2mm</text>
+  
+  <!-- Labels -->
+  <text x="50" y="50" fill="#fff" font-family="Arial" font-size="14" font-weight="bold">Bile Duct Dilatation</text>
+  <text x="50" y="70" fill="#ccc" font-family="Arial" font-size="12">CBD diameter >7mm indicates dilatation</text>
+  
+  <!-- Arrows -->
+  <polygon points="160,110 180,120 160,130" fill="#4ecdc4"/>
+  <line x1="150" y1="120" x2="160" y2="120" stroke="#4ecdc4" stroke-width="2"/>
+</svg>

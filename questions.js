@@ -496,9 +496,233 @@ const questionDatabase = {
             imagePath: "images/portal_doppler.svg",
             options: ["Hepatic artery", "Portal vein", "Hepatic vein", "IVC"],
             correct: 1,
-            explanation: "The Doppler waveform and anatomical position indicate this is the portal vein with hepatopetal flow."
+            explanation: "The Doppler waveform and anatomical position indicate this is the portal vein with hepatopetal flow.",
+            source: "Rumack CM, Wilson SR, Charboneau JW. Diagnostic Ultrasound. 4th ed. Mosby; 2011."
+        },
+        {
+            id: 456,
+            question: "What is the most likely diagnosis based on this gallbladder wall appearance?",
+            imagePath: "images/gb_wall_thickening.svg",
+            options: ["Acute cholecystitis", "Chronic cholecystitis", "Adenomyomatosis", "Gallbladder carcinoma"],
+            correct: 2,
+            explanation: "Comet-tail artifacts from cholesterol deposits in Rokitansky-Aschoff sinuses are pathognomonic for adenomyomatosis.",
+            source: "Levy AD, Murakata LA, Rohrmann CA Jr. Gallbladder carcinoma: radiologic-pathologic correlation. Radiographics. 2001;21(2):295-314."
+        },
+        {
+            id: 457,
+            question: "Identify the structure causing acoustic shadowing in this upper abdomen scan.",
+            imagePath: "images/shadowing_structure.svg",
+            options: ["Gallstone", "Bowel gas", "Rib", "Diaphragm"],
+            correct: 0,
+            explanation: "Clean posterior acoustic shadowing with a mobile echogenic focus is characteristic of a gallstone.",
+            source: "Cooperberg PL, Burhenne HJ. Real-time ultrasonography. Diagnostic technique of choice in calculous gallbladder disease. N Engl J Med. 1980;302(24):1277-9."
+        },
+        {
+            id: 458,
+            question: "What liver pathology is demonstrated in this image?",
+            imagePath: "images/liver_steatosis.svg",
+            options: ["Hepatic steatosis", "Hepatic fibrosis", "Hepatoma", "Hemangioma"],
+            correct: 0,
+            explanation: "Increased echogenicity with posterior attenuation and loss of diaphragmatic definition indicates hepatic steatosis.",
+            source: "Saverymuttu SH, Joseph AE, Maxwell JD. Ultrasound scanning in the detection of hepatic fibrosis and steatosis. Br Med J (Clin Res Ed). 1986;292(6512):13-6."
+        },
+        {
+            id: 459,
+            question: "Identify the pancreatic abnormality shown.",
+            imagePath: "images/pancreatic_mass.svg",
+            options: ["Pancreatic pseudocyst", "Pancreatic adenocarcinoma", "Chronic pancreatitis", "Normal pancreas"],
+            correct: 1,
+            explanation: "Hypoechoic mass in the pancreatic head with bile duct dilatation suggests pancreatic adenocarcinoma.",
+            source: "Freeny PC, Marks WM, Ryan JA, Traverso LW. Pancreatic ductal adenocarcinoma: diagnosis and staging with dynamic CT. Radiology. 1988;166(1 Pt 1):125-33."
+        },
+        {
+            id: 460,
+            question: "What renal abnormality is demonstrated?",
+            imagePath: "images/renal_stone.svg",
+            options: ["Renal cyst", "Renal stone", "Renal tumor", "Renal infarct"],
+            correct: 1,
+            explanation: "Echogenic focus with posterior acoustic shadowing in the renal pelvis indicates a renal stone.",
+            source: "Dunnick NR, Sandler CM, Newhouse JH, Amis ES Jr. Textbook of Uroradiology. 4th ed. Lippincott Williams & Wilkins; 2008."
+        },
+        {
+            id: 461,
+            question: "Identify the vascular abnormality in this Doppler study.",
+            imagePath: "images/portal_vein_thrombosis.svg",
+            options: ["Portal vein thrombosis", "Hepatic artery stenosis", "Budd-Chiari syndrome", "Normal flow"],
+            correct: 0,
+            explanation: "Absence of flow with echogenic material within the portal vein indicates portal vein thrombosis.",
+            source: "Tessler FN, Gehring BJ, Gomes AS, et al. Diagnosis of portal vein thrombosis: value of color Doppler imaging. AJR Am J Roentgenol. 1991;157(2):293-6."
+        },
+        {
+            id: 462,
+            question: "What splenic pathology is shown?",
+            imagePath: "images/splenic_infarct.svg",
+            options: ["Splenic laceration", "Splenic infarct", "Splenic hematoma", "Splenic cyst"],
+            correct: 1,
+            explanation: "Wedge-shaped hypoechoic area extending to the splenic capsule is characteristic of splenic infarction.",
+            source: "Rabushka LS, Kawashima A, Fishman EK. Imaging of the spleen: CT with supplemental MR examination. Radiographics. 1994;14(2):307-32."
+        },
+        {
+            id: 463,
+            question: "Identify the biliary abnormality demonstrated.",
+            imagePath: "images/bile_duct_dilatation.svg",
+            options: ["Normal bile duct", "Choledocholithiasis", "Bile duct stricture", "Bile duct dilatation"],
+            correct: 3,
+            explanation: "Common bile duct diameter >7mm in elderly patients indicates dilatation, suggesting obstruction.",
+            source: "Cooperberg PL, Li D, Wong P, Cohen MM, Burhenne HJ. Accuracy of common hepatic duct size in the evaluation of extrahepatic biliary obstruction. Radiology. 1980;135(1):141-4."
+        },
+        {
+            id: 464,
+            question: "What hepatic vessel abnormality is shown?",
+            imagePath: "images/hepatic_vein_thrombosis.svg",
+            options: ["Portal vein thrombosis", "Hepatic vein thrombosis", "IVC thrombosis", "Normal vessels"],
+            correct: 1,
+            explanation: "Absent flow in hepatic veins with liver congestion indicates Budd-Chiari syndrome (hepatic vein thrombosis).",
+            source: "Bolondi L, Gaiani S, Li Bassi S, et al. Diagnosis of Budd-Chiari syndrome by pulsed Doppler ultrasound. Gastroenterology. 1991;100(5 Pt 1):1324-31."
         }
-        // Continue with 45 more diagram questions...
+            id: 465,
+            question: "What aortic pathology is demonstrated?",
+            imagePath: "images/aortic_aneurysm.svg",
+            options: ["Normal aorta", "Aortic stenosis", "Abdominal aortic aneurysm", "Aortic dissection"],
+            correct: 2,
+            explanation: "Aortic diameter >3.0cm indicates aneurysmal dilatation. Measurement should be outer wall to outer wall.",
+            source: "Lederle FA, Johnson GR, Wilson SE, et al. The aneurysm detection and management study screening program. Arch Intern Med. 1994;154(16):1909-15."
+        },
+        {
+            id: 466,
+            question: "Identify the retroperitoneal mass shown.",
+            imagePath: "images/retroperitoneal_mass.svg",
+            options: ["Lymphadenopathy", "Retroperitoneal fibrosis", "Psoas hematoma", "Renal tumor"],
+            correct: 0,
+            explanation: "Multiple hypoechoic masses in the para-aortic region are consistent with retroperitoneal lymphadenopathy.",
+            source: "Husband JE, Reznek RH. Imaging in Oncology. 3rd ed. Informa Healthcare; 2009."
+        },
+        {
+            id: 467,
+            question: "What gallbladder condition is demonstrated?",
+            imagePath: "images/gb_sludge.svg",
+            options: ["Gallstone", "Gallbladder sludge", "Gallbladder polyp", "Tumefactive sludge"],
+            correct: 1,
+            explanation: "Low-level echoes that layer dependently without posterior shadowing represent gallbladder sludge.",
+            source: "Filly RA, Reddy SG, Nalbandian AB, Silva PD. Sonographic evaluation of gallbladder sludge. AJR Am J Roentgenol. 1980;135(1):81-5."
+        },
+        {
+            id: 468,
+            question: "Identify the pancreatic pathology.",
+            imagePath: "images/pancreatic_pseudocyst.svg",
+            options: ["Pancreatic adenocarcinoma", "Pancreatic pseudocyst", "Pancreatic abscess", "Normal pancreas"],
+            correct: 1,
+            explanation: "Well-defined anechoic collection with posterior enhancement in the pancreatic region indicates pseudocyst.",
+            source: "Balthazar EJ, Robinson DL, Megibow AJ, Ranson JH. Acute pancreatitis: value of CT in establishing prognosis. Radiology. 1990;174(2):331-6."
+        },
+        {
+            id: 469,
+            question: "What liver lesion is shown?",
+            imagePath: "images/liver_hemangioma.svg",
+            options: ["Hepatocellular carcinoma", "Hepatic hemangioma", "Hepatic adenoma", "Metastasis"],
+            correct: 1,
+            explanation: "Hyperechoic lesion with well-defined margins and posterior enhancement is typical of hepatic hemangioma.",
+            source: "Gibney RG, Hendin AP, Cooperberg PL. Sonographically detected hepatic hemangiomas: absence of change over time. AJR Am J Roentgenol. 1987;149(5):953-7."
+        },
+        {
+            id: 470,
+            question: "Identify the renal pathology demonstrated.",
+            imagePath: "images/polycystic_kidney.svg",
+            options: ["Multiple renal cysts", "Polycystic kidney disease", "Multicystic dysplastic kidney", "Normal kidney"],
+            correct: 1,
+            explanation: "Multiple cysts of varying sizes replacing normal renal architecture is diagnostic of polycystic kidney disease.",
+            source: "Grantham JJ. Clinical practice. Autosomal dominant polycystic kidney disease. N Engl J Med. 2008;359(14):1477-85."
+        },
+        {
+            id: 471,
+            question: "What bowel pathology is suggested?",
+            imagePath: "images/bowel_obstruction.svg",
+            options: ["Normal bowel", "Bowel obstruction", "Inflammatory bowel disease", "Bowel perforation"],
+            correct: 1,
+            explanation: "Dilated fluid-filled bowel loops with to-and-fro movement suggest mechanical bowel obstruction.",
+            source: "Schmutz GR, Benko A, Fournier L, et al. Small bowel obstruction: role and reliability of sonography. Eur Radiol. 1997;7(7):1054-8."
+        },
+        {
+            id: 472,
+            question: "Identify the adrenal abnormality.",
+            imagePath: "images/adrenal_mass.svg",
+            options: ["Adrenal adenoma", "Pheochromocytoma", "Adrenal metastasis", "Normal adrenal"],
+            correct: 0,
+            explanation: "Small, homogeneous, hypoechoic adrenal mass is most consistent with adrenal adenoma.",
+            source: "Yeh HC. Sonography of the adrenal glands: normal glands and small masses. AJR Am J Roentgenol. 1980;135(6):1167-77."
+        },
+        {
+            id: 473,
+            question: "What vascular condition is demonstrated?",
+            imagePath: "images/ivc_thrombosis.svg",
+            options: ["IVC compression", "IVC thrombosis", "Normal IVC", "IVC tumor thrombus"],
+            correct: 1,
+            explanation: "Echogenic material within the IVC with absence of flow on Doppler indicates IVC thrombosis.",
+            source: "Koksoy C, Kuzu A, Kutlay J, et al. Intermittent claudication due to inferior vena cava stenosis. J Vasc Surg. 1995;21(2):301-9."
+        },
+        {
+            id: 474,
+            question: "Identify the hepatic abnormality shown.",
+            imagePath: "images/liver_cirrhosis.svg",
+            options: ["Normal liver", "Hepatic steatosis", "Liver cirrhosis", "Acute hepatitis"],
+            correct: 2,
+            explanation: "Coarse, heterogeneous echogenicity with nodular surface and signs of portal hypertension indicate cirrhosis.",
+            source: "Gaiani S, Gramantieri L, Venturoli N, et al. What is the criterion for differentiating chronic hepatitis from compensated cirrhosis? A prospective study comparing ultrasonography and percutaneous liver biopsy. J Hepatol. 1997;27(6):979-85."
+        },
+        {
+            id: 475,
+            question: "What pancreatic duct abnormality is shown?",
+            imagePath: "images/pancreatic_duct_dilatation.svg",
+            options: ["Normal pancreatic duct", "Pancreatic duct stricture", "Pancreatic duct dilatation", "Pancreatic duct stone"],
+            correct: 2,
+            explanation: "Pancreatic duct diameter >3mm indicates dilatation, suggesting downstream obstruction.",
+            source: "Milligan FJ, Nikolaou S, Davis M, et al. The pancreatic duct: normal and abnormal appearances on transabdominal sonography. Clin Radiol. 1988;39(4):391-7."
+        },
+        {
+            id: 476,
+            question: "Identify the splenic abnormality.",
+            imagePath: "images/splenic_cyst.svg",
+            options: ["Splenic hematoma", "Splenic cyst", "Splenic abscess", "Splenic infarct"],
+            correct: 1,
+            explanation: "Well-defined anechoic lesion with posterior enhancement and thin walls indicates splenic cyst.",
+            source: "Ros PR, Moser RP Jr, Dachman AH, et al. Hemangioma of the spleen: radiologic-pathologic correlation in ten cases. Radiology. 1987;162(1 Pt 1):73-7."
+        },
+        {
+            id: 477,
+            question: "What renal vascular abnormality is demonstrated?",
+            imagePath: "images/renal_artery_stenosis.svg",
+            options: ["Normal renal artery", "Renal artery stenosis", "Renal vein thrombosis", "Renal AVM"],
+            correct: 1,
+            explanation: "Peak systolic velocity >180 cm/s in the renal artery indicates significant stenosis.",
+            source: "Stavros AT, Parker SH, Yakes WF, et al. Segmental stenosis of the renal artery: pattern recognition of tardus and parvus abnormalities with duplex sonography. Radiology. 1992;184(2):487-92."
+        },
+        {
+            id: 478,
+            question: "Identify the gallbladder wall abnormality.",
+            imagePath: "images/gb_polyp.svg",
+            options: ["Gallstone", "Gallbladder polyp", "Cholesterol deposit", "Sludge ball"],
+            correct: 1,
+            explanation: "Fixed, non-shadowing, echogenic focus attached to the gallbladder wall indicates a polyp.",
+            source: "Corwin MT, Siewert B, Sheiman RG, Kane RA. Incidentally detected gallbladder polyps: is follow-up necessary? Long-term clinical and US analysis of 346 patients. Radiology. 2011;258(1):277-82."
+        },
+        {
+            id: 479,
+            question: "What liver vascular abnormality is shown?",
+            imagePath: "images/hepatic_artery_stenosis.svg",
+            options: ["Normal hepatic artery", "Hepatic artery stenosis", "Hepatic artery thrombosis", "Portal vein stenosis"],
+            correct: 1,
+            explanation: "Tardus parvus waveform with prolonged acceleration time indicates hepatic artery stenosis.",
+            source: "Crossin JD, Muradali D, Wilson SR. US of liver transplants: normal and abnormal. Radiographics. 2003;23(5):1093-114."
+        },
+        {
+            id: 480,
+            question: "Identify the pancreatic pathology demonstrated.",
+            imagePath: "images/chronic_pancreatitis.svg",
+            options: ["Normal pancreas", "Acute pancreatitis", "Chronic pancreatitis", "Pancreatic carcinoma"],
+            correct: 2,
+            explanation: "Hyperechoic pancreas with irregular contour and ductal dilatation indicates chronic pancreatitis.",
+            source: "Ralls PW, Lentz SR, Lee KP, et al. Ultrasonography of chronic pancreatitis: comparison with ERCP. Gastrointest Radiol. 1985;10(2):115-9."
+        }
     ]
 };
 

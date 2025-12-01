@@ -1,0 +1,27 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="300" fill="#1a1a1a"/>
+  
+  <!-- Portal vein outline -->
+  <ellipse cx="200" cy="120" rx="60" ry="15" fill="#2c3e50" stroke="#fff" stroke-width="2"/>
+  
+  <!-- Thrombotic material -->
+  <ellipse cx="200" cy="120" rx="55" ry="10" fill="#8B4513" opacity="0.8"/>
+  <ellipse cx="210" cy="118" rx="20" ry="6" fill="#fff" opacity="0.9"/>
+  <ellipse cx="185" cy="122" rx="15" ry="4" fill="#ccc" opacity="0.8"/>
+  
+  <!-- No flow indication -->
+  <text x="150" y="180" fill="#ff6b6b" font-family="Arial" font-size="16" font-weight="bold">NO FLOW</text>
+  
+  <!-- Doppler waveform baseline -->
+  <line x1="50" y1="200" x2="350" y2="200" stroke="#fff" stroke-width="1"/>
+  <line x1="50" y1="180" x2="50" y2="220" stroke="#fff" stroke-width="1"/>
+  
+  <!-- Labels -->
+  <text x="50" y="50" fill="#fff" font-family="Arial" font-size="14" font-weight="bold">Portal Vein Thrombosis</text>
+  <text x="50" y="70" fill="#ccc" font-family="Arial" font-size="12">Echogenic material, absent flow</text>
+  
+  <!-- Arrow -->
+  <polygon points="160,110 180,120 160,130" fill="#ff6b6b"/>
+  <line x1="150" y1="120" x2="160" y2="120" stroke="#ff6b6b" stroke-width="2"/>
+</svg>

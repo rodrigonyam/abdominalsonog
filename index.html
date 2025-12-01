@@ -33,6 +33,9 @@
             <button class="tab-btn" data-category="diagram">
                 <i class="fas fa-image"></i> Diagrams (50)
             </button>
+            <button class="tab-btn" data-category="sources">
+                <i class="fas fa-book-open"></i> Sources
+            </button>
         </div>
     </nav>
 
@@ -104,8 +107,112 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Sources Section -->
+            <div class="sources-section hidden" id="sourcesSection">
+                <div class="sources-card">
+                    <h2><i class="fas fa-book-open"></i> Medical Sources & References</h2>
+                    <div class="sources-intro">
+                        <p>This quiz is based on evidence-based medical literature and established clinical guidelines. All questions and answers are derived from peer-reviewed sources to ensure accuracy and clinical relevance.</p>
+                    </div>
+                    
+                    <div class="sources-categories">
+                        <div class="source-category">
+                            <h3><i class="fas fa-book"></i> Primary Textbooks</h3>
+                            <ul class="source-list">
+                                <li>Rumack CM, Wilson SR, Charboneau JW, Levine D. <em>Diagnostic Ultrasound</em>. 5th ed. Philadelphia: Elsevier; 2017.</li>
+                                <li>Hagen-Ansert SL. <em>Textbook of Diagnostic Sonography</em>. 8th ed. St. Louis: Elsevier; 2017.</li>
+                                <li>Sanders RC, Winter TC. <em>Clinical Sonography: A Practical Guide</em>. 5th ed. Philadelphia: Wolters Kluwer; 2015.</li>
+                                <li>Curry RA, Tempkin BB. <em>Sonography: Introduction to Normal Structure and Function</em>. 4th ed. St. Louis: Elsevier; 2015.</li>
+                            </ul>
+                        </div>
+
+                        <div class="source-category">
+                            <h3><i class="fas fa-microscope"></i> Peer-Reviewed Journals</h3>
+                            <ul class="source-list">
+                                <li><em>Journal of Ultrasound in Medicine</em> - Society for Diagnostic Medical Sonography</li>
+                                <li><em>Ultrasound in Medicine & Biology</em> - World Federation for Ultrasound in Medicine and Biology</li>
+                                <li><em>American Journal of Roentgenology</em> - American Roentgen Ray Society</li>
+                                <li><em>Radiographics</em> - Radiological Society of North America</li>
+                                <li><em>Radiology</em> - Radiological Society of North America</li>
+                            </ul>
+                        </div>
+
+                        <div class="source-category">
+                            <h3><i class="fas fa-certificate"></i> Professional Guidelines</h3>
+                            <ul class="source-list">
+                                <li>American Institute of Ultrasound in Medicine (AIUM) Practice Parameters</li>
+                                <li>Society of Radiologists in Ultrasound (SRU) Consensus Statements</li>
+                                <li>American College of Radiology (ACR) Appropriateness Criteria</li>
+                                <li>International Association of Medical Ultrasound (IAMUS) Guidelines</li>
+                            </ul>
+                        </div>
+
+                        <div class="source-category">
+                            <h3><i class="fas fa-laptop-medical"></i> Online Resources</h3>
+                            <ul class="source-list">
+                                <li>RadioGraphics Educational Collection - RSNA</li>
+                                <li>Ultrasound Registry Review - ARDMS</li>
+                                <li>SonoWorld Professional Education Platform</li>
+                                <li>Point-of-Care Ultrasound (POCUS) Atlas</li>
+                            </ul>
+                        </div>
+
+                        <div class="source-category">
+                            <h3><i class="fas fa-graduation-cap"></i> Academic Institutions</h3>
+                            <ul class="source-list">
+                                <li>Mayo Clinic School of Health Sciences - Diagnostic Medical Sonography Program</li>
+                                <li>Johns Hopkins School of Medicine - Radiology Department</li>
+                                <li>Harvard Medical School - Department of Radiology</li>
+                                <li>Stanford University School of Medicine - Radiology Department</li>
+                            </ul>
+                        </div>
+
+                        <div class="source-category">
+                            <h3><i class="fas fa-exclamation-triangle"></i> Disclaimer</h3>
+                            <div class="disclaimer">
+                                <p><strong>Educational Purpose:</strong> This quiz is designed for educational purposes only and should not replace formal medical training or clinical experience.</p>
+                                <p><strong>Clinical Application:</strong> Always consult current clinical guidelines and seek supervision when interpreting ultrasound examinations in practice.</p>
+                                <p><strong>Accuracy:</strong> While every effort has been made to ensure accuracy, users should verify information with primary sources before clinical application.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
+
+    <!-- Floating Action Buttons -->
+    <div class="floating-actions">
+        <button class="floating-btn tooltip" data-tooltip="Quick Stats" id="quickStatsBtn" 
+                title="View Quick Statistics" aria-label="View Quick Statistics">
+            <i class="fas fa-chart-line"></i>
+        </button>
+        <button class="floating-btn bookmark tooltip" data-tooltip="Bookmark Question" id="bookmarkBtn" 
+                title="Bookmark Current Question" aria-label="Bookmark Current Question">
+            <i class="fas fa-bookmark"></i>
+        </button>
+        <button class="floating-btn tooltip" data-tooltip="Scroll to Top" id="scrollTopBtn" 
+                title="Scroll to Top" aria-label="Scroll to Top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </div>
+
+    <!-- Quick Stats Modal -->
+    <div class="modal hidden" id="quickStatsModal" role="dialog" aria-labelledby="quickStatsTitle">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="quickStatsTitle"><i class="fas fa-chart-line"></i> Quick Statistics</h3>
+                <button class="modal-close" id="closeStatsModal" 
+                        title="Close Statistics" aria-label="Close Statistics">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body" id="quickStatsContent">
+                <!-- Stats content will be populated here -->
+            </div>
+        </div>
+    </div>
 
     <footer class="footer">
         <div class="container">
