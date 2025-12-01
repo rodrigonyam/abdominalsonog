@@ -292,8 +292,302 @@ const questionDatabase = {
             options: ["Celiac artery", "Superior mesenteric artery", "Inferior mesenteric artery", "Splenic artery"],
             correct: 1,
             explanation: "The superior mesenteric artery is most commonly affected in acute mesenteric ischemia."
+        },
+
+        // Additional Gallbladder Questions (41-60)
+        {
+            id: 41,
+            question: "Which of the following is characteristic of gallbladder adenomyomatosis?",
+            options: ["Wall thickening >3mm", "Comet-tail artifacts", "Gallstone formation", "Bile duct dilatation"],
+            correct: 1,
+            explanation: "Adenomyomatosis is characterized by comet-tail artifacts from cholesterol deposits in Rokitansky-Aschoff sinuses."
+        },
+        {
+            id: 42,
+            question: "The spiral valves of Heister are located in the:",
+            options: ["Gallbladder fundus", "Gallbladder body", "Cystic duct", "Common bile duct"],
+            correct: 2,
+            explanation: "The spiral valves of Heister are mucosal folds within the cystic duct."
+        },
+        {
+            id: 43,
+            question: "Porcelain gallbladder is associated with increased risk of:",
+            options: ["Acute cholecystitis", "Gallbladder carcinoma", "Cholangitis", "Pancreatitis"],
+            correct: 1,
+            explanation: "Porcelain gallbladder (calcification of the gallbladder wall) is associated with increased risk of gallbladder carcinoma."
+        },
+        {
+            id: 44,
+            question: "The most accurate measurement for common bile duct diameter is taken:",
+            options: ["At the porta hepatis", "Behind the pancreatic head", "At the ampulla", "At the hepatic hilum"],
+            correct: 0,
+            explanation: "The most accurate CBD measurement is taken at the porta hepatis, where it's most easily visualized."
+        },
+        {
+            id: 45,
+            question: "Gallbladder sludge appears as:",
+            options: ["Echogenic with shadowing", "Anechoic without shadowing", "Low-level echoes without shadowing", "High-level echoes with enhancement"],
+            correct: 2,
+            explanation: "Gallbladder sludge appears as low-level echoes that layer dependently without posterior acoustic shadowing."
+        },
+
+        // Additional Liver Questions (61-100)
+        {
+            id: 46,
+            question: "The quadrate lobe corresponds to which Couinaud segment?",
+            options: ["Segment III", "Segment IV", "Segment V", "Segment VIII"],
+            correct: 1,
+            explanation: "The quadrate lobe corresponds to Couinaud segment IV."
+        },
+        {
+            id: 47,
+            question: "Which hepatic segment is most commonly affected by focal nodular hyperplasia?",
+            options: ["Segment II", "Segment III", "Segment IV", "Segment VIII"],
+            correct: 3,
+            explanation: "Segment VIII is the most common location for focal nodular hyperplasia."
+        },
+        {
+            id: 48,
+            question: "The ligamentum venosum separates which hepatic segments?",
+            options: ["I and II", "II and III", "III and IV", "IV and VIII"],
+            correct: 0,
+            explanation: "The ligamentum venosum separates segment I (caudate lobe) from segment II."
+        },
+        {
+            id: 49,
+            question: "Normal hepatic artery diameter should not exceed:",
+            options: ["3 mm", "5 mm", "7 mm", "9 mm"],
+            correct: 2,
+            explanation: "Normal hepatic artery diameter should not exceed 7 mm."
+        },
+        {
+            id: 50,
+            question: "The most common location for hepatocellular carcinoma is:",
+            options: ["Left lobe", "Right lobe", "Caudate lobe", "Quadrate lobe"],
+            correct: 1,
+            explanation: "Hepatocellular carcinoma most commonly occurs in the right lobe of the liver."
+        },
+
+        // Additional Pancreas Questions (51-80)
+        {
+            id: 51,
+            question: "The uncinate process is part of which pancreatic region?",
+            options: ["Head", "Neck", "Body", "Tail"],
+            correct: 0,
+            explanation: "The uncinate process is part of the pancreatic head."
+        },
+        {
+            id: 52,
+            question: "Which vessel passes posterior to the pancreatic neck?",
+            options: ["Splenic artery", "Superior mesenteric artery", "Superior mesenteric vein", "Portal vein"],
+            correct: 2,
+            explanation: "The superior mesenteric vein passes directly posterior to the pancreatic neck."
+        },
+        {
+            id: 53,
+            question: "The normal pancreatic body thickness should not exceed:",
+            options: ["1.5 cm", "2.0 cm", "2.5 cm", "3.0 cm"],
+            correct: 1,
+            explanation: "Normal pancreatic body thickness should not exceed 2.0 cm."
+        },
+        {
+            id: 54,
+            question: "Pancreatic divisum is a congenital anomaly involving:",
+            options: ["Pancreatic agenesis", "Duct fusion failure", "Arterial malformation", "Venous anomaly"],
+            correct: 1,
+            explanation: "Pancreatic divisum results from failure of fusion between the dorsal and ventral pancreatic ducts."
+        },
+        {
+            id: 55,
+            question: "The ampulla of Vater is located in the:",
+            options: ["Pancreatic head", "Duodenal wall", "Common bile duct", "Pancreatic duct"],
+            correct: 1,
+            explanation: "The ampulla of Vater is located within the duodenal wall where the pancreatic and bile ducts converge."
+        },
+
+        // Additional Spleen Questions (56-75)
+        {
+            id: 56,
+            question: "The splenic vein drains into the:",
+            options: ["Inferior vena cava", "Portal vein", "Superior mesenteric vein", "Left renal vein"],
+            correct: 1,
+            explanation: "The splenic vein joins with the superior mesenteric vein to form the portal vein."
+        },
+        {
+            id: 57,
+            question: "Normal splenic volume should not exceed:",
+            options: ["150 ml", "200 ml", "250 ml", "300 ml"],
+            correct: 2,
+            explanation: "Normal adult splenic volume should not exceed 250 ml."
+        },
+        {
+            id: 58,
+            question: "Gamna-Gandy bodies in the spleen are associated with:",
+            options: ["Lymphoma", "Portal hypertension", "Trauma", "Infection"],
+            correct: 1,
+            explanation: "Gamna-Gandy bodies are calcific deposits associated with portal hypertension and chronic congestion."
+        },
+        {
+            id: 59,
+            question: "Wandering spleen is caused by:",
+            options: ["Trauma", "Congenital ligament laxity", "Tumor", "Infection"],
+            correct: 1,
+            explanation: "Wandering spleen results from congenital laxity or absence of the splenic ligaments."
+        },
+        {
+            id: 60,
+            question: "The most common primary splenic tumor is:",
+            options: ["Lymphoma", "Hemangioma", "Angiosarcoma", "Metastasis"],
+            correct: 0,
+            explanation: "Lymphoma is the most common primary splenic malignancy."
+        },
+
+        // Additional Kidney Questions (61-90)
+        {
+            id: 61,
+            question: "The renal pelvis is located in the:",
+            options: ["Cortex", "Medulla", "Hilum", "Capsule"],
+            correct: 2,
+            explanation: "The renal pelvis is the funnel-shaped expansion of the ureter located in the renal hilum."
+        },
+        {
+            id: 62,
+            question: "Adult polycystic kidney disease is inherited as:",
+            options: ["Autosomal dominant", "Autosomal recessive", "X-linked", "Mitochondrial"],
+            correct: 0,
+            explanation: "Adult polycystic kidney disease (ADPKD) is inherited as an autosomal dominant trait."
+        },
+        {
+            id: 63,
+            question: "The most common renal malignancy in adults is:",
+            options: ["Wilms tumor", "Renal cell carcinoma", "Transitional cell carcinoma", "Lymphoma"],
+            correct: 1,
+            explanation: "Renal cell carcinoma is the most common primary renal malignancy in adults."
+        },
+        {
+            id: 64,
+            question: "Normal renal resistive index should be:",
+            options: ["<0.5", "<0.7", "<0.8", "<0.9"],
+            correct: 1,
+            explanation: "Normal renal resistive index should be less than 0.7."
+        },
+        {
+            id: 65,
+            question: "The column of Bertin represents:",
+            options: ["Renal cortex", "Renal medulla", "Cortical tissue between pyramids", "Collecting duct"],
+            correct: 2,
+            explanation: "The column of Bertin is cortical tissue that extends between the renal pyramids."
+        },
+
+        // Additional Vascular Questions (66-90)
+        {
+            id: 66,
+            question: "The renal arteries typically arise at the level of:",
+            options: ["T12-L1", "L1-L2", "L2-L3", "L3-L4"],
+            correct: 1,
+            explanation: "The renal arteries typically arise from the aorta at the L1-L2 vertebral level."
+        },
+        {
+            id: 67,
+            question: "Portal hypertension is defined as portal pressure greater than:",
+            options: ["5 mmHg", "10 mmHg", "12 mmHg", "15 mmHg"],
+            correct: 2,
+            explanation: "Portal hypertension is defined as portal pressure greater than 12 mmHg above IVC pressure."
+        },
+        {
+            id: 68,
+            question: "The hepatic artery supplies what percentage of liver blood flow?",
+            options: ["25%", "40%", "60%", "75%"],
+            correct: 0,
+            explanation: "The hepatic artery supplies approximately 25% of liver blood flow, with portal vein supplying 75%."
+        },
+        {
+            id: 69,
+            question: "Budd-Chiari syndrome involves occlusion of:",
+            options: ["Portal vein", "Hepatic arteries", "Hepatic veins", "Splenic vein"],
+            correct: 2,
+            explanation: "Budd-Chiari syndrome involves occlusion of hepatic veins and/or IVC."
+        },
+        {
+            id: 70,
+            question: "The most common cause of superior mesenteric artery stenosis is:",
+            options: ["Atherosclerosis", "Fibromuscular dysplasia", "Takayasu arteritis", "Compression syndrome"],
+            correct: 0,
+            explanation: "Atherosclerosis is the most common cause of superior mesenteric artery stenosis."
+        },
+
+        // Additional Multiple Choice Questions to reach 200 (71-200)
+        {
+            id: 71,
+            question: "Which structure is most anterior in the porta hepatis?",
+            options: ["Portal vein", "Hepatic artery", "Common bile duct", "Hepatic vein"],
+            correct: 2,
+            explanation: "The common bile duct is the most anterior structure in the porta hepatis (HAD - Hepatic artery, bile Duct)."
+        },
+        {
+            id: 72,
+            question: "The most common benign liver tumor is:",
+            options: ["Hemangioma", "Focal nodular hyperplasia", "Hepatic adenoma", "Simple cyst"],
+            correct: 0,
+            explanation: "Hemangioma is the most common benign liver tumor, occurring in 1-20% of the population."
+        },
+        {
+            id: 73,
+            question: "Normal pancreatic echogenicity should be:",
+            options: ["Hypoechoic to liver", "Isoechoic to liver", "Hyperechoic to liver", "Anechoic"],
+            correct: 1,
+            explanation: "Normal pancreatic parenchyma should be isoechoic to the liver parenchyma."
+        },
+        {
+            id: 74,
+            question: "The most common cause of biliary obstruction in elderly patients is:",
+            options: ["Gallstones", "Pancreatic carcinoma", "Cholangiocarcinoma", "Benign stricture"],
+            correct: 1,
+            explanation: "Pancreatic adenocarcinoma is the most common cause of biliary obstruction in elderly patients."
+        },
+        {
+            id: 75,
+            question: "Courvoisier's law states that:",
+            options: ["Dilated GB with stones = inflammation", "Dilated GB without stones = malignancy", "Contracted GB = chronic disease", "Thick GB wall = acute cholecystitis"],
+            correct: 1,
+            explanation: "Courvoisier's law: a palpably enlarged gallbladder without stones suggests malignant obstruction."
+        },
+        {
+            id: 76,
+            question: "The resistive index is calculated as:",
+            options: ["(PSV-EDV)/PSV", "(PSV+EDV)/2", "PSV/EDV", "EDV/PSV"],
+            correct: 0,
+            explanation: "Resistive index = (Peak systolic velocity - End diastolic velocity) / Peak systolic velocity."
+        },
+        {
+            id: 77,
+            question: "The most sensitive sign of acute cholecystitis is:",
+            options: ["Gallbladder wall thickening", "Pericholecystic fluid", "Gallstones", "Sonographic Murphy's sign"],
+            correct: 3,
+            explanation: "Sonographic Murphy's sign (tenderness over the gallbladder during scanning) is the most sensitive sign."
+        },
+        {
+            id: 78,
+            question: "Normal main pancreatic duct diameter in the head should not exceed:",
+            options: ["1 mm", "2 mm", "3 mm", "4 mm"],
+            correct: 2,
+            explanation: "The normal main pancreatic duct in the head should not exceed 3mm (2mm in body/tail)."
+        },
+        {
+            id: 79,
+            question: "The hepatorenal recess is also known as:",
+            options: ["Morrison's pouch", "Paracolic gutter", "Pelvis", "Lesser sac"],
+            correct: 0,
+            explanation: "Morrison's pouch is the hepatorenal recess, the most dependent part of the peritoneal cavity when upright."
+        },
+        {
+            id: 80,
+            question: "Acute pancreatitis most commonly involves which pancreatic region?",
+            options: ["Head", "Neck", "Body", "Tail"],
+            correct: 2,
+            explanation: "Acute pancreatitis most commonly involves the pancreatic body, often extending to the tail."
         }
-        // Continue with 160 more multiple choice questions covering additional topics...
+        // Additional questions 81-200 would continue here to reach the full 200 multiple choice questions...
     ],
     
     // True/False Questions (150 questions)
@@ -387,8 +681,162 @@ const questionDatabase = {
             question: "The caudate lobe drains directly into the IVC.",
             correct: true,
             explanation: "True. The caudate lobe has direct venous drainage to the IVC via short hepatic veins."
+        },
+
+        // Additional True/False Questions (16-50)
+        {
+            id: 216,
+            question: "The gallbladder is located in the left lobe of the liver.",
+            correct: false,
+            explanation: "The gallbladder is located in the right lobe of the liver, specifically in the gallbladder fossa."
+        },
+        {
+            id: 217,
+            question: "Cholecystitis can cause a positive sonographic Murphy's sign.",
+            correct: true,
+            explanation: "A positive sonographic Murphy's sign is tenderness over the gallbladder during ultrasound examination and is associated with acute cholecystitis."
+        },
+        {
+            id: 218,
+            question: "The pancreatic duct normally measures less than 2mm in diameter.",
+            correct: true,
+            explanation: "The normal pancreatic duct (duct of Wirsung) should measure less than 2mm in diameter in the head and body regions."
+        },
+        {
+            id: 219,
+            question: "Hepatic steatosis causes increased echogenicity of the liver parenchyma.",
+            correct: true,
+            explanation: "Fatty infiltration (steatosis) of the liver causes increased echogenicity compared to normal liver parenchyma."
+        },
+        {
+            id: 220,
+            question: "The spleen is located in the right upper quadrant.",
+            correct: false,
+            explanation: "The spleen is located in the left upper quadrant of the abdomen."
+        },
+        {
+            id: 221,
+            question: "Renal resistive index increases with age.",
+            correct: true,
+            explanation: "Normal renal resistive index does tend to increase slightly with advancing age due to decreased vascular compliance."
+        },
+        {
+            id: 222,
+            question: "The caudate lobe is Couinaud segment I.",
+            correct: true,
+            explanation: "The caudate lobe corresponds to Couinaud segment I in the hepatic segmentation system."
+        },
+        {
+            id: 223,
+            question: "Gallstones always cause posterior acoustic shadowing.",
+            correct: false,
+            explanation: "While most gallstones cause posterior acoustic shadowing, small stones or cholesterol stones may not always produce shadowing."
+        },
+        {
+            id: 224,
+            question: "The portal vein carries oxygenated blood to the liver.",
+            correct: false,
+            explanation: "The portal vein carries deoxygenated, nutrient-rich blood from the intestines to the liver."
+        },
+        {
+            id: 225,
+            question: "Pancreatic pseudocysts have thick, irregular walls.",
+            correct: false,
+            explanation: "Pancreatic pseudocysts typically have thin, smooth walls and are anechoic fluid collections."
+        },
+        {
+            id: 226,
+            question: "Hydronephrosis can be caused by ureteral stricture.",
+            correct: true,
+            explanation: "Ureteral stricture is a common cause of unilateral hydronephrosis due to obstruction of urine flow."
+        },
+        {
+            id: 227,
+            question: "The aorta normally decreases in caliber as it descends.",
+            correct: true,
+            explanation: "The aorta normally tapers as it descends, decreasing from approximately 3cm at the diaphragm to 2cm at the bifurcation."
+        },
+        {
+            id: 228,
+            question: "Bowel gas always prevents adequate pancreatic visualization.",
+            correct: false,
+            explanation: "While bowel gas can obscure pancreatic visualization, various techniques can overcome this limitation in many cases."
+        },
+        {
+            id: 229,
+            question: "Renal cortical thickness decreases with normal aging.",
+            correct: true,
+            explanation: "Normal aging is associated with gradual decrease in renal cortical thickness and overall kidney size."
+        },
+        {
+            id: 230,
+            question: "The IVC diameter varies with respiration.",
+            correct: true,
+            explanation: "IVC diameter normally varies with respiration, increasing during inspiration and decreasing during expiration."
+        },
+
+        // Additional True/False Questions to reach 100 (31-100)
+        {
+            id: 231,
+            question: "The splenic artery is typically tortuous in appearance.",
+            correct: true,
+            explanation: "The splenic artery characteristically demonstrates a tortuous, serpentine course along the superior pancreatic border."
+        },
+        {
+            id: 232,
+            question: "Pneumobilia appears as echogenic foci with ring-down artifacts.",
+            correct: true,
+            explanation: "Gas in the biliary tree (pneumobilia) appears as echogenic foci with ring-down or comet-tail artifacts."
+        },
+        {
+            id: 233,
+            question: "The left hepatic vein drains segments II and III.",
+            correct: true,
+            explanation: "The left hepatic vein drains Couinaud segments II and III (left lateral segment)."
+        },
+        {
+            id: 234,
+            question: "Hepatic steatosis can cause beam attenuation.",
+            correct: true,
+            explanation: "Fatty infiltration increases hepatic echogenicity and causes increased beam attenuation."
+        },
+        {
+            id: 235,
+            question: "The normal adult kidney length is 15-20 cm.",
+            correct: false,
+            explanation: "Normal adult kidney length is 10-12 cm (9-13 cm range), not 15-20 cm."
+        },
+        {
+            id: 236,
+            question: "Ascites appears hyperechoic on ultrasound.",
+            correct: false,
+            explanation: "Ascites (free fluid) appears anechoic (black) on ultrasound, not hyperechoic."
+        },
+        {
+            id: 237,
+            question: "The hepatic hilum contains the portal triad structures.",
+            correct: true,
+            explanation: "The hepatic hilum (porta hepatis) contains the portal triad: portal vein, hepatic artery, and bile duct."
+        },
+        {
+            id: 238,
+            question: "Renal pyramids are normally hyperechoic.",
+            correct: false,
+            explanation: "Renal pyramids (medulla) are normally hypoechoic compared to the cortex, not hyperechoic."
+        },
+        {
+            id: 239,
+            question: "The pancreatic head lies in the C-loop of the duodenum.",
+            correct: true,
+            explanation: "The pancreatic head is intimately related to and lies within the C-shaped curve of the duodenum."
+        },
+        {
+            id: 240,
+            question: "Portal vein flow is typically hepatopetal.",
+            correct: true,
+            explanation: "Normal portal vein flow is hepatopetal (toward the liver), not hepatofugal (away from liver)."
         }
-        // Continue with 135 more true/false questions...
+        // Additional true/false questions 241-300 would continue here to reach the full 100...
     ],
     
     // Short Answer Questions (100 questions)
@@ -452,8 +900,162 @@ const questionDatabase = {
             question: "What is the term for air in the biliary tree?",
             correctAnswers: ["pneumobilia"],
             explanation: "Pneumobilia refers to air within the biliary tree, appearing as echogenic foci with shadowing."
+        },
+
+        // Additional Short Answer Questions (11-40)
+        {
+            id: 341,
+            question: "What is the normal diameter of the common bile duct in adults under 60 years old?",
+            answer: "6 mm",
+            explanation: "The normal CBD diameter is less than 6mm in adults under 60, and may increase by 1mm per decade after age 60."
+        },
+        {
+            id: 342,
+            question: "Name the three main branches of the celiac axis.",
+            answer: "Left gastric artery, splenic artery, and common hepatic artery",
+            explanation: "The celiac axis (celiac trunk) divides into these three main branches to supply the foregut structures."
+        },
+        {
+            id: 343,
+            question: "What is the maximum normal thickness of the gallbladder wall?",
+            answer: "3 mm",
+            explanation: "Normal gallbladder wall thickness should not exceed 3mm when the gallbladder is adequately distended."
+        },
+        {
+            id: 344,
+            question: "Which pancreatic duct normally drains into the ampulla of Vater?",
+            answer: "Duct of Wirsung",
+            explanation: "The main pancreatic duct (duct of Wirsung) normally joins with the common bile duct to drain through the ampulla of Vater."
+        },
+        {
+            id: 345,
+            question: "What is the most common location for renal cell carcinoma?",
+            answer: "Upper pole",
+            explanation: "Renal cell carcinoma most commonly occurs in the upper pole of the kidney, followed by lower pole then mid-kidney."
+        },
+        {
+            id: 346,
+            question: "Name the largest hepatic segment according to Couinaud classification.",
+            answer: "Segment VII",
+            explanation: "Segment VII is typically the largest hepatic segment in the Couinaud classification system."
+        },
+        {
+            id: 347,
+            question: "What structure separates the right and left lobes of the liver anatomically?",
+            answer: "Middle hepatic vein",
+            explanation: "The middle hepatic vein defines the anatomical division between right and left hepatic lobes."
+        },
+        {
+            id: 348,
+            question: "What is the normal splenic length in adults?",
+            answer: "12 cm",
+            explanation: "Normal adult spleen length should not exceed 12cm in the longest dimension."
+        },
+        {
+            id: 349,
+            question: "Which vessel forms the posterior boundary of the pancreatic head?",
+            answer: "Inferior vena cava",
+            explanation: "The IVC forms the posterior boundary of the pancreatic head, along with the aorta medially."
+        },
+        {
+            id: 350,
+            question: "What is the term for fluid collection around the kidney?",
+            answer: "Perinephric fluid",
+            explanation: "Fluid collection in the perinephric space (around the kidney within Gerota's fascia) is called perinephric fluid."
+        },
+        {
+            id: 351,
+            question: "Name the condition characterized by multiple liver cysts and kidney cysts.",
+            answer: "Polycystic liver disease",
+            explanation: "Polycystic liver disease is often associated with autosomal dominant polycystic kidney disease (ADPKD)."
+        },
+        {
+            id: 352,
+            question: "What is the normal portal vein diameter?",
+            answer: "13 mm",
+            explanation: "The normal portal vein diameter should not exceed 13mm at the porta hepatis."
+        },
+        {
+            id: 353,
+            question: "Which imaging plane best demonstrates the pancreatic body and tail?",
+            answer: "Left parasagittal",
+            explanation: "The left parasagittal plane through the splenic vein best demonstrates the pancreatic body and tail."
+        },
+        {
+            id: 354,
+            question: "What is the most common cause of acute pancreatitis?",
+            answer: "Gallstones",
+            explanation: "Gallstone disease is the most common cause of acute pancreatitis, followed by alcohol abuse."
+        },
+        {
+            id: 355,
+            question: "Name the space between Gerota's fascia and the renal capsule.",
+            answer: "Perinephric space",
+            explanation: "The perinephric space lies between Gerota's fascia and the renal capsule, containing fat and potential fluid collections."
+        },
+
+        // Additional Short Answer Questions to reach 100 (16-100)
+        {
+            id: 356,
+            question: "What is the upper limit of normal for the abdominal aorta diameter?",
+            answer: "3 cm",
+            explanation: "Normal abdominal aorta diameter should not exceed 3cm; >3cm indicates aneurysmal dilatation."
+        },
+        {
+            id: 357,
+            question: "Name the sign describing gallbladder wall thickening in acute cholecystitis.",
+            answer: "Halo sign",
+            explanation: "The halo sign refers to the sonographic appearance of gallbladder wall edema in acute cholecystitis."
+        },
+        {
+            id: 358,
+            question: "What is the normal IVC diameter in adults?",
+            answer: "2.5 cm",
+            explanation: "Normal IVC diameter ranges from 1.5-2.5cm, varying with respiration and patient position."
+        },
+        {
+            id: 359,
+            question: "Which hepatic segment is known as the caudate lobe?",
+            answer: "Segment I",
+            explanation: "The caudate lobe corresponds to Couinaud segment I and has independent vascular supply."
+        },
+        {
+            id: 360,
+            question: "What is the most common cause of acute cholangitis?",
+            answer: "Choledocholithiasis",
+            explanation: "Common bile duct stones (choledocholithiasis) are the most common cause of acute cholangitis."
+        },
+        {
+            id: 361,
+            question: "Name the ultrasound sign for intussusception.",
+            answer: "Target sign",
+            explanation: "Intussusception appears as a target or doughnut sign on transverse imaging."
+        },
+        {
+            id: 362,
+            question: "What is the normal pancreatic head AP dimension?",
+            answer: "3 cm",
+            explanation: "Normal pancreatic head anteroposterior dimension should not exceed 3cm."
+        },
+        {
+            id: 363,
+            question: "Which renal artery PSV indicates significant stenosis?",
+            answer: "180 cm/s",
+            explanation: "Renal artery peak systolic velocity >180 cm/s suggests >60% stenosis."
+        },
+        {
+            id: 364,
+            question: "What is the term for liver enhancement pattern in Budd-Chiari syndrome?",
+            answer: "Nutmeg liver",
+            explanation: "Budd-Chiari syndrome causes a nutmeg liver appearance due to hepatic congestion."
+        },
+        {
+            id: 365,
+            question: "Name the most common location for gallbladder carcinoma.",
+            answer: "Fundus",
+            explanation: "Gallbladder carcinoma most commonly arises in the fundal region of the gallbladder."
         }
-        // Continue with 90 more short answer questions...
+        // Additional short answer questions 366-450 would continue here to reach the full 100...
     ],
     
     // Diagram Questions (50 questions)
@@ -579,7 +1181,8 @@ const questionDatabase = {
             correct: 1,
             explanation: "Absent flow in hepatic veins with liver congestion indicates Budd-Chiari syndrome (hepatic vein thrombosis).",
             source: "Bolondi L, Gaiani S, Li Bassi S, et al. Diagnosis of Budd-Chiari syndrome by pulsed Doppler ultrasound. Gastroenterology. 1991;100(5 Pt 1):1324-31."
-        }
+        },
+        {
             id: 465,
             question: "What aortic pathology is demonstrated?",
             imagePath: "images/aortic_aneurysm.svg",
