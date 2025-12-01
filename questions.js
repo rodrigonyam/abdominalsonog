@@ -95,6 +95,46 @@ const questionDatabase = {
             question: "Which hepatic segment has dual blood supply?",
             answer: "Segment I",
             explanation: "Segment I (caudate lobe) receives blood from both right and left portal systems."
+        },
+        {
+            id: 13,
+            type: "multipleChoice",
+            question: "Focal nodular hyperplasia typically demonstrates:",
+            options: ["Central scar", "Peripheral calcification", "Fatty infiltration", "Cystic degeneration"],
+            correct: 0,
+            explanation: "FNH characteristically shows a central stellate scar on imaging."
+        },
+        {
+            id: 14,
+            type: "multipleChoice",
+            question: "Normal hepatic artery resistive index should be:",
+            options: ["<0.5", "0.5-0.7", "0.7-0.8", ">0.8"],
+            correct: 1,
+            explanation: "Normal hepatic artery RI is typically 0.5-0.7, higher values suggest pathology."
+        },
+        {
+            id: 15,
+            type: "trueFalse",
+            question: "Budd-Chiari syndrome involves hepatic vein occlusion.",
+            correct: true,
+            explanation: "Budd-Chiari syndrome is characterized by hepatic vein or IVC outflow obstruction."
+        },
+        {
+            id: 16,
+            type: "imageReference",
+            question: "A hypoechoic liver lesion with posterior enhancement is most suggestive of:",
+            imageDescription: "Liver ultrasound showing well-defined hypoechoic lesion with increased through-transmission",
+            options: ["Simple cyst", "Hemangioma", "Hepatocellular carcinoma", "Metastasis"],
+            correct: 0,
+            explanation: "Simple hepatic cysts are anechoic/hypoechoic with posterior acoustic enhancement."
+        },
+        {
+            id: 17,
+            type: "multipleChoice",
+            question: "Portal vein thrombosis appears as:",
+            options: ["Absent flow signal", "Echogenic material in lumen", "Both A and B", "Neither A nor B"],
+            correct: 2,
+            explanation: "Portal vein thrombosis shows echogenic thrombus and absent/reduced Doppler flow."
         }
     ],
 
@@ -168,6 +208,38 @@ const questionDatabase = {
             question: "What is the term for gas in the biliary tree?",
             answer: "Pneumobilia",
             explanation: "Pneumobilia refers to gas in the biliary system, appearing as echogenic foci with ring-down artifacts."
+        },
+        {
+            id: 22,
+            type: "multipleChoice",
+            question: "Mirizzi syndrome is characterized by:",
+            options: ["CBD obstruction by GB stone", "Cystic artery aneurysm", "GB wall calcification", "Cholecystoenteric fistula"],
+            correct: 0,
+            explanation: "Mirizzi syndrome involves CBD obstruction from an impacted stone in the GB neck/cystic duct."
+        },
+        {
+            id: 23,
+            type: "multipleChoice",
+            question: "Adenomyomatosis of the gallbladder demonstrates:",
+            options: ["Wall thinning", "Comet-tail artifacts", "Increased vascularity", "Pericholecystic fluid"],
+            correct: 1,
+            explanation: "Adenomyomatosis shows comet-tail artifacts from cholesterol deposits in Rokitansky-Aschoff sinuses."
+        },
+        {
+            id: 24,
+            type: "imageReference",
+            question: "A fixed echogenic focus in the GB wall without shadowing represents:",
+            imageDescription: "Gallbladder ultrasound showing small echogenic focus attached to wall",
+            options: ["Gallstone", "Polyp", "Sludge", "Adenomyomatosis"],
+            correct: 1,
+            explanation: "Fixed, non-shadowing echogenic foci attached to the GB wall are characteristic of polyps."
+        },
+        {
+            id: 25,
+            type: "trueFalse",
+            question: "Porcelain gallbladder increases risk of malignancy.",
+            correct: true,
+            explanation: "Porcelain GB (calcified wall) is associated with increased risk of gallbladder carcinoma."
         }
     ],
 
@@ -241,6 +313,38 @@ const questionDatabase = {
             question: "What structure separates the renal cortex from medulla?",
             answer: "Corticomedullary junction",
             explanation: "The corticomedullary junction is the boundary between cortex and medullary pyramids."
+        },
+        {
+            id: 31,
+            type: "multipleChoice",
+            question: "Renal artery stenosis >60% demonstrates PSV of:",
+            options: [">120 cm/s", ">150 cm/s", ">180 cm/s", ">200 cm/s"],
+            correct: 2,
+            explanation: "Renal artery PSV >180 cm/s indicates significant (>60%) stenosis."
+        },
+        {
+            id: 32,
+            type: "multipleChoice",
+            question: "Acute tubular necrosis typically shows:",
+            options: ["Increased cortical echogenicity", "Decreased cortical echogenicity", "Normal echogenicity", "Cystic changes"],
+            correct: 0,
+            explanation: "ATN often causes increased cortical echogenicity due to cellular swelling and debris."
+        },
+        {
+            id: 33,
+            type: "imageReference",
+            question: "Multiple anechoic lesions in both kidneys suggest:",
+            imageDescription: "Bilateral kidneys with multiple round anechoic lesions of varying sizes",
+            options: ["Simple cysts", "Polycystic kidney disease", "Renal cell carcinoma", "Lymphoma"],
+            correct: 1,
+            explanation: "Multiple bilateral cysts are characteristic of polycystic kidney disease."
+        },
+        {
+            id: 34,
+            type: "trueFalse",
+            question: "Column of Bertin can mimic a renal mass.",
+            correct: true,
+            explanation: "Prominent columns of Bertin (cortical tissue) can simulate renal masses on imaging."
         }
     ],
 
@@ -470,6 +574,85 @@ const questionDatabase = {
             options: ["Muscle tear", "Separation of rectus muscles", "Hernia", "Hematoma"],
             correct: 1,
             explanation: "Diastasis recti is separation of the rectus abdominis muscles at the linea alba."
+        }
+    ],
+
+    // CASE STUDIES AND IMAGE-BASED QUESTIONS
+    caseStudies: [
+        {
+            id: 57,
+            type: "caseStudy",
+            question: "A 45-year-old female presents with RUQ pain and fever. Ultrasound shows GB wall thickening of 5mm, pericholecystic fluid, and positive sonographic Murphy's sign. What is the most likely diagnosis?",
+            options: ["Chronic cholecystitis", "Acute cholecystitis", "Cholangitis", "GB carcinoma"],
+            correct: 1,
+            explanation: "Classic triad of acute cholecystitis: wall thickening >3mm, pericholecystic fluid, and positive Murphy's sign."
+        },
+        {
+            id: 58,
+            type: "imageReference",
+            question: "This liver lesion with central scar and spoke-wheel vascularity is most consistent with:",
+            imageDescription: "Liver ultrasound showing hyperechoic lesion with central hypoechoic scar",
+            imagePlaceholder: "liver_fnh_pattern.svg",
+            options: ["Hemangioma", "Focal nodular hyperplasia", "Hepatocellular carcinoma", "Metastasis"],
+            correct: 1,
+            explanation: "FNH characteristically shows central scar with spoke-wheel vascular pattern on Doppler."
+        },
+        {
+            id: 59,
+            type: "measurementChallenge",
+            question: "Based on this aortic measurement, what is your assessment?",
+            imageDescription: "Transverse aorta measurement showing 3.8 cm diameter",
+            imagePlaceholder: "aorta_aneurysm_measurement.svg",
+            options: ["Normal aorta", "Mild ectasia", "Abdominal aortic aneurysm", "Aortic dissection"],
+            correct: 2,
+            explanation: "Aortic diameter >3.0 cm indicates aneurysm; 3.8 cm represents moderate AAA requiring monitoring."
+        },
+        {
+            id: 60,
+            type: "doppler",
+            question: "This renal artery Doppler waveform shows PSV of 220 cm/s with tardus parvus pattern. This indicates:",
+            imageDescription: "Renal artery Doppler showing high velocity with delayed systolic upstroke",
+            imagePlaceholder: "renal_artery_stenosis_doppler.svg",
+            options: ["Normal flow", "Mild stenosis <50%", "Moderate stenosis 50-70%", "Severe stenosis >70%"],
+            correct: 3,
+            explanation: "PSV >180 cm/s with tardus parvus waveform indicates severe renal artery stenosis >70%."
+        },
+        {
+            id: 61,
+            type: "pathology",
+            question: "A patient with cirrhosis shows this portal vein Doppler pattern. The finding represents:",
+            imageDescription: "Portal vein Doppler showing flow away from liver (hepatofugal)",
+            imagePlaceholder: "portal_vein_reversal.svg",
+            options: ["Normal portal flow", "Increased portal flow", "Reversed portal flow", "Absent portal flow"],
+            correct: 2,
+            explanation: "Hepatofugal (reversed) portal flow indicates severe portal hypertension in cirrhosis."
+        }
+    ],
+
+    // PHYSICS AND TECHNIQUE QUESTIONS
+    physics: [
+        {
+            id: 62,
+            type: "multipleChoice",
+            question: "To improve visualization of a deep abdominal structure, you should:",
+            options: ["Increase frequency", "Decrease frequency", "Increase gain only", "Use harmonics only"],
+            correct: 1,
+            explanation: "Lower frequencies penetrate deeper but with reduced resolution."
+        },
+        {
+            id: 63,
+            type: "multipleChoice",
+            question: "Acoustic shadowing is most commonly caused by:",
+            options: ["Fluid", "Gas", "Calcification", "Both B and C"],
+            correct: 3,
+            explanation: "Both gas and calcification cause acoustic shadowing by reflecting/absorbing sound waves."
+        },
+        {
+            id: 64,
+            type: "trueFalse",
+            question: "Compound imaging reduces speckle artifact.",
+            correct: true,
+            explanation: "Compound imaging uses multiple beam angles to reduce speckle and improve image quality."
         }
     ]
 };

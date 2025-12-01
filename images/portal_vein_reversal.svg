@@ -1,0 +1,61 @@
+<!-- Portal Vein Flow Reversal Template -->
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="300" fill="#000000"/>
+  
+  <!-- Grid pattern -->
+  <defs>
+    <pattern id="dopplergrid" width="25" height="25" patternUnits="userSpaceOnUse">
+      <path d="M 25 0 L 0 0 0 25" fill="none" stroke="#303030" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+  <rect width="400" height="300" fill="url(#dopplergrid)"/>
+  
+  <!-- Baseline (zero flow line) -->
+  <line x1="50" y1="150" x2="350" y2="150" stroke="#606060" stroke-width="2"/>
+  
+  <!-- Reversed (hepatofugal) portal flow - below baseline -->
+  <g stroke="#FF4444" stroke-width="3" fill="none">
+    <!-- Continuous venous flow below baseline -->
+    <path d="M 60 180 Q 80 185 100 175 Q 120 170 140 180 Q 160 185 180 175"/>
+    <path d="M 180 175 Q 200 170 220 180 Q 240 185 260 175 Q 280 170 300 180"/>
+    <path d="M 300 180 Q 320 185 340 175"/>
+  </g>
+  
+  <!-- Flow direction arrow -->
+  <g stroke="#FF4444" stroke-width="2" fill="#FF4444">
+    <line x1="100" y1="220" x2="150" y2="220"/>
+    <polygon points="150,215 160,220 150,225" fill="#FF4444"/>
+    <text x="105" y="240" font-size="12" fill="#FF4444">Hepatofugal Flow</text>
+  </g>
+  
+  <!-- Velocity scale -->
+  <g stroke="#808080" stroke-width="1" fill="white" font-family="Arial" font-size="10">
+    <line x1="45" y1="100" x2="50" y2="100"/>
+    <text x="35" y="105">+50</text>
+    <line x1="45" y1="125" x2="50" y2="125"/>
+    <text x="35" y="130">+25</text>
+    <line x1="45" y1="150" x2="50" y2="150"/>
+    <text x="40" y="155">0</text>
+    <line x1="45" y1="175" x2="50" y2="175"/>
+    <text x="35" y="180">-25</text>
+    <line x1="45" y1="200" x2="50" y2="200"/>
+    <text x="35" y="205">-50</text>
+  </g>
+  
+  <!-- Measurement markers -->
+  <g stroke="yellow" stroke-width="1" fill="yellow">
+    <line x1="200" y1="175" x2="200" y2="165"/>
+    <text x="205" y="163" font-size="10">Mean: -30 cm/s</text>
+    <circle cx="200" cy="175" r="2"/>
+  </g>
+  
+  <!-- Labels -->
+  <text x="10" y="20" font-family="Arial" font-size="14" fill="white">Portal Vein Doppler</text>
+  <text x="10" y="40" font-family="Arial" font-size="12" fill="#FF4444">Reversed Flow Pattern</text>
+  <text x="10" y="280" font-family="Arial" font-size="10" fill="white">Portal Hypertension with Flow Reversal</text>
+  
+  <!-- Axis labels -->
+  <text x="15" y="150" font-family="Arial" font-size="10" fill="white" transform="rotate(-90, 15, 150)">Velocity (cm/s)</text>
+  <text x="200" y="290" font-family="Arial" font-size="10" fill="white" text-anchor="middle">Time</text>
+</svg>

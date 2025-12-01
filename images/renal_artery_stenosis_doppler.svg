@@ -1,0 +1,56 @@
+<!-- Renal Artery Stenosis Doppler Template -->
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="300" fill="#000000"/>
+  
+  <!-- Doppler waveform baseline -->
+  <line x1="50" y1="150" x2="350" y2="150" stroke="#404040" stroke-width="1"/>
+  
+  <!-- Grid lines -->
+  <defs>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#202020" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+  <rect width="400" height="300" fill="url(#grid)"/>
+  
+  <!-- Abnormal waveform with tardus parvus pattern -->
+  <g stroke="#00FF00" stroke-width="2" fill="none">
+    <!-- First cardiac cycle - delayed upstroke -->
+    <path d="M 60 150 Q 80 150 90 120 Q 100 110 110 115 Q 120 120 130 135 Q 140 145 150 150"/>
+    <!-- Second cardiac cycle -->
+    <path d="M 150 150 Q 170 150 180 120 Q 190 110 200 115 Q 210 120 220 135 Q 230 145 240 150"/>
+    <!-- Third cardiac cycle -->
+    <path d="M 240 150 Q 260 150 270 120 Q 280 110 290 115 Q 300 120 310 135 Q 320 145 330 150"/>
+  </g>
+  
+  <!-- Velocity scale markers -->
+  <g stroke="#808080" stroke-width="1" fill="white" font-family="Arial" font-size="10">
+    <line x1="45" y1="50" x2="50" y2="50"/>
+    <text x="35" y="55">200</text>
+    <line x1="45" y1="100" x2="50" y2="100"/>
+    <text x="35" y="105">100</text>
+    <line x1="45" y1="150" x2="50" y2="150"/>
+    <text x="40" y="155">0</text>
+    <line x1="45" y1="200" x2="50" y2="200"/>
+    <text x="30" y="205">-100</text>
+  </g>
+  
+  <!-- Peak velocity marker -->
+  <g stroke="yellow" stroke-width="1" fill="yellow">
+    <line x1="90" y1="120" x2="90" y2="110"/>
+    <text x="95" y="108" font-size="10">PSV: 220 cm/s</text>
+    <circle cx="90" cy="120" r="2"/>
+  </g>
+  
+  <!-- Time scale -->
+  <text x="200" y="290" font-family="Arial" font-size="10" fill="white" text-anchor="middle">Time (sec)</text>
+  
+  <!-- Labels -->
+  <text x="10" y="20" font-family="Arial" font-size="14" fill="white">Renal Artery Doppler</text>
+  <text x="10" y="40" font-family="Arial" font-size="12" fill="yellow">Tardus Parvus Pattern</text>
+  <text x="200" y="35" font-family="Arial" font-size="10" fill="red">Severe Stenosis</text>
+  
+  <!-- Velocity axis label -->
+  <text x="15" y="150" font-family="Arial" font-size="10" fill="white" transform="rotate(-90, 15, 150)">Velocity (cm/s)</text>
+</svg>

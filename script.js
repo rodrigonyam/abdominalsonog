@@ -84,7 +84,9 @@ class AbdominalSonographyQuiz {
             adrenal: 'Adrenal Glands',
             gastrointestinal: 'Gastrointestinal',
             retroperitoneum: 'Retroperitoneum',
-            abdominalWall: 'Abdominal Wall'
+            abdominalWall: 'Abdominal Wall',
+            caseStudies: 'Case Studies',
+            physics: 'Physics & Technique'
         };
         
         // Combine all anatomical sections
