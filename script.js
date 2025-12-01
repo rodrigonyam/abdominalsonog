@@ -21,8 +21,8 @@ class AbdominalSonographyQuiz {
         this.questionHistory = [];
         this.loadProgressData();
         
-        // Combine all questions into a single array with category labels
-        this.allQuestions = this.combineQuestions();
+        // Combine all anatomical sections into a single array with section labels
+        this.allQuestions = this.combineAnatomicalSections();
         this.filteredQuestions = [...this.allQuestions];
         
         this.initializeEventListeners();
@@ -71,51 +71,51 @@ class AbdominalSonographyQuiz {
 
     combineQuestions() {
         const combined = [];
+        let questionId = 1;
         
-        // Add multiple choice questions
-        if (questionDatabase.multipleChoice) {
-            questionDatabase.multipleChoice.forEach(q => {
-                combined.push({
-                    ...q,
-                    type: 'multiple-choice',
-                    category: 'multiple-choice'
-                });
-            });
-        }
+        // Define anatomical sections with display names
+        const sections = {
+            liver: 'Liver',
+            gallbladder: 'Gallbladder & Biliary',
+            kidney: 'Kidney & Urinary',
+            pancreas: 'Pancreas',
+            spleen: 'Spleen',
+            vascular: 'Abdominal Vascular',
+            adrenal: 'Adrenal Glands',
+            gastrointestinal: 'Gastrointestinal',
+            retroperitoneum: 'Retroperitoneum',
+            abdominalWall: 'Abdominal Wall'
+        };
         
-        // Add true/false questions
-        if (questionDatabase.trueFalse) {
-            questionDatabase.trueFalse.forEach(q => {
-                combined.push({
-                    ...q,
-                    type: 'true-false',
-                    category: 'true-false',
-                    options: ['True', 'False']
+        // Combine all anatomical sections
+        Object.keys(sections).forEach(sectionKey => {
+            if (questionDatabase[sectionKey]) {
+                questionDatabase[sectionKey].forEach(q => {
+                    let processedQuestion = {
+                        ...q,
+                        id: questionId++,
+                        anatomicalSection: sections[sectionKey],
+                        sectionKey: sectionKey,
+                        category: sections[sectionKey]
+                    };
+                    
+                    // Handle different question types
+                    if (q.type === 'trueFalse') {
+                        processedQuestion.type = 'true-false';
+                        processedQuestion.options = ['True', 'False'];
+                        processedQuestion.category = sections[sectionKey];
+                    } else if (q.type === 'shortAnswer') {
+                        processedQuestion.type = 'short-answer';
+                        processedQuestion.category = sections[sectionKey];
+                    } else if (q.type === 'multipleChoice') {
+                        processedQuestion.type = 'multiple-choice';
+                        processedQuestion.category = sections[sectionKey];
+                    }
+                    
+                    combined.push(processedQuestion);
                 });
-            });
-        }
-        
-        // Add short answer questions
-        if (questionDatabase.shortAnswer) {
-            questionDatabase.shortAnswer.forEach(q => {
-                combined.push({
-                    ...q,
-                    type: 'short-answer',
-                    category: 'short-answer'
-                });
-            });
-        }
-        
-        // Add diagram questions
-        if (questionDatabase.diagram) {
-            questionDatabase.diagram.forEach(q => {
-                combined.push({
-                    ...q,
-                    type: 'diagram',
-                    category: 'diagram'
-                });
-            });
-        }
+            }
+        });
         
         return combined;
     }
