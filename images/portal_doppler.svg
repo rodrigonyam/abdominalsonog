@@ -1,0 +1,44 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="300" fill="#1a1a1a"/>
+  
+  <!-- Doppler waveform background -->
+  <rect x="50" y="50" width="300" height="150" fill="#000000" stroke="#444444" stroke-width="1"/>
+  
+  <!-- Portal vein waveform (hepatopetal flow) -->
+  <path d="M 60 125 L 80 120 L 100 125 L 120 122 L 140 125 L 160 123 L 180 125 L 200 124 L 220 125 L 240 123 L 260 125 L 280 124 L 300 125 L 320 123 L 340 125" 
+        stroke="#00ff00" stroke-width="3" fill="none"/>
+  
+  <!-- Baseline -->
+  <line x1="50" y1="125" x2="350" y2="125" stroke="#666666" stroke-width="1" stroke-dasharray="2,2"/>
+  
+  <!-- Flow direction arrow -->
+  <path d="M 280 100 L 320 100" stroke="#ffff00" stroke-width="3" fill="none"/>
+  <path d="M 315 95 L 320 100 L 315 105" stroke="#ffff00" stroke-width="3" fill="none"/>
+  
+  <!-- Doppler parameters -->
+  <text x="60" y="80" fill="#00ff00" font-family="Arial" font-size="12">Portal Vein Doppler</text>
+  <text x="60" y="95" fill="#ffffff" font-family="Arial" font-size="10">Velocity: 15-30 cm/s</text>
+  
+  <!-- Measurement cursor -->
+  <line x1="180" y1="50" x2="180" y2="200" stroke="#ff0000" stroke-width="1"/>
+  <line x1="220" y1="50" x2="220" y2="200" stroke="#ff0000" stroke-width="1"/>
+  
+  <!-- Velocity scale -->
+  <text x="20" y="80" fill="#cccccc" font-family="Arial" font-size="8">+30</text>
+  <text x="20" y="125" fill="#cccccc" font-family="Arial" font-size="8">0</text>
+  <text x="20" y="170" fill="#cccccc" font-family="Arial" font-size="8">-30</text>
+  
+  <!-- Time scale -->
+  <text x="60" y="220" fill="#cccccc" font-family="Arial" font-size="8">1s</text>
+  <text x="180" y="220" fill="#cccccc" font-family="Arial" font-size="8">2s</text>
+  <text x="300" y="220" fill="#cccccc" font-family="Arial" font-size="8">3s</text>
+  
+  <!-- Labels -->
+  <text x="50" y="30" fill="#ffffff" font-family="Arial" font-size="14">Doppler Ultrasound</text>
+  <text x="50" y="280" fill="#cccccc" font-family="Arial" font-size="12">Continuous monophasic flow pattern</text>
+  
+  <!-- Arrow pointing to vessel -->
+  <path d="M 150 240 L 180 210" stroke="#ffff00" stroke-width="2" fill="none"/>
+  <path d="M 175 215 L 180 210 L 175 205" stroke="#ffff00" stroke-width="2" fill="none"/>
+</svg>

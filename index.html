@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdominal Sonography Quiz - 500 Questions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1><i class="fas fa-stethoscope"></i> Abdominal Sonography Quiz</h1>
+            <p class="subtitle">Master abdominal ultrasound with 500 comprehensive questions</p>
+        </div>
+    </header>
+
+    <nav class="nav-tabs">
+        <div class="container">
+            <button class="tab-btn active" data-category="all">
+                <i class="fas fa-th-large"></i> All Questions (500)
+            </button>
+            <button class="tab-btn" data-category="multiple-choice">
+                <i class="fas fa-list-ul"></i> Multiple Choice (200)
+            </button>
+            <button class="tab-btn" data-category="true-false">
+                <i class="fas fa-check-circle"></i> True/False (150)
+            </button>
+            <button class="tab-btn" data-category="short-answer">
+                <i class="fas fa-edit"></i> Short Answer (100)
+            </button>
+            <button class="tab-btn" data-category="diagram">
+                <i class="fas fa-image"></i> Diagrams (50)
+            </button>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="container">
+            <!-- Quiz Controls -->
+            <div class="quiz-controls">
+                <div class="progress-section">
+                    <div class="progress-info">
+                        <span class="current-question">Question <span id="currentQuestionNum">1</span> of <span id="totalQuestions">500</span></span>
+                        <span class="score">Score: <span id="currentScore">0</span>/<span id="questionsAnswered">0</span> 
+                            <span class="accuracy-indicator" id="accuracyIndicator"></span>
+                        </span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                    <div class="progress-details">
+                        <span>Accuracy: <span id="accuracyPercentage">0%</span></span>
+                        <span>Session: <span id="sessionTime">0:00</span></span>
+                        <span>Streak: <span id="streakCounter">0</span></span>
+                    </div>
+                </div>
+                
+                <div class="control-buttons">
+                    <button id="prevBtn" class="control-btn" disabled>
+                        <i class="fas fa-chevron-left"></i> Previous
+                    </button>
+                    <button id="submitBtn" class="control-btn submit-btn">
+                        <i class="fas fa-check"></i> Submit Answer
+                    </button>
+                    <button id="nextBtn" class="control-btn hidden">
+                        Next <i class="fas fa-chevron-right"></i>
+                    </button>
+                    <button id="finishBtn" class="control-btn finish-btn hidden">
+                        <i class="fas fa-flag-checkered"></i> Finish Quiz
+                    </button>
+                    <button id="restartBtn" class="control-btn restart-btn">
+                        <i class="fas fa-redo"></i> Restart
+                    </button>
+                </div>
+            </div>
+
+            <!-- Question Display Area -->
+            <div class="question-container" id="questionContainer">
+                <!-- Question will be loaded here dynamically -->
+            </div>
+
+            <!-- Results Section -->
+            <div class="results-section hidden" id="resultsSection">
+                <div class="results-card">
+                    <h2><i class="fas fa-trophy"></i> Quiz Results</h2>
+                    <div class="results-stats">
+                        <div class="stat-item">
+                            <div class="stat-value" id="finalScore">0</div>
+                            <div class="stat-label">Final Score</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value" id="percentageScore">0%</div>
+                            <div class="stat-label">Percentage</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value" id="totalAnswered">0</div>
+                            <div class="stat-label">Questions Answered</div>
+                        </div>
+                    </div>
+                    <div class="category-breakdown" id="categoryBreakdown">
+                        <!-- Category results will be populated here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Abdominal Sonography Quiz. Educational tool for medical professionals.</p>
+        </div>
+    </footer>
+
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

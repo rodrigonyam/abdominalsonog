@@ -1,0 +1,38 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="gbGradient" cx="0.3" cy="0.3">
+      <stop offset="0%" style="stop-color:#2d5a2d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a4d1a;stop-opacity:1" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="#2c2c2c"/>
+  
+  <!-- Gallbladder outline -->
+  <ellipse cx="200" cy="150" rx="80" ry="40" fill="url(#gbGradient)" stroke="#4a4a4a" stroke-width="2"/>
+  
+  <!-- Thickened wall (acute cholecystitis) -->
+  <ellipse cx="200" cy="150" rx="85" ry="45" fill="none" stroke="#ff6666" stroke-width="6"/>
+  
+  <!-- Pericholecystic fluid -->
+  <ellipse cx="200" cy="150" rx="95" ry="55" fill="none" stroke="#66ccff" stroke-width="3" opacity="0.7"/>
+  
+  <!-- Gallstones with shadowing -->
+  <circle cx="180" cy="160" r="8" fill="#ffffff"/>
+  <circle cx="210" cy="145" r="6" fill="#ffffff"/>
+  
+  <!-- Acoustic shadows -->
+  <path d="M 180 170 L 180 220 L 190 220 L 180 170" fill="#000000" opacity="0.8"/>
+  <path d="M 210 155 L 210 200 L 218 200 L 210 155" fill="#000000" opacity="0.8"/>
+  
+  <!-- Labels -->
+  <text x="50" y="50" fill="#ffffff" font-family="Arial" font-size="14">Gallbladder Pathology</text>
+  <text x="50" y="280" fill="#cccccc" font-family="Arial" font-size="12">Thickened wall + pericholecystic fluid + stones</text>
+  
+  <!-- Measurement markers -->
+  <line x1="120" y1="150" x2="120" y2="195" stroke="#ffff00" stroke-width="2"/>
+  <line x1="115" y1="150" x2="125" y2="150" stroke="#ffff00" stroke-width="2"/>
+  <line x1="115" y1="195" x2="125" y2="195" stroke="#ffff00" stroke-width="2"/>
+  <text x="85" y="175" fill="#ffff00" font-family="Arial" font-size="10">8mm</text>
+</svg>

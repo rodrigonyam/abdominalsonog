@@ -1,0 +1,39 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="pancreasGradient" cx="0.3" cy="0.3">
+      <stop offset="0%" style="stop-color:#8B7355;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#5D4E37;stop-opacity:1" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="#2c2c2c"/>
+  
+  <!-- Pancreas outline -->
+  <path d="M 60 140 C 80 130, 200 135, 320 145 C 330 150, 340 160, 340 170 C 330 180, 200 175, 60 165 Z" 
+        fill="url(#pancreasGradient)" stroke="#4a4a4a" stroke-width="2"/>
+  
+  <!-- Superior mesenteric vein (highlighted) -->
+  <circle cx="180" cy="155" r="12" fill="#4444ff" stroke="#66ccff" stroke-width="2"/>
+  <text x="165" y="160" fill="#ffffff" font-family="Arial" font-size="8">SMV</text>
+  
+  <!-- Superior mesenteric artery -->
+  <circle cx="200" cy="170" r="8" fill="#ff4444" stroke="#fff" stroke-width="1"/>
+  <text x="190" y="175" fill="#ffffff" font-family="Arial" font-size="8">SMA</text>
+  
+  <!-- Splenic vein -->
+  <path d="M 70 150 L 150 155" stroke="#6666ff" stroke-width="4"/>
+  
+  <!-- Arrow pointing to SMV -->
+  <path d="M 180 120 L 180 140" stroke="#ffff00" stroke-width="3" fill="none"/>
+  <path d="M 175 135 L 180 140 L 185 135" stroke="#ffff00" stroke-width="3" fill="none"/>
+  
+  <!-- Labels -->
+  <text x="50" y="50" fill="#ffffff" font-family="Arial" font-size="14">Pancreatic Anatomy - Transverse View</text>
+  <text x="50" y="280" fill="#cccccc" font-family="Arial" font-size="12">Identify the vessel posterior to pancreatic neck</text>
+  
+  <!-- Anatomical labels -->
+  <text x="80" y="120" fill="#cccccc" font-family="Arial" font-size="10">Head</text>
+  <text x="180" y="120" fill="#cccccc" font-family="Arial" font-size="10">Neck</text>
+  <text x="280" y="120" fill="#cccccc" font-family="Arial" font-size="10">Body</text>
+</svg>

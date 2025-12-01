@@ -1,0 +1,30 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="liverGradient" cx="0.3" cy="0.3">
+      <stop offset="0%" style="stop-color:#8B4513;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#654321;stop-opacity:1" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="#2c2c2c"/>
+  
+  <!-- Liver outline -->
+  <path d="M 80 100 C 120 80, 280 80, 320 100 L 320 200 C 300 220, 100 220, 80 200 Z" 
+        fill="url(#liverGradient)" stroke="#4a4a4a" stroke-width="2"/>
+  
+  <!-- Hepatic vein (highlighted structure) -->
+  <path d="M 200 120 L 240 140 L 260 180 L 280 200" 
+        stroke="#00ff88" stroke-width="4" fill="none"/>
+  
+  <!-- Portal vein -->
+  <circle cx="180" cy="160" r="8" fill="#ff4444" stroke="#fff" stroke-width="1"/>
+  
+  <!-- Arrow pointing to hepatic vein -->
+  <path d="M 160 100 L 190 115" stroke="#ffff00" stroke-width="3" fill="none"/>
+  <path d="M 185 110 L 190 115 L 185 120" stroke="#ffff00" stroke-width="3" fill="none"/>
+  
+  <!-- Labels -->
+  <text x="50" y="50" fill="#ffffff" font-family="Arial" font-size="14">Longitudinal RUQ View</text>
+  <text x="50" y="280" fill="#cccccc" font-family="Arial" font-size="12">Identify the structure indicated by the arrow</text>
+</svg>
