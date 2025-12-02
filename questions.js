@@ -1784,6 +1784,389 @@ const questionDatabase = {
             options: ["Hypoechoic", "Hyperechoic", "Anechoic", "Mixed echogenicity"],
             correct: 1,
             explanation: "Pancreatic lipomatosis shows increased echogenicity due to fatty infiltration."
+        },
+        {
+            id: 51,
+            type: "multipleChoice",
+            question: "The most common location for pancreatic adenocarcinoma is:",
+            options: ["Head", "Body", "Tail", "Uncinate process"],
+            correct: 0,
+            explanation: "Pancreatic adenocarcinoma occurs most commonly in the pancreatic head (60-70% of cases)."
+        },
+        {
+            id: 52,
+            type: "trueFalse",
+            question: "Chronic pancreatitis always causes ductal dilatation.",
+            correct: false,
+            explanation: "While ductal dilatation is common in chronic pancreatitis, it is not always present."
+        },
+        {
+            id: 53,
+            type: "multipleChoice",
+            question: "Groove pancreatitis affects which anatomical area?",
+            options: ["Pancreatoduodenal groove", "Splenic hilum", "Lesser sac", "Gastrocolic ligament"],
+            correct: 0,
+            explanation: "Groove pancreatitis is a form of chronic pancreatitis affecting the pancreatoduodenal groove."
+        },
+        {
+            id: 54,
+            type: "multipleChoice",
+            question: "The most sensitive imaging finding for acute pancreatitis is:",
+            options: ["Pancreatic enlargement", "Ductal dilatation", "Peripancreatic fluid", "Pseudocyst formation"],
+            correct: 0,
+            explanation: "Pancreatic enlargement with decreased echogenicity is the most sensitive ultrasound finding."
+        },
+        {
+            id: 55,
+            type: "trueFalse",
+            question: "Pancreatic neuroendocrine tumors are typically hyperechoic.",
+            correct: false,
+            explanation: "Pancreatic neuroendocrine tumors are typically hypoechoic and well-circumscribed."
+        },
+        {
+            id: 56,
+            type: "multipleChoice",
+            question: "Autoimmune pancreatitis most commonly affects:",
+            options: ["Pancreatic head", "Pancreatic body", "Pancreatic tail", "Diffuse involvement"],
+            correct: 3,
+            explanation: "Type 1 autoimmune pancreatitis typically shows diffuse pancreatic involvement."
+        },
+        {
+            id: 57,
+            type: "multipleChoice",
+            question: "Sphincter of Oddi dysfunction is best evaluated with:",
+            options: ["Ultrasound", "MRCP", "ERCP with manometry", "CT"],
+            correct: 2,
+            explanation: "ERCP with sphincter of Oddi manometry is the gold standard for diagnosis."
+        },
+        {
+            id: 58,
+            type: "trueFalse",
+            question: "Pancreatic pseudocysts communicate with the pancreatic duct.",
+            correct: true,
+            explanation: "Pancreatic pseudocysts typically maintain communication with the pancreatic ductal system."
+        },
+        {
+            id: 59,
+            type: "multipleChoice",
+            question: "Pancreas divisum results from:",
+            options: ["Ductal obstruction", "Failure of ductal fusion", "Pancreatic atrophy", "Vascular anomaly"],
+            correct: 1,
+            explanation: "Pancreas divisum results from failure of fusion between dorsal and ventral pancreatic ducts."
+        },
+        {
+            id: 60,
+            type: "multipleChoice",
+            question: "The 'duct-penetrating sign' is associated with:",
+            options: ["Benign tumors", "Malignant tumors", "Pancreatitis", "Normal variant"],
+            correct: 1,
+            explanation: "The duct-penetrating sign suggests malignancy rather than benign disease."
+        },
+        {
+            id: 61,
+            type: "trueFalse",
+            question: "Intraductal papillary mucinous neoplasms (IPMNs) have malignant potential.",
+            correct: true,
+            explanation: "IPMNs are considered premalignant lesions with potential for malignant transformation."
+        },
+        {
+            id: 62,
+            type: "multipleChoice",
+            question: "Pancreatic ascites most commonly results from:",
+            options: ["Tumor rupture", "Ductal disruption", "Vascular injury", "Infection"],
+            correct: 1,
+            explanation: "Pancreatic ascites typically results from pancreatic ductal disruption."
+        },
+        {
+            id: 63,
+            type: "multipleChoice",
+            question: "Solid pseudopapillary tumors most commonly occur in:",
+            options: ["Elderly men", "Young women", "Children", "Middle-aged men"],
+            correct: 1,
+            explanation: "Solid pseudopapillary tumors predominantly affect young women (90% female, mean age 28)."
+        },
+        {
+            id: 64,
+            type: "trueFalse",
+            question: "Pancreatic trauma most commonly affects the pancreatic body.",
+            correct: true,
+            explanation: "The pancreatic body is most vulnerable to blunt trauma due to its anterior location over the spine."
+        },
+        {
+            id: 65,
+            type: "multipleChoice",
+            question: "The most common complication of acute pancreatitis is:",
+            options: ["Pseudocyst formation", "Pancreatic necrosis", "Splenic vein thrombosis", "Duodenal obstruction"],
+            correct: 0,
+            explanation: "Pseudocyst formation is the most common complication of acute pancreatitis."
+        },
+        {
+            id: 66,
+            type: "multipleChoice",
+            question: "Pancreatic steatosis is associated with:",
+            options: ["Diabetes", "Obesity", "Aging", "All of the above"],
+            correct: 3,
+            explanation: "Pancreatic steatosis is associated with diabetes, obesity, aging, and metabolic syndrome."
+        },
+        {
+            id: 67,
+            type: "trueFalse",
+            question: "Chronic pancreatitis always leads to diabetes mellitus.",
+            correct: false,
+            explanation: "While diabetes is common in chronic pancreatitis, it does not always occur."
+        },
+        {
+            id: 68,
+            type: "multipleChoice",
+            question: "Pancreatic lymphoma is most commonly:",
+            options: ["Primary pancreatic lymphoma", "Secondary involvement", "Hodgkin lymphoma", "T-cell lymphoma"],
+            correct: 1,
+            explanation: "Secondary pancreatic involvement is more common than primary pancreatic lymphoma."
+        },
+        {
+            id: 69,
+            type: "multipleChoice",
+            question: "The 'double duct sign' indicates:",
+            options: ["Normal anatomy", "Chronic pancreatitis", "Pancreatic head mass", "Sphincter dysfunction"],
+            correct: 2,
+            explanation: "The double duct sign (bile and pancreatic duct dilatation) suggests pancreatic head pathology."
+        },
+        {
+            id: 70,
+            type: "trueFalse",
+            question: "Pancreatic calcifications are pathognomonic for chronic pancreatitis.",
+            correct: true,
+            explanation: "Pancreatic calcifications are virtually pathognomonic for chronic pancreatitis."
+        },
+        {
+            id: 71,
+            type: "multipleChoice",
+            question: "Pancreaticoduodenectomy (Whipple procedure) is performed for:",
+            options: ["Chronic pancreatitis only", "Pancreatic head tumors", "Pancreatic tail lesions", "Pseudocysts"],
+            correct: 1,
+            explanation: "Whipple procedure is the standard surgical treatment for pancreatic head malignancies."
+        },
+        {
+            id: 72,
+            type: "multipleChoice",
+            question: "Mucinous cystic neoplasms typically occur in:",
+            options: ["Pancreatic head", "Pancreatic body and tail", "Uncinate process", "Diffusely"],
+            correct: 1,
+            explanation: "Mucinous cystic neoplasms typically occur in the pancreatic body and tail."
+        },
+        {
+            id: 73,
+            type: "trueFalse",
+            question: "Pancreatic ductal adenocarcinoma has a good prognosis.",
+            correct: false,
+            explanation: "Pancreatic ductal adenocarcinoma has one of the worst prognoses among solid malignancies."
+        },
+        {
+            id: 74,
+            type: "multipleChoice",
+            question: "Hereditary pancreatitis is most commonly associated with:",
+            options: ["PRSS1 gene mutation", "CFTR gene mutation", "SPINK1 gene mutation", "CTRC gene mutation"],
+            correct: 0,
+            explanation: "PRSS1 (cationic trypsinogen) gene mutations are the most common cause of hereditary pancreatitis."
+        },
+        {
+            id: 75,
+            type: "multipleChoice",
+            question: "Pancreatic rest (ectopic pancreas) most commonly occurs in:",
+            options: ["Duodenum", "Stomach", "Small bowel", "Colon"],
+            correct: 1,
+            explanation: "Pancreatic rests most commonly occur in the gastric antrum."
+        },
+        {
+            id: 76,
+            type: "trueFalse",
+            question: "Endoscopic ultrasound is superior to transabdominal ultrasound for pancreatic imaging.",
+            correct: true,
+            explanation: "EUS provides superior resolution and detail for pancreatic imaging compared to transabdominal ultrasound."
+        },
+        {
+            id: 77,
+            type: "multipleChoice",
+            question: "Pancreatic serous cystadenomas are:",
+            options: ["Always malignant", "Premalignant", "Benign", "Variable malignant potential"],
+            correct: 2,
+            explanation: "Serous cystadenomas are benign lesions with no malignant potential."
+        },
+        {
+            id: 78,
+            type: "multipleChoice",
+            question: "The most common cause of acute pancreatitis worldwide is:",
+            options: ["Gallstones", "Alcohol", "Medications", "Idiopathic"],
+            correct: 0,
+            explanation: "Gallstones are the most common cause of acute pancreatitis globally."
+        },
+        {
+            id: 79,
+            type: "trueFalse",
+            question: "Pancreatic ductal strictures are always malignant.",
+            correct: false,
+            explanation: "Pancreatic ductal strictures can be benign (chronic pancreatitis) or malignant."
+        },
+        {
+            id: 80,
+            type: "multipleChoice",
+            question: "Disconnected pancreatic duct syndrome results from:",
+            options: ["Congenital anomaly", "Surgical complication", "Severe necrotizing pancreatitis", "Tumor compression"],
+            correct: 2,
+            explanation: "Disconnected duct syndrome typically results from severe necrotizing pancreatitis."
+        },
+        {
+            id: 81,
+            type: "multipleChoice",
+            question: "CA 19-9 elevation is most specific for:",
+            options: ["Pancreatic adenocarcinoma", "Chronic pancreatitis", "Cholangiocarcinoma", "Gastric cancer"],
+            correct: 0,
+            explanation: "CA 19-9 is most commonly elevated in pancreatic adenocarcinoma, though not specific."
+        },
+        {
+            id: 82,
+            type: "trueFalse",
+            question: "Pancreatic atrophy is reversible if the underlying cause is treated.",
+            correct: false,
+            explanation: "Pancreatic atrophy from chronic pancreatitis is generally irreversible."
+        },
+        {
+            id: 83,
+            type: "multipleChoice",
+            question: "Annular pancreas is associated with:",
+            options: ["Duodenal obstruction", "Biliary obstruction", "Gastric outlet obstruction", "All of the above"],
+            correct: 3,
+            explanation: "Annular pancreas can cause duodenal, biliary, or gastric outlet obstruction."
+        },
+        {
+            id: 84,
+            type: "multipleChoice",
+            question: "Pancreatic enzyme replacement therapy is indicated when:",
+            options: ["Lipase <10% normal", "Lipase <5% normal", "Any enzyme deficiency", "Symptomatic steatorrhea"],
+            correct: 1,
+            explanation: "Pancreatic enzyme replacement is typically needed when lipase output is <5% of normal."
+        },
+        {
+            id: 85,
+            type: "trueFalse",
+            question: "Pancreatic pseudoaneurysms are a life-threatening complication.",
+            correct: true,
+            explanation: "Pancreatic pseudoaneurysms have high morbidity and mortality due to rupture risk."
+        },
+        {
+            id: 86,
+            type: "multipleChoice",
+            question: "The Cambridge classification is used for:",
+            options: ["Acute pancreatitis severity", "Chronic pancreatitis grading", "Pancreatic cancer staging", "Cystic lesion classification"],
+            correct: 1,
+            explanation: "The Cambridge classification grades the severity of chronic pancreatitis."
+        },
+        {
+            id: 87,
+            type: "multipleChoice",
+            question: "Pancreatic acinar cell carcinoma comprises what percentage of pancreatic malignancies?",
+            options: ["<1%", "5-10%", "15-20%", "25-30%"],
+            correct: 0,
+            explanation: "Acinar cell carcinoma is rare, comprising <1% of pancreatic malignancies."
+        },
+        {
+            id: 88,
+            type: "trueFalse",
+            question: "Pancreatic tail resection requires splenectomy.",
+            correct: true,
+            explanation: "Distal pancreatectomy typically includes splenectomy due to shared vascular supply."
+        },
+        {
+            id: 89,
+            type: "multipleChoice",
+            question: "Pancreatic fistula most commonly occurs after:",
+            options: ["Pancreaticoduodenectomy", "Distal pancreatectomy", "Enucleation", "Necrosectomy"],
+            correct: 1,
+            explanation: "Pancreatic fistula rates are highest after distal pancreatectomy."
+        },
+        {
+            id: 90,
+            type: "multipleChoice",
+            question: "The most common pancreatic cystic lesion is:",
+            options: ["Serous cystadenoma", "Mucinous cystic neoplasm", "IPMN", "Pseudocyst"],
+            correct: 3,
+            explanation: "Pseudocysts are the most common cystic pancreatic lesions overall."
+        },
+        {
+            id: 91,
+            type: "trueFalse",
+            question: "Pancreatic stellate cells play a role in pancreatic fibrosis.",
+            correct: true,
+            explanation: "Pancreatic stellate cells are key mediators of pancreatic fibrosis and desmoplasia."
+        },
+        {
+            id: 92,
+            type: "multipleChoice",
+            question: "Pancreatic ductal hypertension in chronic pancreatitis is best treated by:",
+            options: ["Medical management", "Ductal drainage", "Resection", "Observation"],
+            correct: 1,
+            explanation: "Lateral pancreaticojejunostomy (Puestow procedure) relieves ductal hypertension."
+        },
+        {
+            id: 93,
+            type: "multipleChoice",
+            question: "Groove pancreatitis is most commonly associated with:",
+            options: ["Gallstones", "Alcohol abuse", "Trauma", "Medications"],
+            correct: 1,
+            explanation: "Groove pancreatitis is strongly associated with chronic alcohol abuse."
+        },
+        {
+            id: 94,
+            type: "trueFalse",
+            question: "Pancreatic cancer screening is recommended for high-risk individuals.",
+            correct: true,
+            explanation: "Screening is recommended for individuals with genetic syndromes and strong family history."
+        },
+        {
+            id: 95,
+            type: "multipleChoice",
+            question: "The Ranson criteria are used to assess:",
+            options: ["Chronic pancreatitis severity", "Acute pancreatitis prognosis", "Pancreatic cancer stage", "Cyst malignancy risk"],
+            correct: 1,
+            explanation: "Ranson criteria predict the severity and prognosis of acute pancreatitis."
+        },
+        {
+            id: 96,
+            type: "multipleChoice",
+            question: "Pancreatic metastases most commonly originate from:",
+            options: ["Lung", "Breast", "Kidney", "Colon"],
+            correct: 2,
+            explanation: "Renal cell carcinoma is the most common source of pancreatic metastases."
+        },
+        {
+            id: 97,
+            type: "trueFalse",
+            question: "Pancreatic endocrine insufficiency occurs earlier than exocrine insufficiency in chronic pancreatitis.",
+            correct: false,
+            explanation: "Exocrine insufficiency typically precedes endocrine insufficiency in chronic pancreatitis."
+        },
+        {
+            id: 98,
+            type: "multipleChoice",
+            question: "The most reliable sign of pancreatic ductal adenocarcinoma on ultrasound is:",
+            options: ["Hypoechoic mass", "Ductal dilatation", "Vascular invasion", "Liver metastases"],
+            correct: 0,
+            explanation: "Hypoechoic mass is the most common and reliable ultrasound finding in pancreatic cancer."
+        },
+        {
+            id: 99,
+            type: "multipleChoice",
+            question: "Pancreatic cystic fibrosis affects primarily:",
+            options: ["Ductal cells", "Acinar cells", "Islet cells", "Stellate cells"],
+            correct: 1,
+            explanation: "Cystic fibrosis primarily affects pancreatic acinar cells, leading to exocrine insufficiency."
+        },
+        {
+            id: 100,
+            type: "trueFalse",
+            question: "Pancreatic rest can undergo malignant transformation.",
+            correct: true,
+            explanation: "Ectopic pancreatic tissue has the same malignant potential as normally located pancreas."
         }
     ],
 
@@ -1941,6 +2324,389 @@ const questionDatabase = {
             options: ["Lung", "Breast", "Melanoma", "Colon"],
             correct: 2,
             explanation: "Melanoma is the most common primary tumor to metastasize to the spleen."
+        },
+        {
+            id: 58,
+            type: "multipleChoice",
+            question: "Splenic artery aneurysm is most commonly associated with:",
+            options: ["Hypertension", "Pregnancy", "Trauma", "Infection"],
+            correct: 1,
+            explanation: "Splenic artery aneurysm has increased risk during pregnancy due to hormonal and hemodynamic changes."
+        },
+        {
+            id: 59,
+            type: "trueFalse",
+            question: "Splenomegaly always indicates pathology.",
+            correct: false,
+            explanation: "Mild splenomegaly can be seen in normal individuals, particularly in athletes."
+        },
+        {
+            id: 60,
+            type: "multipleChoice",
+            question: "Gaucher disease affects the spleen by causing:",
+            options: ["Atrophy", "Calcification", "Enlargement", "Cysts"],
+            correct: 2,
+            explanation: "Gaucher disease causes hepatosplenomegaly due to accumulation of glucocerebroside."
+        },
+        {
+            id: 61,
+            type: "multipleChoice",
+            question: "The splenic flexure syndrome refers to:",
+            options: ["Splenic torsion", "Gas trapped in colon", "Splenic rupture", "Arterial stenosis"],
+            correct: 1,
+            explanation: "Splenic flexure syndrome involves gas trapping in the splenic flexure of the colon."
+        },
+        {
+            id: 62,
+            type: "trueFalse",
+            question: "Splenic laceration always requires surgical intervention.",
+            correct: false,
+            explanation: "Many splenic lacerations can be managed conservatively with observation and monitoring."
+        },
+        {
+            id: 63,
+            type: "multipleChoice",
+            question: "Wandering spleen is caused by:",
+            options: ["Splenic enlargement", "Lax ligamentous attachments", "Vascular malformation", "Congenital absence of ribs"],
+            correct: 1,
+            explanation: "Wandering spleen results from lax or absent ligamentous attachments to the spleen."
+        },
+        {
+            id: 64,
+            type: "multipleChoice",
+            question: "The most common cause of splenic vein thrombosis is:",
+            options: ["Pancreatitis", "Trauma", "Malignancy", "Hypercoagulable state"],
+            correct: 0,
+            explanation: "Pancreatitis is the most common cause of splenic vein thrombosis due to local inflammation."
+        },
+        {
+            id: 65,
+            type: "trueFalse",
+            question: "Splenic hamartomas have malignant potential.",
+            correct: false,
+            explanation: "Splenic hamartomas are benign lesions with no malignant potential."
+        },
+        {
+            id: 66,
+            type: "multipleChoice",
+            question: "Post-splenectomy patients are most susceptible to:",
+            options: ["Viral infections", "Encapsulated bacterial infections", "Fungal infections", "Parasitic infections"],
+            correct: 1,
+            explanation: "Post-splenectomy patients are particularly susceptible to infections by encapsulated bacteria."
+        },
+        {
+            id: 67,
+            type: "multipleChoice",
+            question: "Splenic marginal zone lymphoma is also known as:",
+            options: ["Hodgkin lymphoma", "MALT lymphoma", "Burkitt lymphoma", "Mantle cell lymphoma"],
+            correct: 1,
+            explanation: "Splenic marginal zone lymphoma is a type of MALT (mucosa-associated lymphoid tissue) lymphoma."
+        },
+        {
+            id: 68,
+            type: "trueFalse",
+            question: "Splenic calcifications are always pathological.",
+            correct: false,
+            explanation: "Splenic calcifications can be benign (healed infections, infarcts) or pathological."
+        },
+        {
+            id: 69,
+            type: "multipleChoice",
+            question: "The most common splenic cystic lesion is:",
+            options: ["Epidermoid cyst", "Hydatid cyst", "Pseudocyst", "Lymphangioma"],
+            correct: 2,
+            explanation: "Splenic pseudocysts (post-traumatic) are the most common cystic splenic lesions."
+        },
+        {
+            id: 70,
+            type: "multipleChoice",
+            question: "Splenic sequestration crisis most commonly occurs in:",
+            options: ["Sickle cell disease", "Thalassemia", "Spherocytosis", "G6PD deficiency"],
+            correct: 0,
+            explanation: "Splenic sequestration is a serious complication of sickle cell disease in children."
+        },
+        {
+            id: 71,
+            type: "trueFalse",
+            question: "Splenic accessory organs are always located near the main spleen.",
+            correct: false,
+            explanation: "Accessory splenic tissue can be found anywhere along the embryologic migration path."
+        },
+        {
+            id: 72,
+            type: "multipleChoice",
+            question: "Splenic peliosis is characterized by:",
+            options: ["Solid masses", "Blood-filled spaces", "Calcified deposits", "Fatty infiltration"],
+            correct: 1,
+            explanation: "Splenic peliosis involves blood-filled cystic spaces within the splenic parenchyma."
+        },
+        {
+            id: 73,
+            type: "multipleChoice",
+            question: "The spleen is most commonly injured in which type of trauma?",
+            options: ["Penetrating abdominal trauma", "Blunt abdominal trauma", "Thoracic trauma", "Pelvic trauma"],
+            correct: 1,
+            explanation: "The spleen is the most commonly injured organ in blunt abdominal trauma."
+        },
+        {
+            id: 74,
+            type: "trueFalse",
+            question: "Splenic lymphangiomas are malignant lesions.",
+            correct: false,
+            explanation: "Splenic lymphangiomas are benign vascular malformations."
+        },
+        {
+            id: 75,
+            type: "multipleChoice",
+            question: "Gamma-Gandy bodies in the spleen represent:",
+            options: ["Calcifications", "Hemosiderin deposits", "Fibrotic tissue", "Lymphoid follicles"],
+            correct: 1,
+            explanation: "Gamma-Gandy bodies are hemosiderin deposits seen in portal hypertension and hemolytic disorders."
+        },
+        {
+            id: 76,
+            type: "multipleChoice",
+            question: "Splenic rupture most commonly occurs in:",
+            options: ["Left upper quadrant", "Right upper quadrant", "Left lower quadrant", "Epigastrium"],
+            correct: 0,
+            explanation: "Splenic rupture typically presents with left upper quadrant pain and tenderness."
+        },
+        {
+            id: 77,
+            type: "trueFalse",
+            question: "Splenic abscess always requires surgical drainage.",
+            correct: false,
+            explanation: "Small splenic abscesses may respond to antibiotic therapy; large ones typically require drainage."
+        },
+        {
+            id: 78,
+            type: "multipleChoice",
+            question: "Splenic granulomas are most commonly caused by:",
+            options: ["Tuberculosis", "Histoplasmosis", "Sarcoidosis", "All of the above"],
+            correct: 3,
+            explanation: "Splenic granulomas can be caused by TB, histoplasmosis, sarcoidosis, and other conditions."
+        },
+        {
+            id: 79,
+            type: "multipleChoice",
+            question: "The splenic hilum contains:",
+            options: ["Splenic artery only", "Splenic vein only", "Splenic vessels and lymphatics", "Only lymph nodes"],
+            correct: 2,
+            explanation: "The splenic hilum contains splenic artery, vein, lymphatics, and lymph nodes."
+        },
+        {
+            id: 80,
+            type: "trueFalse",
+            question: "Splenic infarcts are always symptomatic.",
+            correct: false,
+            explanation: "Small splenic infarcts may be asymptomatic; large infarcts typically cause pain."
+        },
+        {
+            id: 81,
+            type: "multipleChoice",
+            question: "Congenital asplenia is associated with:",
+            options: ["Ivemark syndrome", "Turner syndrome", "Down syndrome", "Marfan syndrome"],
+            correct: 0,
+            explanation: "Congenital asplenia is associated with Ivemark syndrome (right atrial isomerism)."
+        },
+        {
+            id: 82,
+            type: "multipleChoice",
+            question: "Splenic artery steal syndrome occurs with:",
+            options: ["Liver transplantation", "Kidney transplantation", "Heart transplantation", "Pancreas transplantation"],
+            correct: 0,
+            explanation: "Splenic artery steal syndrome can occur after liver transplantation due to altered hemodynamics."
+        },
+        {
+            id: 83,
+            type: "trueFalse",
+            question: "Polysplenia is always associated with cardiac abnormalities.",
+            correct: false,
+            explanation: "While polysplenia is often associated with cardiac defects, not all cases have cardiac involvement."
+        },
+        {
+            id: 84,
+            type: "multipleChoice",
+            question: "The most common cause of massive splenomegaly is:",
+            options: ["Malaria", "Lymphoma", "Leukemia", "Myelofibrosis"],
+            correct: 3,
+            explanation: "Myelofibrosis commonly causes massive splenomegaly due to extramedullary hematopoiesis."
+        },
+        {
+            id: 85,
+            type: "multipleChoice",
+            question: "Splenic littoral cell angioma is:",
+            options: ["Always malignant", "Always benign", "Has malignant potential", "Pre-malignant"],
+            correct: 2,
+            explanation: "Splenic littoral cell angioma can rarely undergo malignant transformation to angiosarcoma."
+        },
+        {
+            id: 86,
+            type: "trueFalse",
+            question: "Splenic tuberculosis always causes splenomegaly.",
+            correct: false,
+            explanation: "Splenic TB may present as focal lesions without significant splenomegaly."
+        },
+        {
+            id: 87,
+            type: "multipleChoice",
+            question: "Splenic notching on chest X-ray indicates:",
+            options: ["Splenic enlargement", "Collateral circulation", "Splenic infection", "Normal variant"],
+            correct: 1,
+            explanation: "Splenic notching results from enlarged intercostal arteries serving as collateral circulation."
+        },
+        {
+            id: 88,
+            type: "multipleChoice",
+            question: "The spleen develops from which embryologic structure?",
+            options: ["Foregut", "Midgut", "Hindgut", "Dorsal mesogastrium"],
+            correct: 3,
+            explanation: "The spleen develops from mesenchymal cells in the dorsal mesogastrium."
+        },
+        {
+            id: 89,
+            type: "trueFalse",
+            question: "Splenic torsion can occur without wandering spleen.",
+            correct: true,
+            explanation: "Splenic torsion can occur with normal splenic position, though it's more common with wandering spleen."
+        },
+        {
+            id: 90,
+            type: "multipleChoice",
+            question: "Splenic angiosarcoma is associated with:",
+            options: ["Thorotrast exposure", "Vinyl chloride", "Asbestos", "All of the above"],
+            correct: 0,
+            explanation: "Splenic angiosarcoma is strongly associated with prior Thorotrast (contrast agent) exposure."
+        },
+        {
+            id: 91,
+            type: "multipleChoice",
+            question: "The splenic flexure is located at:",
+            options: ["Junction of ascending and transverse colon", "Junction of transverse and descending colon", "Junction of descending and sigmoid colon", "Junction of sigmoid and rectum"],
+            correct: 1,
+            explanation: "The splenic flexure is the junction between the transverse and descending colon."
+        },
+        {
+            id: 92,
+            type: "trueFalse",
+            question: "Splenic involvement in lymphoma always indicates advanced disease.",
+            correct: false,
+            explanation: "Splenic involvement can occur at any stage and doesn't automatically indicate advanced disease."
+        },
+        {
+            id: 93,
+            type: "multipleChoice",
+            question: "Splenic hydatid cysts are most commonly caused by:",
+            options: ["Echinococcus granulosus", "Echinococcus multilocularis", "Taenia solium", "Schistosoma mansoni"],
+            correct: 0,
+            explanation: "Echinococcus granulosus is the most common cause of splenic hydatid disease."
+        },
+        {
+            id: 94,
+            type: "multipleChoice",
+            question: "The shortest diameter for splenomegaly diagnosis is:",
+            options: ["11 cm", "13 cm", "15 cm", "17 cm"],
+            correct: 1,
+            explanation: "Splenomegaly is generally diagnosed when splenic length exceeds 13 cm."
+        },
+        {
+            id: 95,
+            type: "trueFalse",
+            question: "Splenic red pulp is primarily involved in immune function.",
+            correct: false,
+            explanation: "Splenic white pulp handles immune functions; red pulp filters blood and removes old RBCs."
+        },
+        {
+            id: 96,
+            type: "multipleChoice",
+            question: "Splenic pseudoaneurysm most commonly results from:",
+            options: ["Atherosclerosis", "Trauma", "Infection", "Congenital weakness"],
+            correct: 1,
+            explanation: "Splenic pseudoaneurysm most commonly results from trauma or iatrogenic injury."
+        },
+        {
+            id: 97,
+            type: "multipleChoice",
+            question: "Hypersplenism is characterized by:",
+            options: ["Increased platelet count", "Increased white cell count", "Cytopenia with hyperactive bone marrow", "Bone marrow suppression"],
+            correct: 2,
+            explanation: "Hypersplenism causes cytopenia due to increased sequestration despite active bone marrow."
+        },
+        {
+            id: 98,
+            type: "trueFalse",
+            question: "Splenic epidermoid cysts require surgical removal.",
+            correct: false,
+            explanation: "Asymptomatic splenic epidermoid cysts can be observed; symptomatic ones may require treatment."
+        },
+        {
+            id: 99,
+            type: "multipleChoice",
+            question: "The splenic capsule is composed of:",
+            options: ["Smooth muscle only", "Fibrous tissue only", "Smooth muscle and fibrous tissue", "Cartilage"],
+            correct: 2,
+            explanation: "The splenic capsule contains both fibrous tissue and smooth muscle fibers."
+        },
+        {
+            id: 100,
+            type: "multipleChoice",
+            question: "Splenic involvement in sarcoidosis typically appears as:",
+            options: ["Diffuse enlargement", "Multiple nodules", "Single mass", "Calcifications"],
+            correct: 1,
+            explanation: "Splenic sarcoidosis typically presents as multiple small hypoechoic nodules."
+        },
+        {
+            id: 101,
+            type: "trueFalse",
+            question: "Splenic biopsy is routinely performed for diagnosis.",
+            correct: false,
+            explanation: "Splenic biopsy is avoided due to bleeding risk; diagnosis is usually made by imaging and clinical correlation."
+        },
+        {
+            id: 102,
+            type: "multipleChoice",
+            question: "The most common indication for splenectomy is:",
+            options: ["Trauma", "Hematologic disorders", "Tumors", "Infection"],
+            correct: 1,
+            explanation: "Hematologic disorders (ITP, hereditary spherocytosis) are the most common indication for splenectomy."
+        },
+        {
+            id: 103,
+            type: "multipleChoice",
+            question: "Splenic salvage techniques include all EXCEPT:",
+            options: ["Splenorrhaphy", "Partial splenectomy", "Splenic artery ligation", "Total splenectomy"],
+            correct: 3,
+            explanation: "Total splenectomy is not a splenic salvage technique; the others preserve splenic tissue."
+        },
+        {
+            id: 104,
+            type: "trueFalse",
+            question: "Splenic oxygen consumption is higher than most other organs.",
+            correct: true,
+            explanation: "The spleen has one of the highest oxygen consumption rates per gram of tissue."
+        },
+        {
+            id: 105,
+            type: "multipleChoice",
+            question: "Splenic microabscesses are most commonly seen in:",
+            options: ["Immunocompetent patients", "Diabetic patients", "Immunocompromised patients", "Elderly patients"],
+            correct: 2,
+            explanation: "Splenic microabscesses are typically seen in immunocompromised patients with systemic infections."
+        },
+        {
+            id: 106,
+            type: "multipleChoice",
+            question: "The splenic artery typically arises from:",
+            options: ["Aorta directly", "Celiac trunk", "Superior mesenteric artery", "Left gastric artery"],
+            correct: 1,
+            explanation: "The splenic artery is typically the largest branch of the celiac trunk."
+        },
+        {
+            id: 107,
+            type: "trueFalse",
+            question: "Splenic function can be assessed with nuclear medicine imaging.",
+            correct: true,
+            explanation: "Tc-99m sulfur colloid or heat-damaged RBC scans can assess splenic function and presence of accessory spleens."
         }
     ],
 
@@ -2192,6 +2958,389 @@ const questionDatabase = {
             options: ["Muscle tear", "Separation of rectus muscles", "Hernia", "Hematoma"],
             correct: 1,
             explanation: "Diastasis recti is separation of the rectus abdominis muscles at the linea alba."
+        },
+        {
+            id: 57,
+            type: "multipleChoice",
+            question: "The normal diameter of the abdominal aorta at the celiac axis is:",
+            options: ["< 2.0 cm", "< 2.5 cm", "< 3.0 cm", "< 3.5 cm"],
+            correct: 2,
+            explanation: "The normal abdominal aorta diameter at the celiac axis should be less than 3.0 cm."
+        },
+        {
+            id: 58,
+            type: "trueFalse",
+            question: "Portal vein thrombosis always requires anticoagulation.",
+            correct: false,
+            explanation: "Treatment depends on extent, cause, and clinical presentation; not all cases require anticoagulation."
+        },
+        {
+            id: 59,
+            type: "multipleChoice",
+            question: "Hepatic artery stenosis after liver transplant most commonly occurs at:",
+            options: ["Celiac trunk", "Proper hepatic artery", "Anastomotic site", "Intrahepatic branches"],
+            correct: 2,
+            explanation: "Post-transplant hepatic artery stenosis most commonly occurs at the anastomotic site."
+        },
+        {
+            id: 60,
+            type: "multipleChoice",
+            question: "The nutcracker syndrome involves compression of:",
+            options: ["Left renal vein", "Right renal vein", "IVC", "Portal vein"],
+            correct: 0,
+            explanation: "Nutcracker syndrome involves compression of the left renal vein between the aorta and SMA."
+        },
+        {
+            id: 61,
+            type: "trueFalse",
+            question: "Renal artery stenosis can cause hypertension.",
+            correct: true,
+            explanation: "Renal artery stenosis is a cause of renovascular hypertension."
+        },
+        {
+            id: 62,
+            type: "multipleChoice",
+            question: "May-Thurner syndrome involves compression of:",
+            options: ["Left common iliac vein", "Right common iliac vein", "IVC", "Portal vein"],
+            correct: 0,
+            explanation: "May-Thurner syndrome involves compression of the left common iliac vein by the right common iliac artery."
+        },
+        {
+            id: 63,
+            type: "multipleChoice",
+            question: "The most sensitive Doppler parameter for renal artery stenosis is:",
+            options: ["Peak systolic velocity", "Resistive index", "Aorto-renal ratio", "End-diastolic velocity"],
+            correct: 2,
+            explanation: "The aorto-renal ratio (renal:aortic PSV) is the most sensitive parameter for renal artery stenosis."
+        },
+        {
+            id: 64,
+            type: "trueFalse",
+            question: "Portal vein flow is normally hepatopetal.",
+            correct: true,
+            explanation: "Normal portal vein flow is hepatopetal (toward the liver)."
+        },
+        {
+            id: 65,
+            type: "multipleChoice",
+            question: "Budd-Chiari syndrome involves:",
+            options: ["Portal vein obstruction", "Hepatic vein obstruction", "Splenic vein obstruction", "Renal vein obstruction"],
+            correct: 1,
+            explanation: "Budd-Chiari syndrome is obstruction of hepatic venous outflow."
+        },
+        {
+            id: 66,
+            type: "multipleChoice",
+            question: "The celiac artery typically gives rise to all EXCEPT:",
+            options: ["Left gastric artery", "Splenic artery", "Common hepatic artery", "Gastroduodenal artery"],
+            correct: 3,
+            explanation: "The gastroduodenal artery arises from the common hepatic artery, not directly from the celiac trunk."
+        },
+        {
+            id: 67,
+            type: "trueFalse",
+            question: "IVC filter placement prevents all pulmonary emboli.",
+            correct: false,
+            explanation: "IVC filters reduce but don't eliminate the risk of pulmonary embolism."
+        },
+        {
+            id: 68,
+            type: "multipleChoice",
+            question: "Median arcuate ligament syndrome affects the:",
+            options: ["Celiac artery", "SMA", "IMA", "Renal arteries"],
+            correct: 0,
+            explanation: "Median arcuate ligament syndrome causes external compression of the celiac artery."
+        },
+        {
+            id: 69,
+            type: "multipleChoice",
+            question: "The normal hepatic artery resistive index is:",
+            options: ["0.5-0.7", "0.6-0.8", "0.7-0.9", "0.8-1.0"],
+            correct: 1,
+            explanation: "Normal hepatic artery resistive index ranges from 0.6 to 0.8."
+        },
+        {
+            id: 70,
+            type: "trueFalse",
+            question: "Aortic aneurysms always require surgical repair.",
+            correct: false,
+            explanation: "Small aortic aneurysms may be managed conservatively with surveillance."
+        },
+        {
+            id: 71,
+            type: "multipleChoice",
+            question: "Fibromuscular dysplasia most commonly affects:",
+            options: ["Carotid arteries", "Renal arteries", "Mesenteric arteries", "Iliac arteries"],
+            correct: 1,
+            explanation: "Fibromuscular dysplasia most commonly affects the renal arteries."
+        },
+        {
+            id: 72,
+            type: "multipleChoice",
+            question: "Portal hypertension is defined as a portal pressure gradient >:",
+            options: ["5 mmHg", "10 mmHg", "15 mmHg", "20 mmHg"],
+            correct: 1,
+            explanation: "Portal hypertension is defined as a hepatic venous pressure gradient >10 mmHg."
+        },
+        {
+            id: 73,
+            type: "trueFalse",
+            question: "Renal artery aneurysms are always symptomatic.",
+            correct: false,
+            explanation: "Many renal artery aneurysms are asymptomatic and found incidentally."
+        },
+        {
+            id: 74,
+            type: "multipleChoice",
+            question: "The coronary steal phenomenon in hepatic arteries occurs with:",
+            options: ["Portal vein stenosis", "Hepatic vein stenosis", "Portal vein thrombosis", "Increased portal flow"],
+            correct: 3,
+            explanation: "Coronary steal occurs when increased portal flow reduces hepatic arterial flow."
+        },
+        {
+            id: 75,
+            type: "multipleChoice",
+            question: "SMA syndrome involves compression of the:",
+            options: ["Duodenum", "Left renal vein", "Celiac artery", "Portal vein"],
+            correct: 0,
+            explanation: "SMA syndrome involves compression of the third part of the duodenum between the SMA and aorta."
+        },
+        {
+            id: 76,
+            type: "trueFalse",
+            question: "All aortic dissections require immediate surgery.",
+            correct: false,
+            explanation: "Type B dissections may be managed medically unless complicated."
+        },
+        {
+            id: 77,
+            type: "multipleChoice",
+            question: "The normal IVC diameter at inspiration is:",
+            options: ["< 1.5 cm", "< 2.1 cm", "< 2.5 cm", "< 3.0 cm"],
+            correct: 1,
+            explanation: "Normal IVC diameter should be less than 2.1 cm with >50% collapse on inspiration."
+        },
+        {
+            id: 78,
+            type: "multipleChoice",
+            question: "Takayasu arteritis most commonly affects:",
+            options: ["Coronary arteries", "Aorta and its branches", "Peripheral arteries", "Cerebral arteries"],
+            correct: 1,
+            explanation: "Takayasu arteritis is a large vessel vasculitis affecting the aorta and its major branches."
+        },
+        {
+            id: 79,
+            type: "trueFalse",
+            question: "Venous thrombosis always shows complete vessel occlusion.",
+            correct: false,
+            explanation: "Venous thrombosis can be partial or complete, acute or chronic."
+        },
+        {
+            id: 80,
+            type: "multipleChoice",
+            question: "The tardus parvus waveform indicates:",
+            options: ["Normal flow", "Upstream stenosis", "Downstream stenosis", "Arteriovenous fistula"],
+            correct: 1,
+            explanation: "Tardus parvus waveform indicates significant upstream arterial stenosis."
+        },
+        {
+            id: 81,
+            type: "multipleChoice",
+            question: "Splenic artery aneurysm rupture risk is highest in:",
+            options: ["Elderly men", "Young women", "Pregnant women", "Children"],
+            correct: 2,
+            explanation: "Splenic artery aneurysm rupture risk is highest during pregnancy."
+        },
+        {
+            id: 82,
+            type: "trueFalse",
+            question: "Portal vein gas is always pathological.",
+            correct: true,
+            explanation: "Portal vein gas indicates serious pathology such as bowel ischemia or perforation."
+        },
+        {
+            id: 83,
+            type: "multipleChoice",
+            question: "The most common cause of mesenteric ischemia is:",
+            options: ["Embolism", "Thrombosis", "Low flow state", "Vasculitis"],
+            correct: 0,
+            explanation: "Acute mesenteric ischemia is most commonly caused by arterial embolism."
+        },
+        {
+            id: 84,
+            type: "multipleChoice",
+            question: "Hepatic artery thrombosis after liver transplant typically occurs:",
+            options: ["Intraoperatively", "Within 24 hours", "Within first week", "After one month"],
+            correct: 2,
+            explanation: "Hepatic artery thrombosis typically occurs within the first week post-transplant."
+        },
+        {
+            id: 85,
+            type: "trueFalse",
+            question: "Renal vein thrombosis always causes flank pain.",
+            correct: false,
+            explanation: "Renal vein thrombosis may be asymptomatic, especially if chronic or unilateral."
+        },
+        {
+            id: 86,
+            type: "multipleChoice",
+            question: "Leriche syndrome involves occlusion of:",
+            options: ["Aortic bifurcation", "Celiac trunk", "SMA", "Renal arteries"],
+            correct: 0,
+            explanation: "Leriche syndrome is occlusion of the aortic bifurcation and iliac arteries."
+        },
+        {
+            id: 87,
+            type: "multipleChoice",
+            question: "The normal main renal artery peak systolic velocity is:",
+            options: ["< 100 cm/s", "< 150 cm/s", "< 180 cm/s", "< 200 cm/s"],
+            correct: 2,
+            explanation: "Normal main renal artery PSV should be less than 180 cm/s."
+        },
+        {
+            id: 88,
+            type: "trueFalse",
+            question: "IVC compression can cause lower extremity edema.",
+            correct: true,
+            explanation: "IVC obstruction or compression can lead to bilateral lower extremity edema."
+        },
+        {
+            id: 89,
+            type: "multipleChoice",
+            question: "Hepatofugal flow in the portal vein indicates:",
+            options: ["Normal physiology", "Portal hypertension", "Liver dysfunction", "Biliary obstruction"],
+            correct: 1,
+            explanation: "Hepatofugal (away from liver) portal flow indicates portal hypertension."
+        },
+        {
+            id: 90,
+            type: "multipleChoice",
+            question: "Cavernous transformation of the portal vein represents:",
+            options: ["Congenital anomaly", "Acute thrombosis", "Chronic portal vein occlusion", "Portal hypertension"],
+            correct: 2,
+            explanation: "Cavernous transformation represents chronic portal vein occlusion with collateral formation."
+        },
+        {
+            id: 91,
+            type: "trueFalse",
+            question: "All abdominal aortic aneurysms should be screened with duplex ultrasound.",
+            correct: true,
+            explanation: "Duplex ultrasound is the preferred screening method for AAA."
+        },
+        {
+            id: 92,
+            type: "multipleChoice",
+            question: "The blue toe syndrome is caused by:",
+            options: ["Venous thrombosis", "Arterial embolism", "Lymphatic obstruction", "Nerve compression"],
+            correct: 1,
+            explanation: "Blue toe syndrome is caused by cholesterol or atherosclerotic emboli."
+        },
+        {
+            id: 93,
+            type: "multipleChoice",
+            question: "Superior mesenteric artery stenosis >70% typically shows PSV:",
+            options: ["> 200 cm/s", "> 275 cm/s", "> 350 cm/s", "> 400 cm/s"],
+            correct: 1,
+            explanation: "SMA stenosis >70% typically shows peak systolic velocity >275 cm/s."
+        },
+        {
+            id: 94,
+            type: "trueFalse",
+            question: "Arteriovenous fistulas always require surgical repair.",
+            correct: false,
+            explanation: "Some small AVFs may close spontaneously or be managed conservatively."
+        },
+        {
+            id: 95,
+            type: "multipleChoice",
+            question: "Hepatic veno-occlusive disease most commonly occurs after:",
+            options: ["Viral hepatitis", "Bone marrow transplant", "Liver transplant", "Chemotherapy"],
+            correct: 1,
+            explanation: "Hepatic veno-occlusive disease is a recognized complication of bone marrow transplantation."
+        },
+        {
+            id: 96,
+            type: "multipleChoice",
+            question: "The normal splenic vein diameter is:",
+            options: ["< 6 mm", "< 8 mm", "< 10 mm", "< 12 mm"],
+            correct: 2,
+            explanation: "Normal splenic vein diameter should be less than 10 mm."
+        },
+        {
+            id: 97,
+            type: "trueFalse",
+            question: "Chronic mesenteric ischemia always presents with postprandial pain.",
+            correct: false,
+            explanation: "While postprandial pain is classic, chronic mesenteric ischemia can have variable presentations."
+        },
+        {
+            id: 98,
+            type: "multipleChoice",
+            question: "Pseudoaneurysms are characterized by:",
+            options: ["Intact vessel wall", "Partial vessel wall disruption", "Complete wall disruption with contained hematoma", "Wall thickening"],
+            correct: 2,
+            explanation: "Pseudoaneurysms involve complete arterial wall disruption with contained hematoma."
+        },
+        {
+            id: 99,
+            type: "multipleChoice",
+            question: "The most common location for AAA is:",
+            options: ["Suprarenal", "Juxtarenal", "Infrarenal", "Iliac"],
+            correct: 2,
+            explanation: "Most abdominal aortic aneurysms occur in the infrarenal segment."
+        },
+        {
+            id: 100,
+            type: "trueFalse",
+            question: "Portal vein velocity normally increases after meals.",
+            correct: true,
+            explanation: "Portal vein velocity normally increases postprandially due to increased splanchnic flow."
+        },
+        {
+            id: 101,
+            type: "multipleChoice",
+            question: "Hepatic artery buffer response refers to:",
+            options: ["Increased flow with portal vein stenosis", "Decreased flow with portal hypertension", "Compensatory flow changes", "Fixed arterial flow"],
+            correct: 2,
+            explanation: "Hepatic artery buffer response involves compensatory flow changes when portal flow is altered."
+        },
+        {
+            id: 102,
+            type: "multipleChoice",
+            question: "The most reliable sign of IVC thrombosis is:",
+            options: ["Dilation", "Echogenic material", "Absent flow", "Wall thickening"],
+            correct: 2,
+            explanation: "Absent flow on Doppler is the most reliable sign of IVC thrombosis."
+        },
+        {
+            id: 103,
+            type: "trueFalse",
+            question: "Celiac artery stenosis can cause liver ischemia.",
+            correct: true,
+            explanation: "Severe celiac stenosis can compromise hepatic arterial perfusion and cause liver ischemia."
+        },
+        {
+            id: 104,
+            type: "multipleChoice",
+            question: "Renal artery fibromuscular dysplasia most commonly affects:",
+            options: ["Proximal third", "Middle third", "Distal third", "Entire length"],
+            correct: 2,
+            explanation: "Renal artery FMD most commonly affects the distal two-thirds of the vessel."
+        },
+        {
+            id: 105,
+            type: "multipleChoice",
+            question: "TIPS (transjugular intrahepatic portosystemic shunt) creates a connection between:",
+            options: ["Portal vein and hepatic vein", "Portal vein and IVC", "Hepatic artery and portal vein", "Splenic vein and renal vein"],
+            correct: 0,
+            explanation: "TIPS creates a connection between the portal vein and hepatic vein system."
+        },
+        {
+            id: 106,
+            type: "trueFalse",
+            question: "Renovascular hypertension is curable with revascularization.",
+            correct: false,
+            explanation: "While revascularization can improve BP control, cure rates vary and depend on multiple factors."
         }
     ],
 
@@ -2244,6 +3393,166 @@ const questionDatabase = {
             options: ["Normal portal flow", "Increased portal flow", "Reversed portal flow", "Absent portal flow"],
             correct: 2,
             explanation: "Hepatofugal (reversed) portal flow indicates severe portal hypertension in cirrhosis."
+        },
+        {
+            id: 62,
+            type: "caseStudy",
+            question: "A 35-year-old male with history of pancreatitis presents with epigastric mass. CT shows 8cm cystic lesion with debris levels in pancreatic tail. What is the most likely diagnosis?",
+            options: ["Pancreatic adenocarcinoma", "Pseudocyst", "Cystadenoma", "Acute pancreatitis"],
+            correct: 1,
+            explanation: "Post-pancreatitis cystic lesion with debris suggests pancreatic pseudocyst."
+        },
+        {
+            id: 63,
+            type: "caseStudy",
+            question: "A 28-year-old female presents with RUQ pain. Ultrasound shows multiple echogenic foci in GB with posterior shadowing and no gravitational dependency. What is the diagnosis?",
+            options: ["Cholelithiasis", "Adenomyomatosis", "Porcelain gallbladder", "Cholesterolosis"],
+            correct: 1,
+            explanation: "Fixed echogenic foci with shadowing that don't move suggest adenomyomatosis (comet-tail artifacts)."
+        },
+        {
+            id: 64,
+            type: "caseStudy",
+            question: "A 55-year-old diabetic presents with fever and flank pain. Ultrasound shows enlarged kidney with echogenic foci and dirty shadowing. What complication should be suspected?",
+            options: ["Pyelonephritis", "Emphysematous pyelonephritis", "Renal abscess", "Chronic pyelonephritis"],
+            correct: 1,
+            explanation: "Echogenic foci with dirty shadowing in diabetic with severe infection suggests emphysematous pyelonephritis."
+        },
+        {
+            id: 65,
+            type: "caseStudy",
+            question: "A 40-year-old woman presents with RUQ pain and jaundice. ERCP shows beading of bile ducts. Ultrasound shows dilated intrahepatic ducts. What is the most likely diagnosis?",
+            options: ["Choledocholithiasis", "Primary sclerosing cholangitis", "Cholangiocarcinoma", "Mirizzi syndrome"],
+            correct: 1,
+            explanation: "Beading of bile ducts on ERCP with ductal dilation is characteristic of primary sclerosing cholangitis."
+        },
+        {
+            id: 66,
+            type: "caseStudy",
+            question: "A 62-year-old man with cirrhosis undergoes surveillance. Ultrasound shows 3cm hypoechoic nodule with peripheral rim enhancement on contrast. What is the most appropriate next step?",
+            options: ["Repeat ultrasound in 6 months", "Biopsy", "MRI or CT with contrast", "Immediate surgery"],
+            correct: 2,
+            explanation: "Suspicious nodule in cirrhotic liver requires further characterization with CT or MRI."
+        },
+        {
+            id: 67,
+            type: "caseStudy",
+            question: "A 25-year-old presents with acute severe epigastric pain radiating to back. Lipase is 1200. Ultrasound shows hypoechoic swollen pancreas. What is the most likely cause in this age group?",
+            options: ["Gallstones", "Alcohol", "Hypertriglyceridemia", "Idiopathic"],
+            correct: 0,
+            explanation: "In young patients, gallstone pancreatitis is the most common cause of acute pancreatitis."
+        },
+        {
+            id: 68,
+            type: "caseStudy",
+            question: "A 50-year-old presents with weight loss and painless jaundice. CT shows 2cm pancreatic head mass with dilated pancreatic and bile ducts. What is the most likely diagnosis?",
+            options: ["Chronic pancreatitis", "Pancreatic adenocarcinoma", "IPMN", "Neuroendocrine tumor"],
+            correct: 1,
+            explanation: "Painless jaundice with double duct sign strongly suggests pancreatic head adenocarcinoma."
+        },
+        {
+            id: 69,
+            type: "caseStudy",
+            question: "A 45-year-old presents with LUQ pain after MVA. CT shows splenic laceration with subcapsular hematoma. Vitals are stable. What is the best management?",
+            options: ["Immediate surgery", "Conservative management with monitoring", "Splenic artery embolization", "Splenectomy"],
+            correct: 1,
+            explanation: "Stable patients with splenic injury can often be managed conservatively with close monitoring."
+        },
+        {
+            id: 70,
+            type: "caseStudy",
+            question: "A 30-year-old female presents with recurrent UTIs. Ultrasound shows duplicated collecting system with upper pole hydronephrosis. What is the most likely associated anomaly?",
+            options: ["Vesicoureteral reflux", "Ureterocele", "Renal agenesis", "Horseshoe kidney"],
+            correct: 1,
+            explanation: "Upper pole hydronephrosis in duplicated system often associated with ureterocele of upper pole ureter."
+        },
+        {
+            id: 71,
+            type: "caseStudy",
+            question: "A 65-year-old male presents with hematuria. Ultrasound shows echogenic mass in renal pelvis with posterior shadowing. What is the most likely diagnosis?",
+            options: ["Renal cell carcinoma", "Transitional cell carcinoma", "Nephrolithiasis", "Angiomyolipoma"],
+            correct: 1,
+            explanation: "Echogenic mass in renal pelvis with shadowing in elderly patient with hematuria suggests TCC."
+        },
+        {
+            id: 72,
+            type: "caseStudy",
+            question: "A 38-year-old pregnant woman at 32 weeks presents with severe RUQ pain and elevated liver enzymes. What condition should be suspected?",
+            options: ["Acute fatty liver of pregnancy", "HELLP syndrome", "Hyperemesis gravidarum", "Cholestasis of pregnancy"],
+            correct: 1,
+            explanation: "RUQ pain with elevated liver enzymes in third trimester suggests HELLP syndrome."
+        },
+        {
+            id: 73,
+            type: "caseStudy",
+            question: "A 42-year-old presents with epigastric pain. Ultrasound shows target sign in GB wall with alternating layers. What is the diagnosis?",
+            options: ["Acute cholecystitis", "Adenomyomatosis", "GB carcinoma", "Cholesterolosis"],
+            correct: 1,
+            explanation: "Target sign with alternating wall layers is characteristic of adenomyomatosis."
+        },
+        {
+            id: 74,
+            type: "caseStudy",
+            question: "A 55-year-old presents with jaundice and weight loss. Ultrasound shows dilated CBD to 12mm with abrupt cutoff. No stones seen. What is the most likely cause?",
+            options: ["Choledocholithiasis", "Cholangiocarcinoma", "Pancreatic head mass", "Papillary stenosis"],
+            correct: 2,
+            explanation: "Dilated CBD with abrupt cutoff and weight loss most commonly indicates pancreatic head mass."
+        },
+        {
+            id: 75,
+            type: "caseStudy",
+            question: "A 28-year-old presents with acute flank pain. Ultrasound shows dilated ureter with echogenic focus and twinkling artifact. What is the most likely diagnosis?",
+            options: ["Ureteral stricture", "Ureterolithiasis", "Ureterocele", "Bladder tumor"],
+            correct: 1,
+            explanation: "Echogenic focus with twinkling artifact in dilated ureter indicates ureterolithiasis."
+        },
+        {
+            id: 76,
+            type: "caseStudy",
+            question: "A 60-year-old diabetic presents with fever and altered mental status. Ultrasound shows gas in portal venous system. What is the most serious concern?",
+            options: ["Gallstone ileus", "Bowel ischemia", "Biliary-enteric anastomosis", "Pneumobilia"],
+            correct: 1,
+            explanation: "Portal venous gas in sick diabetic patient raises concern for bowel ischemia/necrosis."
+        },
+        {
+            id: 77,
+            type: "caseStudy",
+            question: "A 45-year-old presents with chronic diarrhea and weight loss. CT shows enlarged mesenteric lymph nodes and bowel wall thickening. Ultrasound-guided biopsy is planned. What condition is suspected?",
+            options: ["Crohn's disease", "Lymphoma", "Carcinoid tumor", "Tuberculosis"],
+            correct: 1,
+            explanation: "Enlarged mesenteric nodes with bowel involvement suggests lymphoma, requiring tissue diagnosis."
+        },
+        {
+            id: 78,
+            type: "caseStudy",
+            question: "A 52-year-old presents with painless hematuria. Ultrasound shows anechoic lesion with thin septations in kidney. What is the Bosniak classification?",
+            options: ["Bosniak I", "Bosniak II", "Bosniak IIF", "Bosniak III"],
+            correct: 1,
+            explanation: "Anechoic lesion with thin septations represents Bosniak II cyst (benign)."
+        },
+        {
+            id: 79,
+            type: "caseStudy",
+            question: "A 35-year-old female presents with pelvic pain. Ultrasound shows complex adnexal mass with mixed echogenicity. CA-125 is elevated. What is the most concerning feature for malignancy?",
+            options: ["Complex internal structure", "Bilateral involvement", "Size >10cm", "Solid components with flow"],
+            correct: 3,
+            explanation: "Solid components with vascular flow are the most concerning ultrasound features for ovarian malignancy."
+        },
+        {
+            id: 80,
+            type: "caseStudy",
+            question: "A 48-year-old male with Budd-Chiari syndrome undergoes follow-up ultrasound. What finding would indicate successful TIPS placement?",
+            options: ["Decreased liver size", "Patent hepatic veins", "Reduced portal vein velocity", "Hepatopetal portal flow"],
+            correct: 3,
+            explanation: "Successful TIPS should restore hepatopetal (toward liver) portal vein flow direction."
+        },
+        {
+            id: 81,
+            type: "caseStudy",
+            question: "A 33-year-old pregnant woman at 20 weeks presents with severe nausea and RUQ pain. Ultrasound shows multiple small GB stones and sludge. What is the best management?",
+            options: ["Immediate cholecystectomy", "Conservative management", "ERCP", "Percutaneous cholecystostomy"],
+            correct: 1,
+            explanation: "During pregnancy, symptomatic cholelithiasis is initially managed conservatively unless complications develop."
         }
     ],
 
@@ -2271,6 +3580,160 @@ const questionDatabase = {
             question: "Compound imaging reduces speckle artifact.",
             correct: true,
             explanation: "Compound imaging uses multiple beam angles to reduce speckle and improve image quality."
+        },
+        {
+            id: 65,
+            type: "multipleChoice",
+            question: "The optimal Doppler angle for velocity measurements is:",
+            options: ["0 degrees", "30-60 degrees", "90 degrees", "120 degrees"],
+            correct: 1,
+            explanation: "Doppler angles between 30-60 degrees provide optimal balance of sensitivity and accuracy."
+        },
+        {
+            id: 66,
+            type: "multipleChoice",
+            question: "Harmonic imaging improves image quality by:",
+            options: ["Reducing attenuation", "Reducing near-field artifacts", "Increasing penetration", "Reducing side lobes"],
+            correct: 1,
+            explanation: "Harmonic imaging reduces near-field artifacts and improves contrast resolution."
+        },
+        {
+            id: 67,
+            type: "trueFalse",
+            question: "Power Doppler is angle dependent.",
+            correct: false,
+            explanation: "Power Doppler is angle independent, making it useful for detecting slow flow."
+        },
+        {
+            id: 68,
+            type: "multipleChoice",
+            question: "The beam profile in the focal zone is described as:",
+            options: ["Widest", "Narrowest", "Most divergent", "Most attenuated"],
+            correct: 1,
+            explanation: "The beam is narrowest at the focal zone, providing best lateral resolution."
+        },
+        {
+            id: 69,
+            type: "multipleChoice",
+            question: "Time gain compensation (TGC) compensates for:",
+            options: ["Attenuation", "Scatter", "Refraction", "Absorption only"],
+            correct: 0,
+            explanation: "TGC compensates for attenuation by amplifying deeper echoes more than superficial ones."
+        },
+        {
+            id: 70,
+            type: "trueFalse",
+            question: "Aliasing occurs when the Doppler shift exceeds the Nyquist limit.",
+            correct: true,
+            explanation: "Aliasing occurs when the Doppler shift frequency exceeds half the PRF (Nyquist limit)."
+        },
+        {
+            id: 71,
+            type: "multipleChoice",
+            question: "The acoustic impedance difference between soft tissue and air causes:",
+            options: ["Enhancement", "Total reflection", "Refraction", "Scattering"],
+            correct: 1,
+            explanation: "Large impedance mismatch between soft tissue and air causes nearly total reflection."
+        },
+        {
+            id: 72,
+            type: "multipleChoice",
+            question: "Spatial pulse length affects:",
+            options: ["Lateral resolution", "Axial resolution", "Temporal resolution", "Contrast resolution"],
+            correct: 1,
+            explanation: "Shorter spatial pulse length improves axial resolution (ability to separate objects along beam axis)."
+        },
+        {
+            id: 73,
+            type: "trueFalse",
+            question: "Increasing frequency always improves image quality.",
+            correct: false,
+            explanation: "Higher frequency improves resolution but decreases penetration; optimal frequency depends on depth."
+        },
+        {
+            id: 74,
+            type: "multipleChoice",
+            question: "The wall filter in Doppler removes:",
+            options: ["High frequency noise", "Low frequency noise", "Aliasing", "Mirror artifacts"],
+            correct: 1,
+            explanation: "Wall filter removes low-frequency noise from vessel wall motion and probe movement."
+        },
+        {
+            id: 75,
+            type: "multipleChoice",
+            question: "Beam steering in linear array transducers is achieved by:",
+            options: ["Mechanical movement", "Electronic phasing", "Frequency modulation", "Gain adjustment"],
+            correct: 1,
+            explanation: "Linear arrays use electronic phasing to steer and focus the ultrasound beam."
+        },
+        {
+            id: 76,
+            type: "trueFalse",
+            question: "Absorption is the dominant cause of attenuation in soft tissue.",
+            correct: true,
+            explanation: "Absorption accounts for approximately 80% of attenuation in soft tissues."
+        },
+        {
+            id: 77,
+            type: "multipleChoice",
+            question: "The term 'anisotropy' refers to:",
+            options: ["Frequency-dependent attenuation", "Angle-dependent echogenicity", "Depth-dependent resolution", "Time-dependent artifacts"],
+            correct: 1,
+            explanation: "Anisotropy describes how tissue echogenicity varies with beam angle, especially in tendons and muscles."
+        },
+        {
+            id: 78,
+            type: "multipleChoice",
+            question: "Range ambiguity artifacts occur when:",
+            options: ["Frequency is too high", "PRF is too high", "Gain is too high", "Time gain is incorrect"],
+            correct: 1,
+            explanation: "Range ambiguity occurs when PRF is too high, causing echoes from previous pulses to be displayed incorrectly."
+        },
+        {
+            id: 79,
+            type: "trueFalse",
+            question: "Continuous wave Doppler can provide range information.",
+            correct: false,
+            explanation: "Continuous wave Doppler cannot provide range information since it transmits and receives simultaneously."
+        },
+        {
+            id: 80,
+            type: "multipleChoice",
+            question: "The quality factor (Q factor) of a transducer relates to:",
+            options: ["Sensitivity", "Bandwidth", "Penetration", "Focusing ability"],
+            correct: 1,
+            explanation: "Q factor relates to bandwidth; high Q (narrow bandwidth) gives good axial resolution but poor penetration."
+        },
+        {
+            id: 81,
+            type: "multipleChoice",
+            question: "Lateral resolution is best at the:",
+            options: ["Near field", "Focal zone", "Far field", "Transducer surface"],
+            correct: 1,
+            explanation: "Lateral resolution is best at the focal zone where the beam is narrowest."
+        },
+        {
+            id: 82,
+            type: "trueFalse",
+            question: "Spectral broadening always indicates turbulent flow.",
+            correct: false,
+            explanation: "Spectral broadening can result from turbulent flow, but also from large sample volume or beam geometry."
+        },
+        {
+            id: 83,
+            type: "multipleChoice",
+            question: "The piezoelectric effect describes:",
+            options: ["Sound attenuation", "Voltage-pressure conversion", "Frequency filtering", "Beam focusing"],
+            correct: 1,
+            explanation: "Piezoelectric effect converts electrical voltage to mechanical pressure (and vice versa) in transducers."
+        },
+        {
+            id: 84,
+            type: "multipleChoice",
+            question: "Elevational resolution (slice thickness) is controlled by:",
+            options: ["Frequency", "Electronic focusing", "Lens focusing", "Gain settings"],
+            correct: 2,
+            explanation: "Elevational resolution is controlled by lens focusing in the elevational plane of the transducer."
         }
     ]
 };
