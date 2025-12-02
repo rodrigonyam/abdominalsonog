@@ -434,6 +434,32 @@ body {
     background: #f8f9fa;
 }
 
+/* Answer Feedback */
+.answer-feedback {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.answer-feedback.correct {
+    background: #e8f5e8;
+    border: 2px solid #27ae60;
+    color: #27ae60;
+}
+
+.answer-feedback.incorrect {
+    background: #fdf2f2;
+    border: 2px solid #e74c3c;
+    color: #e74c3c;
+}
+
+.answer-feedback strong {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
 /* Results Section */
 .results-section {
     display: none;

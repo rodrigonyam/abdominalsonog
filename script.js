@@ -113,6 +113,12 @@ class AbdominalSonographyQuiz {
                         processedQuestion.category = sections[sectionKey];
                     } else if (q.type === 'shortAnswer') {
                         processedQuestion.type = 'short-answer';
+                        // Ensure correctAnswers array exists for compatibility
+                        if (q.answer && !q.correctAnswers) {
+                            processedQuestion.correctAnswers = [q.answer];
+                        } else if (q.correctAnswers) {
+                            processedQuestion.correctAnswers = q.correctAnswers;
+                        }
                         processedQuestion.category = sections[sectionKey];
                     } else if (q.type === 'multipleChoice') {
                         processedQuestion.type = 'multiple-choice';
@@ -425,6 +431,7 @@ class AbdominalSonographyQuiz {
                 <textarea class="short-answer-input" 
                          placeholder="Type your answer here..." 
                          rows="4"
+                         oninput="handleShortAnswer(this.value)"
                          onchange="handleShortAnswer(this.value)"></textarea>
             </div>
         `;
@@ -458,7 +465,15 @@ class AbdominalSonographyQuiz {
             return;
         }
         
-        this.userAnswers[question.id] = answer.toLowerCase().trim();
+        // Store the trimmed answer but preserve case for display
+        this.userAnswers[question.id] = answer.trim();
+        
+        // Enable submit button if answer is not empty
+        const submitBtn = document.getElementById('submitBtn');
+        if (submitBtn) {
+            submitBtn.disabled = answer.trim() === '';
+        }
+        
         this.updateNavigationButtons();
     }
     
@@ -471,13 +486,24 @@ class AbdominalSonographyQuiz {
         if (question.type === 'short-answer') {
             const textarea = document.querySelector('.short-answer-input');
             if (textarea) {
-                textarea.value = savedAnswer;
+                textarea.value = savedAnswer || '';
+                
+                // Enable/disable submit button based on answer content
+                const submitBtn = document.getElementById('submitBtn');
+                if (submitBtn && !isSubmitted) {
+                    submitBtn.disabled = !savedAnswer || savedAnswer.trim() === '';
+                }
+                
                 if (isSubmitted) {
                     const isCorrect = this.isAnswerCorrect(question, savedAnswer);
                     textarea.style.borderColor = isCorrect ? '#27ae60' : '#e74c3c';
                     textarea.style.backgroundColor = isCorrect ? '#e8f5e8' : '#fdf2f2';
                     textarea.disabled = true;
-                    this.showExplanation(question, isCorrect);
+                    
+                    // Show feedback if not already shown
+                    if (!document.querySelector('.answer-feedback')) {
+                        this.showAnswerFeedback(question, savedAnswer);
+                    }
                 }
             }
         } else {
@@ -579,10 +605,19 @@ class AbdominalSonographyQuiz {
     
     isAnswerCorrect(question, userAnswer) {
         if (question.type === 'short-answer') {
-            return question.correctAnswers.some(correctAnswer => 
-                correctAnswer.toLowerCase().includes(userAnswer.toLowerCase()) ||
-                userAnswer.toLowerCase().includes(correctAnswer.toLowerCase())
-            );
+            // Handle both single answer and multiple correct answers
+            const correctAnswers = question.correctAnswers || (question.answer ? [question.answer] : []);
+            if (correctAnswers.length === 0) return false;
+            
+            return correctAnswers.some(correctAnswer => {
+                const userAnswerLower = userAnswer.toLowerCase().trim();
+                const correctAnswerLower = correctAnswer.toLowerCase().trim();
+                
+                // Exact match or partial match (contains)
+                return userAnswerLower === correctAnswerLower ||
+                       correctAnswerLower.includes(userAnswerLower) ||
+                       userAnswerLower.includes(correctAnswerLower);
+            });
         } else if (question.type === 'true-false') {
             const userBool = userAnswer === 0; // 0 = true, 1 = false
             return userBool === question.correct;
@@ -606,8 +641,8 @@ class AbdominalSonographyQuiz {
         const userAnswer = this.userAnswers[question.id];
         
         // Check if answer exists
-        if (userAnswer === undefined || userAnswer === '') {
-            alert('Please select an answer before submitting.');
+        if (userAnswer === undefined || userAnswer === '' || (typeof userAnswer === 'string' && userAnswer.trim() === '')) {
+            alert('Please provide an answer before submitting.');
             return;
         }
         
@@ -633,6 +668,21 @@ class AbdominalSonographyQuiz {
                 textarea.style.borderColor = isCorrect ? '#27ae60' : '#e74c3c';
                 textarea.style.backgroundColor = isCorrect ? '#e8f5e8' : '#fdf2f2';
                 textarea.disabled = true;
+            }
+            
+            // Show correct answer feedback
+            const possibleAnswers = question.correctAnswers || (question.answer ? [question.answer] : []);
+            if (possibleAnswers.length > 0) {
+                const feedbackDiv = document.createElement('div');
+                feedbackDiv.className = `answer-feedback ${isCorrect ? 'correct' : 'incorrect'}`;
+                feedbackDiv.innerHTML = `
+                    <strong>${isCorrect ? 'Correct!' : 'Incorrect.'}</strong><br>
+                    ${isCorrect ? '' : `Correct answer(s): ${possibleAnswers.join(' or ')}<br>`}
+                    ${question.explanation || ''}
+                `;
+                
+                // Insert after textarea
+                textarea.parentNode.insertBefore(feedbackDiv, textarea.nextSibling);
             }
         } else {
             // Show feedback for multiple choice, true/false, and diagram questions
