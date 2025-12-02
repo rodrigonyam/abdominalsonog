@@ -640,6 +640,12 @@ body {
         padding: 0 1rem;
     }
     
+    /* Ensure proper mobile layout flow */
+    .main-content .container {
+        display: flex;
+        flex-direction: column;
+    }
+    
     .sources-categories {
         grid-template-columns: 1fr;
     }
@@ -693,10 +699,28 @@ body {
         align-items: center;
     }
     
-    /* Mobile Navigation Controls */
+    /* Mobile Top Controls */
+    .top-controls {
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #ecf0f1;
+    }
+    
+    /* Mobile Navigation Controls - positioned after question container */
     .navigation-controls {
         margin: 1.5rem 0;
         padding: 1rem;
+        background: #f8f9fa;
+        border-radius: 15px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        /* Ensure it appears after question container */
+        order: 2;
+    }
+    
+    /* Mobile question container ordering */
+    .question-container {
+        order: 1;
+        margin-bottom: 1rem;
     }
     
     .control-buttons {
@@ -711,36 +735,52 @@ body {
     .control-btn {
         flex: 1;
         max-width: 120px;
-        padding: 0.5rem;
+        padding: 0.5rem 0.25rem;
         font-size: 0.85rem;
         justify-content: center;
+        text-align: center;
     }
     
     /* Mobile specific button arrangement: Previous (left), Submit (center), Next (right) */
     #prevBtn {
         order: 1;
+        flex: 0.8;
     }
     
     #submitBtn {
         order: 2;
-        flex: 1.5;
+        flex: 1.4;
         max-width: 140px;
     }
     
     #nextBtn {
         order: 3;
+        flex: 0.8;
     }
     
     #finishBtn {
         order: 2;
-        flex: 1.5;
+        flex: 1.4;
         max-width: 140px;
     }
     
     #restartBtn {
         order: 2;
-        flex: 1.5;
+        flex: 1.4;
         max-width: 140px;
+    }
+    
+    /* Ensure main content uses flexbox for proper ordering on mobile */
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    /* Mobile quiz controls positioning */
+    .quiz-controls {
+        order: 0;
+        margin-bottom: 1rem;
+        padding: 1rem;
     }
     
     .performance-grid {
