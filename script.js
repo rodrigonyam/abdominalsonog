@@ -22,7 +22,7 @@ class AbdominalSonographyQuiz {
         this.loadProgressData();
         
         // Combine all anatomical sections into a single array with section labels
-        this.allQuestions = this.combineAnatomicalSections();
+        this.allQuestions = this.combineQuestions();
         this.filteredQuestions = [...this.allQuestions];
         
         this.initializeEventListeners();
@@ -70,6 +70,11 @@ class AbdominalSonographyQuiz {
     }
 
     combineQuestions() {
+        if (typeof questionDatabase === 'undefined') {
+            console.error('questionDatabase is not defined!');
+            return [];
+        }
+        
         const combined = [];
         let questionId = 1;
         
@@ -140,6 +145,17 @@ class AbdominalSonographyQuiz {
         document.getElementById('bookmarkBtn').addEventListener('click', () => this.bookmarkQuestion());
         document.getElementById('scrollTopBtn').addEventListener('click', () => this.scrollToTop());
         document.getElementById('closeStatsModal').addEventListener('click', () => this.closeQuickStats());
+
+        // Add event delegation for answer options - PERMANENT FIX
+        document.addEventListener('click', (e) => {
+            const answerOption = e.target.closest('.answer-option');
+            if (answerOption && window.quiz) {
+                const index = parseInt(answerOption.dataset.index);
+                if (!isNaN(index)) {
+                    window.quiz.selectAnswer(index);
+                }
+            }
+        });
     }
     
     filterByCategory(category) {
@@ -377,7 +393,7 @@ class AbdominalSonographyQuiz {
         question.options.forEach((option, index) => {
             const letter = String.fromCharCode(65 + index); // A, B, C, D
             html += `
-                <div class="answer-option" data-index="${index}" onclick="selectAnswer(${index})">
+                <div class="answer-option" data-index="${index}">
                     <div class="option-letter">${letter}</div>
                     <div class="option-text">${option}</div>
                 </div>
@@ -391,11 +407,11 @@ class AbdominalSonographyQuiz {
     renderTrueFalse(question) {
         return `
             <div class="answer-options true-false-options">
-                <div class="answer-option" data-index="0" onclick="selectAnswer(0)">
+                <div class="answer-option" data-index="0">
                     <div class="option-letter">T</div>
                     <div class="option-text">True</div>
                 </div>
-                <div class="answer-option" data-index="1" onclick="selectAnswer(1)">
+                <div class="answer-option" data-index="1">
                     <div class="option-letter">F</div>
                     <div class="option-text">False</div>
                 </div>
@@ -914,16 +930,31 @@ function handleShortAnswer(value) {
     }
 }
 
-// Initialize quiz when page loads
+// Initialize quiz when page loads - ROBUST INITIALIZATION
 document.addEventListener('DOMContentLoaded', function() {
     // Add loading animation
     document.body.classList.add('loading');
     
-    // Simulate loading time for better UX
-    setTimeout(() => {
-        window.quiz = new AbdominalSonographyQuiz();
-        document.body.classList.remove('loading');
-    }, 500);
+    // Check if questionDatabase is loaded
+    function initializeQuiz() {
+        if (typeof questionDatabase === 'undefined') {
+            console.error('questionDatabase not loaded, retrying...');
+            setTimeout(initializeQuiz, 100);
+            return;
+        }
+        
+        try {
+            window.quiz = new AbdominalSonographyQuiz();
+            document.body.classList.remove('loading');
+            console.log('Quiz initialized successfully with', window.quiz.allQuestions.length, 'questions');
+        } catch (error) {
+            console.error('Error initializing quiz:', error);
+            document.body.innerHTML = '<div style="text-align: center; padding: 50px; color: red;">Error loading quiz. Please refresh the page.</div>';
+        }
+    }
+    
+    // Start initialization after a short delay
+    setTimeout(initializeQuiz, 500);
 });
 
 // Add keyboard navigation
