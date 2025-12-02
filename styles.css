@@ -170,31 +170,37 @@ body {
 
 .control-buttons {
     display: grid;
-    grid-template-columns: 1fr auto 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
     gap: 1rem;
     align-items: center;
     width: 100%;
+    padding: 1rem 0;
 }
 
 /* Position specific buttons */
 #prevBtn {
     justify-self: start;
+    grid-column: 1;
 }
 
 #submitBtn {
     justify-self: center;
+    grid-column: 2;
 }
 
 #nextBtn {
     justify-self: end;
+    grid-column: 3;
 }
 
 #finishBtn {
     justify-self: center;
+    grid-column: 2;
 }
 
 #restartBtn {
     justify-self: center;
+    grid-column: 2;
 }
 
 .control-btn {
@@ -664,6 +670,7 @@ body {
     #finishBtn,
     #restartBtn {
         justify-self: center;
+        grid-column: 1;
     }
     
     .performance-grid {

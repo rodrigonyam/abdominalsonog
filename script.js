@@ -702,24 +702,30 @@ class AbdominalSonographyQuiz {
         const hasAnswer = this.userAnswers[question.id] !== undefined && this.userAnswers[question.id] !== '';
         const isSubmitted = this.submittedAnswers[question.id] !== undefined;
         
+        // Previous button - disabled only on first question
         prevBtn.disabled = this.currentQuestionIndex === 0;
         
+        // Always show navigation buttons
+        prevBtn.classList.remove('hidden');
+        nextBtn.classList.remove('hidden');
+        submitBtn.classList.remove('hidden');
+        
+        // Next button - disabled only on last question
+        nextBtn.disabled = this.currentQuestionIndex === this.filteredQuestions.length - 1;
+        
+        // Submit button - enabled when answer is selected and not yet submitted
+        submitBtn.disabled = !hasAnswer || isSubmitted;
         if (isSubmitted) {
-            // Answer has been submitted, show next or finish
-            submitBtn.classList.add('hidden');
-            if (this.currentQuestionIndex === this.filteredQuestions.length - 1) {
-                nextBtn.classList.add('hidden');
-                finishBtn.classList.remove('hidden');
-            } else {
-                nextBtn.classList.remove('hidden');
-                finishBtn.classList.add('hidden');
-            }
+            submitBtn.textContent = '✓ Submitted';
         } else {
-            // Answer not submitted yet
-            nextBtn.classList.add('hidden');
+            submitBtn.innerHTML = '<i class="fas fa-check"></i> Submit Answer';
+        }
+        
+        // Finish button - show only on last question when submitted
+        if (this.currentQuestionIndex === this.filteredQuestions.length - 1 && isSubmitted) {
+            finishBtn.classList.remove('hidden');
+        } else {
             finishBtn.classList.add('hidden');
-            submitBtn.classList.remove('hidden');
-            submitBtn.disabled = !hasAnswer;
         }
     }
     
