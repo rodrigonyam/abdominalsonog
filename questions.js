@@ -158,6 +158,390 @@ const questionDatabase = {
             options: ["Brain", "Liver", "Kidneys", "Lungs"],
             correct: 1,
             explanation: "Wilson's disease typically presents with hepatic manifestations before neurological symptoms."
+        },
+        {
+            id: 21,
+            type: "multipleChoice",
+            question: "The most common benign liver tumor is:",
+            options: ["Focal nodular hyperplasia", "Hepatic adenoma", "Hemangioma", "Lipoma"],
+            correct: 2,
+            explanation: "Hemangioma is the most common benign liver tumor, typically appearing as a hyperechoic lesion."
+        },
+        {
+            id: 22,
+            type: "multipleChoice",
+            question: "Portal vein thrombosis most commonly appears as:",
+            options: ["Anechoic structure", "Hyperechoic material within vessel", "Vessel wall thickening", "Increased flow velocity"],
+            correct: 1,
+            explanation: "Portal vein thrombosis typically appears as hyperechoic or mixed echogenicity material within the portal vein."
+        },
+        {
+            id: 23,
+            type: "trueFalse",
+            question: "Hepatic steatosis (fatty liver) typically increases liver echogenicity.",
+            correct: true,
+            explanation: "Fatty infiltration causes increased hepatic echogenicity and sound attenuation."
+        },
+        {
+            id: 24,
+            type: "multipleChoice",
+            question: "The ligamentum teres divides which hepatic segments?",
+            options: ["II and III", "III and IV", "IV and V", "V and VI"],
+            correct: 1,
+            explanation: "The ligamentum teres (round ligament) divides segments III and IV in the left lobe."
+        },
+        {
+            id: 25,
+            type: "multipleChoice",
+            question: "Budd-Chiari syndrome involves thrombosis of:",
+            options: ["Portal vein", "Hepatic veins", "Hepatic artery", "Bile ducts"],
+            correct: 1,
+            explanation: "Budd-Chiari syndrome is characterized by hepatic vein outflow obstruction."
+        },
+        {
+            id: 26,
+            type: "multipleChoice",
+            question: "Normal hepatic artery resistive index should be:",
+            options: ["0.4-0.6", "0.6-0.8", "0.8-1.0", ">1.0"],
+            correct: 1,
+            explanation: "Normal hepatic artery resistive index ranges from 0.6 to 0.8."
+        },
+        {
+            id: 27,
+            type: "trueFalse",
+            question: "Hepatocellular carcinoma is more commonly hypoechoic than hyperechoic.",
+            correct: true,
+            explanation: "HCC is typically hypoechoic, though it can have variable echogenicity patterns."
+        },
+        {
+            id: 28,
+            type: "multipleChoice",
+            question: "The most specific ultrasound finding for hepatic adenoma is:",
+            options: ["Hyperechoic rim", "Central scar", "Heterogeneous echogenicity", "No specific finding"],
+            correct: 3,
+            explanation: "Hepatic adenomas have no pathognomonic ultrasound appearance and require further imaging."
+        },
+        {
+            id: 29,
+            type: "multipleChoice",
+            question: "Glycogen storage disease most commonly affects which Couinaud segments?",
+            options: ["I and IV", "All segments equally", "II and III", "V and VI"],
+            correct: 1,
+            explanation: "Glycogen storage disease typically shows diffuse involvement but may be more prominent in certain areas."
+        },
+        {
+            id: 30,
+            type: "trueFalse",
+            question: "Portal hypertension always causes splenomegaly.",
+            correct: false,
+            explanation: "While splenomegaly is common in portal hypertension, it is not always present."
+        },
+        {
+            id: 31,
+            type: "multipleChoice",
+            question: "The normal portal vein diameter should not exceed:",
+            options: ["8 mm", "13 mm", "18 mm", "23 mm"],
+            correct: 2,
+            explanation: "Normal portal vein diameter should not exceed 13 mm in the fasting state."
+        },
+        {
+            id: 32,
+            type: "multipleChoice",
+            question: "Focal nodular hyperplasia characteristically shows:",
+            options: ["Peripheral vascularity", "Central scar with spoke-wheel pattern", "Rim enhancement", "Calcification"],
+            correct: 1,
+            explanation: "FNH typically shows a central scar with spoke-wheel vascular pattern on Doppler."
+        },
+        {
+            id: 33,
+            type: "trueFalse",
+            question: "Hepatic veins normally show triphasic flow pattern.",
+            correct: true,
+            explanation: "Hepatic veins demonstrate triphasic flow related to cardiac cycle and right atrial pressure changes."
+        },
+        {
+            id: 34,
+            type: "multipleChoice",
+            question: "Alpha-fetoprotein elevation is most associated with:",
+            options: ["Hemangioma", "Hepatocellular carcinoma", "Focal nodular hyperplasia", "Hepatic adenoma"],
+            correct: 1,
+            explanation: "Elevated AFP is strongly associated with hepatocellular carcinoma."
+        },
+        {
+            id: 35,
+            type: "multipleChoice",
+            question: "The hepatorenal recess is also known as:",
+            options: ["Morrison's pouch", "Paracolic gutter", "Pelvis pouch", "Lesser sac"],
+            correct: 0,
+            explanation: "The hepatorenal recess is commonly called Morrison's pouch and is a dependent portion of the peritoneal cavity."
+        },
+        {
+            id: 36,
+            type: "trueFalse",
+            question: "Hemochromatosis typically causes decreased hepatic echogenicity.",
+            correct: false,
+            explanation: "Hemochromatosis typically causes increased hepatic echogenicity due to iron deposition."
+        },
+        {
+            id: 37,
+            type: "multipleChoice",
+            question: "Cavernous transformation of the portal vein appears as:",
+            options: ["Single large vessel", "Multiple small collateral vessels", "Vessel wall thickening", "Anechoic mass"],
+            correct: 1,
+            explanation: "Cavernous transformation shows multiple small collateral vessels replacing the main portal vein."
+        },
+        {
+            id: 38,
+            type: "multipleChoice",
+            question: "The most common location for hepatocellular carcinoma is:",
+            options: ["Left lobe", "Right lobe", "Caudate lobe", "Equal distribution"],
+            correct: 1,
+            explanation: "HCC most commonly occurs in the right lobe of the liver."
+        },
+        {
+            id: 39,
+            type: "trueFalse",
+            question: "Hepatic cysts require intervention if they exceed 5 cm.",
+            correct: false,
+            explanation: "Simple hepatic cysts are typically benign and do not require intervention based on size alone."
+        },
+        {
+            id: 40,
+            type: "multipleChoice",
+            question: "Klatskin tumor occurs at the:",
+            options: ["Hepatic hilum", "Gallbladder neck", "Ampulla of Vater", "Cystic duct"],
+            correct: 0,
+            explanation: "Klatskin tumor is a cholangiocarcinoma at the confluence of right and left hepatic ducts."
+        },
+        {
+            id: 41,
+            type: "multipleChoice",
+            question: "Normal hepatic artery peak systolic velocity should be:",
+            options: ["10-20 cm/s", "30-60 cm/s", "70-100 cm/s", ">100 cm/s"],
+            correct: 1,
+            explanation: "Normal hepatic artery PSV ranges from 30-60 cm/s."
+        },
+        {
+            id: 42,
+            type: "trueFalse",
+            question: "Hepatic fibrosis can be assessed using ultrasound elastography.",
+            correct: true,
+            explanation: "Ultrasound elastography (FibroScan) is widely used to assess hepatic fibrosis non-invasively."
+        },
+        {
+            id: 43,
+            type: "multipleChoice",
+            question: "Polycystic liver disease is most commonly associated with:",
+            options: ["Autosomal dominant polycystic kidney disease", "Autosomal recessive polycystic kidney disease", "Acquired renal cystic disease", "No renal association"],
+            correct: 0,
+            explanation: "Polycystic liver disease is strongly associated with autosomal dominant polycystic kidney disease."
+        },
+        {
+            id: 44,
+            type: "multipleChoice",
+            question: "The hepatic artery proper divides into:",
+            options: ["Left and right hepatic arteries", "Common and proper hepatic arteries", "Gastroduodenal and right gastric arteries", "Cystic and hepatic arteries"],
+            correct: 0,
+            explanation: "The hepatic artery proper divides into left and right hepatic arteries at the liver hilum."
+        },
+        {
+            id: 45,
+            type: "trueFalse",
+            question: "Hepatic lipomas are common benign liver lesions.",
+            correct: false,
+            explanation: "Hepatic lipomas are extremely rare; hemangiomas are the most common benign liver lesions."
+        },
+        {
+            id: 46,
+            type: "multipleChoice",
+            question: "Fibrolamellar hepatocellular carcinoma typically occurs in:",
+            options: ["Elderly patients with cirrhosis", "Young patients without cirrhosis", "Patients with hepatitis B", "Patients with alcoholic liver disease"],
+            correct: 1,
+            explanation: "Fibrolamellar HCC typically occurs in young patients without underlying liver disease."
+        },
+        {
+            id: 47,
+            type: "multipleChoice",
+            question: "The middle hepatic vein drains segments:",
+            options: ["II and III", "IV and V", "V and VIII", "VI and VII"],
+            correct: 1,
+            explanation: "The middle hepatic vein primarily drains segments IV and V."
+        },
+        {
+            id: 48,
+            type: "trueFalse",
+            question: "Portal vein gas typically rises to non-dependent portions of the liver.",
+            correct: true,
+            explanation: "Portal vein gas (pneumoporta) rises to non-dependent areas, unlike biliary gas which layers dependently."
+        },
+        {
+            id: 49,
+            type: "multipleChoice",
+            question: "Hepatic encephalopathy is most commonly caused by:",
+            options: ["Hepatic artery stenosis", "Portal vein thrombosis", "Portosystemic shunting", "Bile duct obstruction"],
+            correct: 2,
+            explanation: "Hepatic encephalopathy results from portosystemic shunting allowing toxins to bypass hepatic metabolism."
+        },
+        {
+            id: 50,
+            type: "multipleChoice",
+            question: "The ligamentum venosum separates which hepatic segments?",
+            options: ["I and II", "II and IV", "I and IV", "III and IV"],
+            correct: 0,
+            explanation: "The ligamentum venosum separates the caudate lobe (segment I) from segment II."
+        },
+        {
+            id: 51,
+            type: "trueFalse",
+            question: "Hepatic abscess typically shows increased through-transmission.",
+            correct: true,
+            explanation: "Hepatic abscesses often demonstrate increased through-transmission due to their fluid content."
+        },
+        {
+            id: 52,
+            type: "multipleChoice",
+            question: "Contrast-enhanced ultrasound is most useful for:",
+            options: ["Measuring liver size", "Assessing portal vein patency", "Characterizing focal liver lesions", "Evaluating bile ducts"],
+            correct: 2,
+            explanation: "CEUS is particularly valuable for characterizing focal liver lesions and their vascularity."
+        },
+        {
+            id: 53,
+            type: "multipleChoice",
+            question: "Regenerative nodules in cirrhosis typically appear:",
+            options: ["Hyperechoic", "Hypoechoic", "Isoechoic", "Anechoic"],
+            correct: 2,
+            explanation: "Regenerative nodules are typically isoechoic and may be difficult to detect on conventional ultrasound."
+        },
+        {
+            id: 54,
+            type: "trueFalse",
+            question: "Hepatic trauma can cause subcapsular hematoma formation.",
+            correct: true,
+            explanation: "Blunt hepatic trauma commonly results in subcapsular hematomas, which appear as fluid collections beneath the liver capsule."
+        },
+        {
+            id: 55,
+            type: "multipleChoice",
+            question: "The porta hepatis contains all of the following EXCEPT:",
+            options: ["Portal vein", "Hepatic artery", "Bile duct", "Hepatic vein"],
+            correct: 3,
+            explanation: "The porta hepatis contains the portal triad (portal vein, hepatic artery, bile duct) but not hepatic veins."
+        },
+        {
+            id: 56,
+            type: "multipleChoice",
+            question: "Hepatopulmonary syndrome is characterized by:",
+            options: ["Liver and lung masses", "Intrapulmonary shunting", "Pleural effusion", "Pneumonia"],
+            correct: 1,
+            explanation: "Hepatopulmonary syndrome involves intrapulmonary vascular shunting in patients with liver disease."
+        },
+        {
+            id: 57,
+            type: "trueFalse",
+            question: "Caudate lobe hypertrophy is characteristic of Budd-Chiari syndrome.",
+            correct: true,
+            explanation: "Caudate lobe hypertrophy occurs in Budd-Chiari syndrome due to its separate venous drainage to the IVC."
+        },
+        {
+            id: 58,
+            type: "multipleChoice",
+            question: "Hepatic adenomatosis is defined as:",
+            options: ["Single large adenoma >5 cm", "≥10 adenomas throughout liver", "Adenoma with malignant transformation", "Adenoma in diabetic patient"],
+            correct: 1,
+            explanation: "Hepatic adenomatosis is defined as 10 or more adenomas distributed throughout the liver."
+        },
+        {
+            id: 59,
+            type: "multipleChoice",
+            question: "The most common cause of portal hypertension worldwide is:",
+            options: ["Alcoholic cirrhosis", "Schistosomiasis", "Hepatitis B cirrhosis", "Non-alcoholic steatohepatitis"],
+            correct: 1,
+            explanation: "Schistosomiasis is the most common cause of portal hypertension globally, though alcoholic cirrhosis is more common in developed countries."
+        },
+        {
+            id: 60,
+            type: "trueFalse",
+            question: "Hepatic artery aneurysm is more common than hepatic artery pseudoaneurysm.",
+            correct: false,
+            explanation: "Hepatic artery pseudoaneurysm is more common than true aneurysm, often associated with pancreatitis or trauma."
+        },
+        {
+            id: 61,
+            type: "multipleChoice",
+            question: "Caroli disease involves:",
+            options: ["Hepatic vein dilatation", "Intrahepatic bile duct dilatation", "Portal vein dilatation", "Hepatic artery dilatation"],
+            correct: 1,
+            explanation: "Caroli disease is characterized by congenital cystic dilatation of intrahepatic bile ducts."
+        },
+        {
+            id: 62,
+            type: "multipleChoice",
+            question: "The best ultrasound approach for evaluating the left lobe of liver is:",
+            options: ["Right subcostal", "Epigastric", "Left subcostal", "Intercostal"],
+            correct: 1,
+            explanation: "The epigastric approach provides optimal visualization of the left lobe of the liver."
+        },
+        {
+            id: 63,
+            type: "trueFalse",
+            question: "Hepatic metastases are more commonly hypoechoic than hyperechoic.",
+            correct: true,
+            explanation: "Hepatic metastases are most commonly hypoechoic, though they can have varied appearances."
+        },
+        {
+            id: 64,
+            type: "multipleChoice",
+            question: "Transjugular intrahepatic portosystemic shunt (TIPS) connects:",
+            options: ["Portal vein to hepatic artery", "Portal vein to hepatic vein", "Hepatic artery to hepatic vein", "Portal vein to IVC"],
+            correct: 1,
+            explanation: "TIPS creates a connection between the portal vein and hepatic vein to reduce portal pressure."
+        },
+        {
+            id: 65,
+            type: "multipleChoice",
+            question: "Hepatic hydatid cysts most commonly result from infection with:",
+            options: ["Echinococcus granulosus", "Entamoeba histolytica", "Candida albicans", "Staphylococcus aureus"],
+            correct: 0,
+            explanation: "Echinococcus granulosus is the most common cause of hepatic hydatid disease."
+        },
+        {
+            id: 66,
+            type: "trueFalse",
+            question: "Hepatic iron deposition can be quantified using ultrasound.",
+            correct: false,
+            explanation: "MRI is the preferred method for quantifying hepatic iron deposition; ultrasound shows only increased echogenicity."
+        },
+        {
+            id: 67,
+            type: "multipleChoice",
+            question: "The 'starry sky' appearance on ultrasound suggests:",
+            options: ["Normal liver", "Acute hepatitis", "Cirrhosis", "Fatty infiltration"],
+            correct: 1,
+            explanation: "The 'starry sky' appearance with prominent portal triads suggests acute hepatitis."
+        },
+        {
+            id: 68,
+            type: "multipleChoice",
+            question: "Hepatic peliosis is characterized by:",
+            options: ["Solid tumor masses", "Blood-filled cystic spaces", "Calcified deposits", "Gas collections"],
+            correct: 1,
+            explanation: "Hepatic peliosis consists of blood-filled cystic spaces within the liver parenchyma."
+        },
+        {
+            id: 69,
+            type: "trueFalse",
+            question: "Post-transplant lymphoproliferative disorder commonly affects the liver.",
+            correct: true,
+            explanation: "PTLD can affect the liver, particularly in immunosuppressed transplant recipients."
+        },
+        {
+            id: 70,
+            type: "multipleChoice",
+            question: "The most appropriate follow-up interval for a 2 cm hepatic hemangioma is:",
+            options: ["1 month", "3 months", "6 months", "No follow-up needed"],
+            correct: 3,
+            explanation: "Typical hepatic hemangiomas <3 cm with characteristic appearance require no routine follow-up."
         }
     ],
 
@@ -317,6 +701,389 @@ const questionDatabase = {
             options: ["Thin GB wall", "Hypoechoic nodules in wall", "Calcified GB", "Polyps"],
             correct: 1,
             explanation: "Xanthogranulomatous cholecystitis shows hypoechoic intramural nodules representing lipid-laden macrophages."
+        },
+        {
+            id: 33,
+            type: "multipleChoice",
+            question: "The most common type of gallstone is:",
+            options: ["Cholesterol stone", "Pigment stone", "Mixed stone", "Calcium stone"],
+            correct: 0,
+            explanation: "Cholesterol stones comprise approximately 80% of gallstones in Western populations."
+        },
+        {
+            id: 34,
+            type: "trueFalse",
+            question: "Murphy's sign is specific for acute cholecystitis.",
+            correct: false,
+            explanation: "Murphy's sign is sensitive but not specific for acute cholecystitis and can occur in other conditions."
+        },
+        {
+            id: 35,
+            type: "multipleChoice",
+            question: "Gangrenous cholecystitis is suggested by:",
+            options: ["Thin gallbladder wall", "Intramural gas", "Multiple polyps", "Contracted gallbladder"],
+            correct: 1,
+            explanation: "Intramural gas (pneumatosis) suggests gangrenous changes in the gallbladder wall."
+        },
+        {
+            id: 36,
+            type: "multipleChoice",
+            question: "The normal common bile duct diameter in patients >60 years should not exceed:",
+            options: ["4 mm", "6 mm", "8 mm", "10 mm"],
+            correct: 3,
+            explanation: "In elderly patients (>60 years), the common bile duct can normally measure up to 10 mm."
+        },
+        {
+            id: 37,
+            type: "trueFalse",
+            question: "Adenomyomatosis of the gallbladder is a premalignant condition.",
+            correct: false,
+            explanation: "Adenomyomatosis is a benign condition with no malignant potential."
+        },
+        {
+            id: 38,
+            type: "multipleChoice",
+            question: "Mirizzi syndrome involves:",
+            options: ["GB perforation", "Cystic artery aneurysm", "Bile duct obstruction by stones", "GB torsion"],
+            correct: 2,
+            explanation: "Mirizzi syndrome is bile duct obstruction caused by impacted stones in the cystic artery or Hartmann's pouch."
+        },
+        {
+            id: 39,
+            type: "multipleChoice",
+            question: "The 'comet tail' artifact is most associated with:",
+            options: ["Gallstones", "Polyps", "Sludge", "Wall thickening"],
+            correct: 0,
+            explanation: "The comet tail artifact is characteristic of cholesterol crystals and small gallstones."
+        },
+        {
+            id: 40,
+            type: "trueFalse",
+            question: "Gallbladder carcinoma most commonly arises from the fundus.",
+            correct: true,
+            explanation: "Gallbladder carcinoma most frequently originates in the fundus, followed by the body."
+        },
+        {
+            id: 41,
+            type: "multipleChoice",
+            question: "Emphysematous cholecystitis is most commonly seen in:",
+            options: ["Young women", "Diabetic patients", "Pregnant patients", "Pediatric patients"],
+            correct: 1,
+            explanation: "Emphysematous cholecystitis occurs predominantly in diabetic patients, especially males."
+        },
+        {
+            id: 42,
+            type: "multipleChoice",
+            question: "The 'WES' triad includes wall thickening, edema, and:",
+            options: ["Stones", "Stranding", "Sludge", "Stricture"],
+            correct: 1,
+            explanation: "The WES triad (Wall thickening, Edema, Stranding) suggests acute cholecystitis."
+        },
+        {
+            id: 43,
+            type: "trueFalse",
+            question: "Porcelain gallbladder requires surgical removal due to malignancy risk.",
+            correct: true,
+            explanation: "Porcelain gallbladder has a significant association with gallbladder carcinoma and warrants cholecystectomy."
+        },
+        {
+            id: 44,
+            type: "multipleChoice",
+            question: "Biliary-enteric anastomotic stricture most commonly occurs at:",
+            options: ["Immediately post-op", "1-3 months", "6-12 months", "Years later"],
+            correct: 2,
+            explanation: "Anastomotic strictures typically develop 6-12 months after biliary-enteric reconstruction."
+        },
+        {
+            id: 45,
+            type: "multipleChoice",
+            question: "The spiral valves of Heister are located in the:",
+            options: ["Common bile duct", "Cystic duct", "Hepatic duct", "Pancreatic duct"],
+            correct: 1,
+            explanation: "The spiral valves of Heister are mucosal folds within the cystic duct."
+        },
+        {
+            id: 46,
+            type: "trueFalse",
+            question: "Gallbladder polyps >1 cm require surgical evaluation.",
+            correct: true,
+            explanation: "Polyps >1 cm have increased malignancy risk and should be considered for surgical removal."
+        },
+        {
+            id: 47,
+            type: "multipleChoice",
+            question: "Choledochocele is a type of:",
+            options: ["Gallbladder polyp", "Choledochal cyst", "Biliary stricture", "Pancreatic cyst"],
+            correct: 1,
+            explanation: "Choledochocele is a type III choledochal cyst involving the intraduodenal portion of the bile duct."
+        },
+        {
+            id: 48,
+            type: "multipleChoice",
+            question: "The most sensitive ultrasound finding for acute cholecystitis is:",
+            options: ["Gallstones", "Wall thickening", "Sonographic Murphy's sign", "Pericholecystic fluid"],
+            correct: 2,
+            explanation: "Sonographic Murphy's sign is the most sensitive ultrasound finding for acute cholecystitis."
+        },
+        {
+            id: 49,
+            type: "trueFalse",
+            question: "Biliary sludge always progresses to gallstone formation.",
+            correct: false,
+            explanation: "Biliary sludge may resolve, persist, or progress to gallstones; progression is not inevitable."
+        },
+        {
+            id: 50,
+            type: "multipleChoice",
+            question: "Cholesterolosis of the gallbladder appears as:",
+            options: ["Wall calcification", "Multiple echogenic foci", "Thin septations", "Anechoic areas"],
+            correct: 1,
+            explanation: "Cholesterolosis shows multiple small echogenic foci in the gallbladder wall representing cholesterol deposits."
+        },
+        {
+            id: 51,
+            type: "multipleChoice",
+            question: "Klatskin tumors are classified using which system?",
+            options: ["Bismuth classification", "TNM staging", "Child-Pugh score", "MELD score"],
+            correct: 0,
+            explanation: "Bismuth classification is used to categorize hilar cholangiocarcinomas (Klatskin tumors)."
+        },
+        {
+            id: 52,
+            type: "trueFalse",
+            question: "Hemobilia typically causes the Charcot triad of symptoms.",
+            correct: false,
+            explanation: "Hemobilia typically causes the Quinke triad (jaundice, pain, GI bleeding), not Charcot's triad."
+        },
+        {
+            id: 53,
+            type: "multipleChoice",
+            question: "Primary sclerosing cholangitis most commonly affects:",
+            options: ["Young women", "Middle-aged men", "Elderly patients", "Children"],
+            correct: 1,
+            explanation: "PSC predominantly affects middle-aged men and is associated with inflammatory bowel disease."
+        },
+        {
+            id: 54,
+            type: "multipleChoice",
+            question: "The Rokitansky-Aschoff sinuses are characteristic of:",
+            options: ["Acute cholecystitis", "Adenomyomatosis", "Gallbladder carcinoma", "Cholesterolosis"],
+            correct: 1,
+            explanation: "Rokitansky-Aschoff sinuses are outpouchings of gallbladder mucosa characteristic of adenomyomatosis."
+        },
+        {
+            id: 55,
+            type: "trueFalse",
+            question: "Gallbladder perforation most commonly occurs at the fundus.",
+            correct: true,
+            explanation: "Gallbladder perforation typically occurs at the fundus, the most dependent and poorly vascularized portion."
+        },
+        {
+            id: 56,
+            type: "multipleChoice",
+            question: "Caroli syndrome includes intrahepatic bile duct dilatation and:",
+            options: ["Portal hypertension", "Congenital hepatic fibrosis", "Hepatic cysts", "Hepatomegaly"],
+            correct: 1,
+            explanation: "Caroli syndrome combines Caroli disease (bile duct ectasia) with congenital hepatic fibrosis."
+        },
+        {
+            id: 57,
+            type: "multipleChoice",
+            question: "The most common cause of acute acalculous cholecystitis is:",
+            options: ["Diabetes", "Critical illness", "Pregnancy", "Medications"],
+            correct: 1,
+            explanation: "Critical illness is the most common setting for acute acalculous cholecystitis."
+        },
+        {
+            id: 58,
+            type: "trueFalse",
+            question: "Biliary cystadenoma has malignant potential.",
+            correct: true,
+            explanation: "Biliary cystadenomas can undergo malignant transformation to cystadenocarcinoma."
+        },
+        {
+            id: 59,
+            type: "multipleChoice",
+            question: "The 'champagne glass' sign refers to:",
+            options: ["Dilated intrahepatic ducts", "Choledochal cyst", "Gallbladder shape", "Portal vein appearance"],
+            correct: 0,
+            explanation: "The 'champagne glass' sign describes the appearance of dilated intrahepatic bile ducts."
+        },
+        {
+            id: 60,
+            type: "multipleChoice",
+            question: "Postcholecystectomy syndrome most commonly results from:",
+            options: ["Retained stones", "Biliary stricture", "Sphincter of Oddi dysfunction", "Bile leak"],
+            correct: 2,
+            explanation: "Sphincter of Oddi dysfunction is the most common cause of postcholecystectomy syndrome."
+        },
+        {
+            id: 61,
+            type: "trueFalse",
+            question: "Gallstone ileus typically involves stones >2.5 cm in diameter.",
+            correct: true,
+            explanation: "Gallstone ileus typically requires large stones (>2.5 cm) to cause mechanical bowel obstruction."
+        },
+        {
+            id: 62,
+            type: "multipleChoice",
+            question: "The normal gallbladder ejection fraction after CCK stimulation should be:",
+            options: [">25%", ">35%", ">50%", ">75%"],
+            correct: 1,
+            explanation: "Normal gallbladder ejection fraction should be >35% after CCK stimulation."
+        },
+        {
+            id: 63,
+            type: "multipleChoice",
+            question: "Oriental cholangiohepatitis is most commonly associated with:",
+            options: ["Clonorchis sinensis", "Ascaris lumbricoides", "E. coli", "Pseudomonas"],
+            correct: 0,
+            explanation: "Oriental cholangiohepatitis is strongly associated with Clonorchis sinensis (liver fluke) infection."
+        },
+        {
+            id: 64,
+            type: "trueFalse",
+            question: "Biliary hamartomas (von Meyenburg complexes) are premalignant.",
+            correct: false,
+            explanation: "Biliary hamartomas are benign malformations with no malignant potential."
+        },
+        {
+            id: 65,
+            type: "multipleChoice",
+            question: "The triangle of Calot is bounded by:",
+            options: ["Hepatic artery, cystic artery, liver edge", "Cystic artery, cystic duct, common hepatic duct", "Common hepatic duct, cystic duct, liver edge", "Portal vein, hepatic artery, bile duct"],
+            correct: 2,
+            explanation: "The triangle of Calot is bounded by the common hepatic duct, cystic duct, and liver edge."
+        },
+        {
+            id: 66,
+            type: "multipleChoice",
+            question: "Bouveret syndrome involves:",
+            options: ["Gallstone in duodenum", "Gallstone in colon", "Gallstone in stomach", "Gallstone in jejunum"],
+            correct: 0,
+            explanation: "Bouveret syndrome is gallstone impaction in the duodenal bulb causing gastric outlet obstruction."
+        },
+        {
+            id: 67,
+            type: "trueFalse",
+            question: "Gallbladder wall thickening is always pathological.",
+            correct: false,
+            explanation: "Gallbladder wall thickening can be physiologic (fasting state) or pathologic (inflammation, hypoalbuminemia)."
+        },
+        {
+            id: 68,
+            type: "multipleChoice",
+            question: "The most common complication of ERCP is:",
+            options: ["Bleeding", "Perforation", "Pancreatitis", "Infection"],
+            correct: 2,
+            explanation: "Post-ERCP pancreatitis is the most common complication, occurring in 3-9% of procedures."
+        },
+        {
+            id: 69,
+            type: "multipleChoice",
+            question: "Biliary-vascular fistula most commonly involves the:",
+            options: ["Portal vein", "Hepatic artery", "Hepatic vein", "IVC"],
+            correct: 0,
+            explanation: "Biliary-vascular fistulas most commonly involve the portal vein system."
+        },
+        {
+            id: 70,
+            type: "trueFalse",
+            question: "Choledocholithiasis can be excluded if the bile duct is not dilated.",
+            correct: false,
+            explanation: "Bile duct dilatation is not always present with choledocholithiasis, especially in acute cases."
+        },
+        {
+            id: 71,
+            type: "multipleChoice",
+            question: "Gallbladder agenesis is most commonly associated with:",
+            options: ["Biliary atresia", "Polysplenia syndrome", "Situs inversus", "ARPKD"],
+            correct: 1,
+            explanation: "Gallbladder agenesis is most commonly associated with polysplenia syndrome and heterotaxy."
+        },
+        {
+            id: 72,
+            type: "multipleChoice",
+            question: "The 'rim sign' in gallbladder imaging suggests:",
+            options: ["Acute cholecystitis", "Gangrenous cholecystitis", "Chronic cholecystitis", "Gallbladder cancer"],
+            correct: 1,
+            explanation: "The rim sign indicates perfusion defect suggesting gangrenous cholecystitis."
+        },
+        {
+            id: 73,
+            type: "trueFalse",
+            question: "Biliary sphincterotomy eliminates the risk of future choledocholithiasis.",
+            correct: false,
+            explanation: "Sphincterotomy reduces but does not eliminate the risk of recurrent bile duct stones."
+        },
+        {
+            id: 74,
+            type: "multipleChoice",
+            question: "Choledochal cyst Type IV involves:",
+            options: ["Single extrahepatic cyst", "Multiple intra- and extrahepatic cysts", "Choledochocele", "Fusiform CBD dilatation"],
+            correct: 1,
+            explanation: "Type IV choledochal cysts involve multiple cystic dilatations both intra- and extrahepatically."
+        },
+        {
+            id: 75,
+            type: "multipleChoice",
+            question: "The most reliable sign of bile duct invasion by gallbladder cancer is:",
+            options: ["Bile duct dilatation", "Mass effect on bile duct", "Loss of tissue planes", "Elevated bilirubin"],
+            correct: 2,
+            explanation: "Loss of normal tissue planes between gallbladder and bile duct suggests invasion."
+        },
+        {
+            id: 76,
+            type: "trueFalse",
+            question: "Cholangitis requires the complete Charcot triad for diagnosis.",
+            correct: false,
+            explanation: "Cholangitis can be diagnosed without the complete Charcot triad; fever and elevated liver enzymes may be sufficient."
+        },
+        {
+            id: 77,
+            type: "multipleChoice",
+            question: "Biliary papillomatosis has the highest malignant potential in which location?",
+            options: ["Intrahepatic ducts", "Common hepatic duct", "Common bile duct", "Papilla of Vater"],
+            correct: 0,
+            explanation: "Intrahepatic biliary papillomatosis has the highest risk of malignant transformation."
+        },
+        {
+            id: 78,
+            type: "multipleChoice",
+            question: "The 'parallel channel' sign indicates:",
+            options: ["Dilated bile duct", "Dilated pancreatic duct", "Both ducts dilated", "Vascular compression"],
+            correct: 2,
+            explanation: "The parallel channel sign indicates simultaneous dilatation of both bile and pancreatic ducts."
+        },
+        {
+            id: 79,
+            type: "trueFalse",
+            question: "Gallbladder duplication always requires surgical intervention.",
+            correct: false,
+            explanation: "Gallbladder duplication is often asymptomatic and may not require intervention if uncomplicated."
+        },
+        {
+            id: 80,
+            type: "multipleChoice",
+            question: "Chronic cholecystitis most commonly results from:",
+            options: ["Repeated acute episodes", "Chronic gallstone irritation", "Ischemia", "Autoimmune disease"],
+            correct: 1,
+            explanation: "Chronic cholecystitis typically results from chronic irritation by gallstones over time."
+        },
+        {
+            id: 81,
+            type: "multipleChoice",
+            question: "The most common location for ectopic gallbladder is:",
+            options: ["Intrahepatic", "Left-sided", "Retroperitoneal", "Suprahepatic"],
+            correct: 0,
+            explanation: "Intrahepatic location is the most common form of ectopic gallbladder positioning."
+        },
+        {
+            id: 82,
+            type: "trueFalse",
+            question: "Biliary cystadenoma shows communication with the biliary tree.",
+            correct: false,
+            explanation: "Biliary cystadenomas typically do not communicate with the biliary system, unlike choledochal cysts."
         }
     ],
 
@@ -476,6 +1243,389 @@ const questionDatabase = {
             options: ["Fat tissue", "Calcification", "Necrosis", "Hemorrhage"],
             correct: 0,
             explanation: "Angiomyolipomas contain fat, which appears hyperechoic on ultrasound."
+        },
+        {
+            id: 42,
+            type: "multipleChoice",
+            question: "Normal renal parenchymal thickness should be at least:",
+            options: ["1.0 cm", "1.5 cm", "2.0 cm", "2.5 cm"],
+            correct: 1,
+            explanation: "Normal renal parenchymal thickness should be at least 1.5 cm; less suggests chronic disease."
+        },
+        {
+            id: 43,
+            type: "trueFalse",
+            question: "Horseshoe kidney is the most common renal fusion anomaly.",
+            correct: true,
+            explanation: "Horseshoe kidney occurs in 1:400-800 births and is the most common fusion anomaly."
+        },
+        {
+            id: 44,
+            type: "multipleChoice",
+            question: "Autosomal dominant polycystic kidney disease typically manifests clinically in:",
+            options: ["Childhood", "Adolescence", "Young adulthood", "Middle age"],
+            correct: 3,
+            explanation: "ADPKD typically becomes clinically apparent in the 3rd-4th decades of life."
+        },
+        {
+            id: 45,
+            type: "multipleChoice",
+            question: "The resistive index in a normal kidney should be:",
+            options: ["<0.5", "<0.7", "<0.9", ">0.9"],
+            correct: 1,
+            explanation: "Normal renal resistive index should be <0.7; elevated values suggest renal dysfunction."
+        },
+        {
+            id: 46,
+            type: "trueFalse",
+            question: "Nephrocalcinosis affects the renal medulla more than cortex.",
+            correct: true,
+            explanation: "Medullary nephrocalcinosis is more common and typically involves calcium phosphate deposits."
+        },
+        {
+            id: 47,
+            type: "multipleChoice",
+            question: "Von Hippel-Lindau syndrome is most associated with:",
+            options: ["Renal cell carcinoma", "Transitional cell carcinoma", "Wilms tumor", "Oncocytoma"],
+            correct: 0,
+            explanation: "VHL syndrome has a strong association with clear cell renal cell carcinoma."
+        },
+        {
+            id: 48,
+            type: "multipleChoice",
+            question: "Acute tubular necrosis typically shows:",
+            options: ["Increased cortical echogenicity", "Decreased cortical echogenicity", "Loss of corticomedullary differentiation", "Hydronephrosis"],
+            correct: 2,
+            explanation: "ATN characteristically causes loss of normal corticomedullary differentiation."
+        },
+        {
+            id: 49,
+            type: "trueFalse",
+            question: "Renal carbuncle represents a localized bacterial infection.",
+            correct: true,
+            explanation: "Renal carbuncle is a localized suppurative infection, typically staphylococcal."
+        },
+        {
+            id: 50,
+            type: "multipleChoice",
+            question: "Medullary sponge kidney affects which part of the nephron?",
+            options: ["Glomerulus", "Proximal tubule", "Collecting ducts", "Loop of Henle"],
+            correct: 2,
+            explanation: "Medullary sponge kidney involves cystic dilatation of collecting ducts in the medulla."
+        },
+        {
+            id: 51,
+            type: "multipleChoice",
+            question: "The most common location for renal cell carcinoma is:",
+            options: ["Upper pole", "Mid kidney", "Lower pole", "Equal distribution"],
+            correct: 0,
+            explanation: "RCC most commonly occurs in the upper pole of the kidney."
+        },
+        {
+            id: 52,
+            type: "trueFalse",
+            question: "Chronic kidney disease always causes bilateral small kidneys.",
+            correct: false,
+            explanation: "Some causes of CKD (diabetes, amyloidosis) may initially cause enlarged kidneys."
+        },
+        {
+            id: 53,
+            type: "multipleChoice",
+            question: "Xanthogranulomatous pyelonephritis typically affects:",
+            options: ["Young children", "Middle-aged women", "Elderly men", "Pregnant women"],
+            correct: 1,
+            explanation: "XGP typically affects middle-aged women and is often associated with staghorn calculi."
+        },
+        {
+            id: 54,
+            type: "multipleChoice",
+            question: "Normal ureterovesical jet frequency should be:",
+            options: ["Every 30 seconds", "Every 1-2 minutes", "Every 5-15 seconds", "Continuous"],
+            correct: 2,
+            explanation: "Normal ureterovesical jets occur every 5-15 seconds, indicating ureteral patency."
+        },
+        {
+            id: 55,
+            type: "trueFalse",
+            question: "Multicystic dysplastic kidney requires immediate surgical intervention.",
+            correct: false,
+            explanation: "MCDK is often managed conservatively with monitoring as many involute spontaneously."
+        },
+        {
+            id: 56,
+            type: "multipleChoice",
+            question: "The most common cause of acute renal failure in hospitalized patients is:",
+            options: ["Prerenal azotemia", "Acute tubular necrosis", "Postrenal obstruction", "Acute glomerulonephritis"],
+            correct: 1,
+            explanation: "ATN is the most common cause of acute renal failure in hospitalized patients."
+        },
+        {
+            id: 57,
+            type: "multipleChoice",
+            question: "Renal oncocytoma typically appears as:",
+            options: ["Hyperechoic mass", "Hypoechoic mass", "Cystic mass", "Calcified mass"],
+            correct: 1,
+            explanation: "Renal oncocytomas are typically homogeneous, hypoechoic masses that may have a central scar."
+        },
+        {
+            id: 58,
+            type: "trueFalse",
+            question: "Nutcracker syndrome involves compression of the left renal vein.",
+            correct: true,
+            explanation: "Nutcracker syndrome involves compression of the left renal vein between the aorta and SMA."
+        },
+        {
+            id: 59,
+            type: "multipleChoice",
+            question: "Page kidney results from:",
+            options: ["Renal artery stenosis", "Subcapsular hematoma", "Renal vein thrombosis", "Ureteral obstruction"],
+            correct: 1,
+            explanation: "Page kidney is hypertension caused by subcapsular hematoma compressing renal parenchyma."
+        },
+        {
+            id: 60,
+            type: "multipleChoice",
+            question: "The normal bladder wall thickness should not exceed:",
+            options: ["2 mm", "3 mm", "5 mm", "8 mm"],
+            correct: 2,
+            explanation: "Normal bladder wall thickness should not exceed 5 mm when adequately distended."
+        },
+        {
+            id: 61,
+            type: "trueFalse",
+            question: "Renal lymphoma is usually bilateral.",
+            correct: true,
+            explanation: "Primary renal lymphoma is rare; secondary involvement is usually bilateral and multifocal."
+        },
+        {
+            id: 62,
+            type: "multipleChoice",
+            question: "Fetal lobulation is distinguished from scarring by:",
+            options: ["Location over calyces", "Location between calyces", "Depth of indentation", "Associated hydronephrosis"],
+            correct: 1,
+            explanation: "Fetal lobulation occurs between calyces, while pathologic scarring occurs over calyces."
+        },
+        {
+            id: 63,
+            type: "multipleChoice",
+            question: "Acute pyelonephritis most commonly shows:",
+            options: ["Focal hyperechoic areas", "Focal hypoechoic areas", "Hydronephrosis", "Renal enlargement"],
+            correct: 1,
+            explanation: "Acute pyelonephritis typically shows focal hypoechoic areas representing edema and inflammation."
+        },
+        {
+            id: 64,
+            type: "trueFalse",
+            question: "Duplicated collecting systems are more common in females.",
+            correct: true,
+            explanation: "Duplicated collecting systems occur more frequently in females with a 6:1 ratio."
+        },
+        {
+            id: 65,
+            type: "multipleChoice",
+            question: "The most common cause of unilateral renal agenesis is:",
+            options: ["Genetic mutation", "In utero vascular accident", "Maternal infection", "Drug exposure"],
+            correct: 1,
+            explanation: "Unilateral renal agenesis is usually caused by failure of ureteric bud development."
+        },
+        {
+            id: 66,
+            type: "multipleChoice",
+            question: "Renal transplant rejection typically shows:",
+            options: ["Increased echogenicity", "Decreased echogenicity", "Loss of corticomedullary differentiation", "Hydronephrosis"],
+            correct: 2,
+            explanation: "Acute rejection typically shows loss of corticomedullary differentiation and increased resistive indices."
+        },
+        {
+            id: 67,
+            type: "trueFalse",
+            question: "Nephroptosis is more common in thin females.",
+            correct: true,
+            explanation: "Nephroptosis (floating kidney) is more common in thin females due to decreased retroperitoneal fat."
+        },
+        {
+            id: 68,
+            type: "multipleChoice",
+            question: "The 'rim sign' in renal imaging indicates:",
+            options: ["Renal infarction", "Renal cell carcinoma", "Simple cyst", "Renal stone"],
+            correct: 0,
+            explanation: "The rim sign represents residual cortical perfusion in acute renal infarction."
+        },
+        {
+            id: 69,
+            type: "multipleChoice",
+            question: "Autosomal recessive polycystic kidney disease typically presents:",
+            options: ["In utero or neonatal period", "In childhood", "In young adulthood", "In middle age"],
+            correct: 0,
+            explanation: "ARPKD typically presents in the neonatal period with enlarged echogenic kidneys."
+        },
+        {
+            id: 70,
+            type: "trueFalse",
+            question: "Simple renal cysts require follow-up imaging.",
+            correct: false,
+            explanation: "Simple renal cysts meeting Bosniak I criteria require no follow-up."
+        },
+        {
+            id: 71,
+            type: "multipleChoice",
+            question: "The most common malignant renal tumor in adults is:",
+            options: ["Transitional cell carcinoma", "Renal cell carcinoma", "Squamous cell carcinoma", "Sarcoma"],
+            correct: 1,
+            explanation: "Renal cell carcinoma accounts for approximately 85% of malignant renal tumors in adults."
+        },
+        {
+            id: 72,
+            type: "multipleChoice",
+            question: "Chronic pyelonephritis characteristically shows:",
+            options: ["Smooth contour", "Blunted calyces and cortical scarring", "Enlarged kidney", "Increased echogenicity"],
+            correct: 1,
+            explanation: "Chronic pyelonephritis shows blunted calyces with overlying cortical scarring."
+        },
+        {
+            id: 73,
+            type: "trueFalse",
+            question: "Milk of calcium in renal cysts is always benign.",
+            correct: true,
+            explanation: "Milk of calcium represents calcium carbonate precipitation and is always benign."
+        },
+        {
+            id: 74,
+            type: "multipleChoice",
+            question: "Renal artery stenosis most commonly occurs at:",
+            options: ["Renal artery origin", "Mid renal artery", "Hilar branches", "Interlobar arteries"],
+            correct: 0,
+            explanation: "Atherosclerotic renal artery stenosis most commonly occurs at the artery origin."
+        },
+        {
+            id: 75,
+            type: "multipleChoice",
+            question: "The dromedary hump represents:",
+            options: ["Pathologic scarring", "Normal variant", "Renal tumor", "Infection sequela"],
+            correct: 1,
+            explanation: "The dromedary hump is a normal variant representing splenic impression on left kidney."
+        },
+        {
+            id: 76,
+            type: "trueFalse",
+            question: "Renal vein thrombosis typically causes acute flank pain.",
+            correct: true,
+            explanation: "Acute renal vein thrombosis typically presents with severe flank pain, hematuria, and renal dysfunction."
+        },
+        {
+            id: 77,
+            type: "multipleChoice",
+            question: "Papillary necrosis is most commonly associated with:",
+            options: ["Hypertension", "Diabetes mellitus", "Glomerulonephritis", "Congenital anomalies"],
+            correct: 1,
+            explanation: "Papillary necrosis is most commonly associated with diabetes mellitus and analgesic abuse."
+        },
+        {
+            id: 78,
+            type: "multipleChoice",
+            question: "The most sensitive ultrasound finding for hydronephrosis is:",
+            options: ["Renal enlargement", "Pelvic dilatation", "Calyceal dilatation", "Cortical thinning"],
+            correct: 2,
+            explanation: "Calyceal dilatation is the most sensitive finding for early hydronephrosis."
+        },
+        {
+            id: 79,
+            type: "trueFalse",
+            question: "Crossed fused ectopia always involves the left kidney crossing to the right.",
+            correct: false,
+            explanation: "Crossed fused ectopia can involve either kidney crossing to the contralateral side."
+        },
+        {
+            id: 80,
+            type: "multipleChoice",
+            question: "Renal candidiasis typically appears as:",
+            options: ["Hyperechoic foci", "Hypoechoic masses", "Cystic lesions", "Calcifications"],
+            correct: 0,
+            explanation: "Renal candidiasis typically appears as multiple small hyperechoic foci ('fungus balls')."
+        },
+        {
+            id: 81,
+            type: "multipleChoice",
+            question: "The most common cause of end-stage renal disease is:",
+            options: ["Glomerulonephritis", "Diabetes mellitus", "Hypertension", "Polycystic kidney disease"],
+            correct: 1,
+            explanation: "Diabetes mellitus is the leading cause of end-stage renal disease in developed countries."
+        },
+        {
+            id: 82,
+            type: "trueFalse",
+            question: "Renal pyramids normally appear hypoechoic compared to cortex.",
+            correct: true,
+            explanation: "Normal renal pyramids are hypoechoic relative to the cortex, creating corticomedullary differentiation."
+        },
+        {
+            id: 83,
+            type: "multipleChoice",
+            question: "Acquired cystic kidney disease is most associated with:",
+            options: ["Diabetes", "Hypertension", "Dialysis", "Aging"],
+            correct: 2,
+            explanation: "ACKD is strongly associated with chronic dialysis and increases renal cell carcinoma risk."
+        },
+        {
+            id: 84,
+            type: "multipleChoice",
+            question: "The normal ureteral orifice appears as:",
+            options: ["Hyperechoic focus", "Hypoechoic area", "Echogenic jet", "Anechoic structure"],
+            correct: 0,
+            explanation: "Normal ureteral orifices appear as small hyperechoic foci on the bladder trigone."
+        },
+        {
+            id: 85,
+            type: "trueFalse",
+            question: "Wilms tumor typically presents in the first decade of life.",
+            correct: true,
+            explanation: "Wilms tumor (nephroblastoma) typically occurs in children under 5 years old."
+        },
+        {
+            id: 86,
+            type: "multipleChoice",
+            question: "Renal arteriovenous malformation most commonly results from:",
+            options: ["Congenital anomaly", "Penetrating trauma", "Biopsy", "Infection"],
+            correct: 2,
+            explanation: "Acquired AVMs most commonly result from renal biopsy or other invasive procedures."
+        },
+        {
+            id: 87,
+            type: "multipleChoice",
+            question: "The 'eggshell sign' in renal imaging refers to:",
+            options: ["Thin-walled cyst", "Rim calcification", "Cortical nephrocalcinosis", "Papillary calcification"],
+            correct: 1,
+            explanation: "The eggshell sign refers to thin rim calcification, often seen in chronic hematomas."
+        },
+        {
+            id: 88,
+            type: "trueFalse",
+            question: "Renal duplication increases the risk of urinary tract infections.",
+            correct: true,
+            explanation: "Duplicated collecting systems increase UTI risk due to ureterovesical reflux and stasis."
+        },
+        {
+            id: 89,
+            type: "multipleChoice",
+            question: "Emphysematous pyelonephritis is most commonly seen in:",
+            options: ["Healthy individuals", "Diabetic patients", "Immunocompromised patients", "Elderly patients"],
+            correct: 1,
+            explanation: "Emphysematous pyelonephritis occurs predominantly in diabetic patients with poor glucose control."
+        },
+        {
+            id: 90,
+            type: "multipleChoice",
+            question: "The most reliable sign of chronic kidney disease on ultrasound is:",
+            options: ["Increased echogenicity", "Small kidney size", "Loss of corticomedullary differentiation", "Cortical thinning"],
+            correct: 1,
+            explanation: "Bilateral small kidneys (<9 cm) are the most reliable ultrasound sign of chronic kidney disease."
+        },
+        {
+            id: 91,
+            type: "trueFalse",
+            question: "Column of Bertin can mimic a renal mass.",
+            correct: true,
+            explanation: "Prominent columns of Bertin (cortical tissue) can simulate renal masses but have normal cortical echogenicity."
         }
     ],
 
